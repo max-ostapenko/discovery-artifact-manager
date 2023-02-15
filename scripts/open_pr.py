@@ -87,7 +87,7 @@ def setup() -> Optional[str]:
     """
     ensure_git_identity()
     github_token: Optional[str] = os.getenv(MAIN_TOKEN_ENV)
-    username: str = ensure_github_username()
+    username: str = GIT_USER_NAME # ensure_github_username()
     fork_repo_name: str = REPO_NAME.replace("googleapis/", f"{username}/")
     # ensure_github_fork(fork_repo_name)
     ensure_git_remote(github_token, username, fork_repo_name)
