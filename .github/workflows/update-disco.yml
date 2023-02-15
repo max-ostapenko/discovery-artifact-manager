@@ -6,10 +6,10 @@ on:
 
 jobs:
   update-discoveries:
-    if: ${{ github.repository == 'googleapis/discovery-artifact-manager' }}
+    if: ${{ github.repository == 'max-ostapenko/discovery-artifact-manager' }}
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.YOSHI_CODE_BOT_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       APPROVAL_GITHUB_TOKEN: ${{secrets.YOSHI_APPROVER_TOKEN}}
     steps:
       - name: Checkout repo

@@ -22,9 +22,9 @@ from typing import Optional
 
 
 REMOTE_NAME = "yoshi-fork"
-REPO_NAME = "googleapis/discovery-artifact-manager"
-GIT_USER_NAME = "Yoshi Automation Bot"
-GIT_USER_EMAIL = "yoshi-automation@google.com"
+REPO_NAME = "max-ostapenko/discovery-artifact-manager"
+GIT_USER_NAME = "max-ostapenko"
+GIT_USER_EMAIL = "1611259+max-ostapenko@users.noreply.github.com"
 COMMIT_MESSAGE = "chore: Automated update of discovery documents"
 PULL_REQUEST_BODY = "Automatically created by the update_disco script."
 APPROVAL_MESSAGE = "Rubber-stamped automated update of discovery documents!"
