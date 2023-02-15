@@ -214,7 +214,7 @@ def push_changes(branch: str, github_token: Optional[str]) -> None:
     """
     logging.info(f"Pushing branch {branch} to remote {REMOTE_NAME}.")
     existing_auth: list[str] = []
-    if github_token is not None:
+    if False: # github_token is not None:
         # This config is set by github actions. Need to undo it temporarily
         # because otherwise it overrides the auth in the remote url.
         result: subprocess.CompletedProcess = subprocess.run(
