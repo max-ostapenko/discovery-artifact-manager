@@ -188,7 +188,7 @@ def open_pr(github_token: Optional[str]) -> None:
     branch: str = commit_changes()
     push_changes(branch, github_token)
     pr_number: str = create_pr()
-    update_pr(pr_number, github_token)
+    # update_pr(pr_number, github_token)
 
 
 def commit_changes() -> str:
