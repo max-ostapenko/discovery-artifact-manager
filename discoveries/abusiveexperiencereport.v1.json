@@ -8,8 +8,7 @@
   "documentationLink": "https://developers.google.com/abusive-experience-report/",
   "fullyEncodeReservedExpansion": true,
   "icons": {
-    "x16": "http://www.google.com/images/icons/product/search-16.gif",
-    "x32": "http://www.google.com/images/icons/product/search-32.gif"
+    "x16": "http://www.google.com/images/icons/product/search-16.gif"
   },
   "id": "abusiveexperiencereport:v1",
   "kind": "discovery#restDescription",
