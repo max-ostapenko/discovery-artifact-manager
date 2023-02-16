@@ -21,3 +21,9 @@ jobs:
       - name: execute
         run: |
           python scripts/update_disco.py && python scripts/open_pr.py
+      - id: automerge
+        name: automerge
+        uses: "pascalgn/automerge-action@v0.15.5"
+        env:
+          MERGE_REMOVE_LABELS: "automerge"
+          MERGE_METHOD: "squash"
