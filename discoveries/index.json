@@ -77,6 +77,21 @@
       "version": "v1"
     },
     {
+      "description": "Google Domains ACME DNS API that allows users to complete ACME DNS-01 challenges for a domain.",
+      "discoveryRestUrl": "https://acmedns.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://developers.google.com/domains/acme-dns/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "acmedns:v1",
+      "kind": "discovery#directoryItem",
+      "name": "acmedns",
+      "preferred": true,
+      "title": "ACME DNS API",
+      "version": "v1"
+    },
+    {
       "description": "Accesses the latest features for managing Authorized Buyers accounts, Real-Time Bidding configurations and auction metrics, and Marketplace programmatic deals.",
       "discoveryRestUrl": "https://adexchangebuyer.googleapis.com/$discovery/rest?version=v2beta1",
       "documentationLink": "https://developers.google.com/authorized-buyers/apis/reference/rest/",
@@ -5824,6 +5839,36 @@
       "name": "vmmigration",
       "preferred": true,
       "title": "VM Migration API",
+      "version": "v1"
+    },
+    {
+      "description": "API for managing VPC access connectors.",
+      "discoveryRestUrl": "https://vpcaccess.googleapis.com/$discovery/rest?version=v1beta1",
+      "documentationLink": "https://cloud.google.com/vpc/docs/configure-serverless-vpc-access",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "vpcaccess:v1beta1",
+      "kind": "discovery#directoryItem",
+      "name": "vpcaccess",
+      "preferred": false,
+      "title": "Serverless VPC Access API",
+      "version": "v1beta1"
+    },
+    {
+      "description": "API for managing VPC access connectors.",
+      "discoveryRestUrl": "https://vpcaccess.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/vpc/docs/configure-serverless-vpc-access",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "vpcaccess:v1",
+      "kind": "discovery#directoryItem",
+      "name": "vpcaccess",
+      "preferred": true,
+      "title": "Serverless VPC Access API",
       "version": "v1"
     },
     {

@@ -1231,7 +1231,7 @@
       }
     }
   },
-  "revision": "20230210",
+  "revision": "20230221",
   "rootUrl": "https://containeranalysis.googleapis.com/",
   "schemas": {
     "AnalysisCompleted": {
@@ -4147,6 +4147,29 @@
       },
       "type": "object"
     },
+    "IdentifierHelper": {
+      "description": "Helps in identifying the underlying product. This should be treated like a one-of field. Only one field should be set in this proto. This is a workaround because spanner indexes on one-of fields restrict addition and deletion of fields.",
+      "id": "IdentifierHelper",
+      "properties": {
+        "field": {
+          "description": "The field that is set in the API proto.",
+          "enum": [
+            "IDENTIFIER_HELPER_FIELD_UNSPECIFIED",
+            "GENERIC_URI"
+          ],
+          "enumDescriptions": [
+            "The helper isn't set.",
+            "The generic_uri one-of field is set."
+          ],
+          "type": "string"
+        },
+        "genericUri": {
+          "description": "Contains a URI which is vendor-specific. Example: The artifact repository URL of an image.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
     "InTotoProvenance": {
       "id": "InTotoProvenance",
       "properties": {
@@ -5096,13 +5119,13 @@
       "description": "Product contains information about a product and how to uniquely identify it.",
       "id": "Product",
       "properties": {
-        "genericUri": {
-          "description": "Contains a URI which is vendor-specific. Example: The artifact repository URL of an image.",
-          "type": "string"
-        },
         "id": {
           "description": "Token that identifies a product so that it can be referred to from other parts in the document. There is no predefined format as long as it uniquely identifies a group in the context of the current document.",
           "type": "string"
+        },
+        "identifierHelper": {
+          "$ref": "IdentifierHelper",
+          "description": "Helps in identifying the underlying product."
         },
         "name": {
           "description": "Name of the product.",
