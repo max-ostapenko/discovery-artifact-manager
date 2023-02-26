@@ -7507,7 +7507,7 @@
       }
     }
   },
-  "revision": "20230215",
+  "revision": "20230222",
   "rootUrl": "https://dialogflow.googleapis.com/",
   "schemas": {
     "GoogleCloudDialogflowCxV3AudioInput": {
@@ -17165,8 +17165,8 @@
           ],
           "enumDescriptions": [
             "If it is unspecified, PROTO will be used.",
-            "Pubsub message will be serialized proto.",
-            "Pubsub message will be json."
+            "Pub/Sub message will be serialized proto.",
+            "Pub/Sub message will be json."
           ],
           "type": "string"
         },
