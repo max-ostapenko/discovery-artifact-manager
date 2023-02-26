@@ -3820,7 +3820,7 @@
       }
     }
   },
-  "revision": "20230215",
+  "revision": "20230222",
   "rootUrl": "https://dialogflow.googleapis.com/",
   "schemas": {
     "GoogleCloudDialogflowCxV3AudioInput": {
@@ -7944,6 +7944,10 @@
       "description": "Request of MatchIntent.",
       "id": "GoogleCloudDialogflowCxV3beta1MatchIntentRequest",
       "properties": {
+        "persistParameterChanges": {
+          "description": "Persist session parameter changes from `query_params`.",
+          "type": "boolean"
+        },
         "queryInput": {
           "$ref": "GoogleCloudDialogflowCxV3beta1QueryInput",
           "description": "Required. The input specification."
