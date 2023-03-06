@@ -3786,6 +3786,21 @@
       "version": "v1"
     },
     {
+      "description": "",
+      "discoveryRestUrl": "https://migrationcenter.googleapis.com/$discovery/rest?version=v1alpha1",
+      "documentationLink": "https://cloud.google.com/migration-center",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "migrationcenter:v1alpha1",
+      "kind": "discovery#directoryItem",
+      "name": "migrationcenter",
+      "preferred": true,
+      "title": "Migration Center API",
+      "version": "v1alpha1"
+    },
+    {
       "description": "An API to enable creating and using machine learning models.",
       "discoveryRestUrl": "https://ml.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/ml/",
