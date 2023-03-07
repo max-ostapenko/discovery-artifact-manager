@@ -1939,6 +1939,21 @@
       "version": "v1beta1"
     },
     {
+      "description": "",
+      "discoveryRestUrl": "https://datalineage.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/data-catalog",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "datalineage:v1",
+      "kind": "discovery#directoryItem",
+      "name": "datalineage",
+      "preferred": true,
+      "title": "Data Lineage API",
+      "version": "v1"
+    },
+    {
       "description": "Manage Cloud Database Migration Service resources on Google Cloud Platform.",
       "discoveryRestUrl": "https://datamigration.googleapis.com/$discovery/rest?version=v1beta1",
       "documentationLink": "https://cloud.google.com/database-migration/",
