@@ -1127,6 +1127,31 @@
                         "https://www.googleapis.com/auth/cloud-platform"
                       ]
                     },
+                    "get": {
+                      "description": "Gets a model.",
+                      "flatPath": "v2/projects/{projectsId}/locations/{locationsId}/catalogs/{catalogsId}/models/{modelsId}",
+                      "httpMethod": "GET",
+                      "id": "retail.projects.locations.catalogs.models.get",
+                      "parameterOrder": [
+                        "name"
+                      ],
+                      "parameters": {
+                        "name": {
+                          "description": "Required. The resource name of the Model to get. Format: `projects/{project_number}/locations/{location_id}/catalogs/{catalog}/models/{model_id}`",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/catalogs/[^/]+/models/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v2/{+name}",
+                      "response": {
+                        "$ref": "GoogleCloudRetailV2Model"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    },
                     "list": {
                       "description": "Lists all the models linked to this event store.",
                       "flatPath": "v2/projects/{projectsId}/locations/{locationsId}/catalogs/{catalogsId}/models",
@@ -2001,7 +2026,7 @@
       }
     }
   },
-  "revision": "20230223",
+  "revision": "20230306",
   "rootUrl": "https://retail.googleapis.com/",
   "schemas": {
     "GoogleApiHttpBody": {
@@ -4952,6 +4977,10 @@
         "completionDetail": {
           "$ref": "GoogleCloudRetailV2CompletionDetail",
           "description": "The main auto-completion details related to the event. This field should be set for `search` event when autocomplete function is enabled and the user clicks a suggestion for search."
+        },
+        "domain": {
+          "description": "Represents the domain of the user event, for projects that combine domains. For example: retailer can have events from multiple domains like retailer-main, retailer-baby, retailer-meds, etc. under one project.",
+          "type": "string"
         },
         "eventTime": {
           "description": "Only required for UserEventService.ImportUserEvents method. Timestamp of when the user event happened.",
