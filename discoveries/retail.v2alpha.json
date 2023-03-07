@@ -2130,7 +2130,7 @@
       }
     }
   },
-  "revision": "20230223",
+  "revision": "20230306",
   "rootUrl": "https://retail.googleapis.com/",
   "schemas": {
     "GoogleApiHttpBody": {
@@ -5913,6 +5913,10 @@
         "completionDetail": {
           "$ref": "GoogleCloudRetailV2alphaCompletionDetail",
           "description": "The main auto-completion details related to the event. This field should be set for `search` event when autocomplete function is enabled and the user clicks a suggestion for search."
+        },
+        "domain": {
+          "description": "Represents the domain of the user event, for projects that combine domains. For example: retailer can have events from multiple domains like retailer-main, retailer-baby, retailer-meds, etc. under one project.",
+          "type": "string"
         },
         "eventTime": {
           "description": "Only required for UserEventService.ImportUserEvents method. Timestamp of when the user event happened.",
