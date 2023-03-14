@@ -5358,7 +5358,7 @@
       "kind": "discovery#directoryItem",
       "name": "sqladmin",
       "preferred": false,
-      "title": "sqladmin API (prod)",
+      "title": "Cloud SQL Admin API",
       "version": "v1beta4"
     },
     {
@@ -5373,7 +5373,7 @@
       "kind": "discovery#directoryItem",
       "name": "sqladmin",
       "preferred": true,
-      "title": "sqladmin API (prod)",
+      "title": "Cloud SQL Admin API",
       "version": "v1"
     },
     {
