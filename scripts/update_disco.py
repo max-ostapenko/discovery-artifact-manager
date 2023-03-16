@@ -121,26 +121,67 @@ def load_documents(index_document: DocumentInfo) -> list[DocumentInfo]:
         version: str = item["version"]
         discovery_rest_url: str = item["discoveryRestUrl"]
         filename: str = f"{name}.{version}.json"
-        # Sometimes the index lists services that don't exist. So log any
-        # errors but don't let them crash the entire script.
-        try:
-            with urllib.request.urlopen(discovery_rest_url) as f:
-                if f.status != 200:
-                    logging.error(
-                        f"HTTP status {f.status} when loading {filename} from {discovery_rest_url}"
-                    )
-                    continue
-                document: DocumentInfo = DocumentInfo(f.read(), filename)
-        except urllib.error.HTTPError:
-            logging.error(f"Failed to load {filename} from {discovery_rest_url}")
-            continue
-        if document.revision == None:
-            logging.error(
-                f"Malformed document for {filename} from {discovery_rest_url}"
-            )
-            continue
-        logging.info(f"Loaded {filename} from {discovery_rest_url}")
-        service_documents.append(document)
+
+        # Whitelist of watched APIs
+        if filename in [
+            "analytics.v3.json",
+            "analyticsadmin.v1alpha.json",
+            "analyticsadmin.v1beta.json",
+            "analyticsdata.v1beta.json",
+            "analyticshub.v1.json",
+            "analyticshub.v1beta1.json",
+            "analyticsreporting.v4.json",
+            "analyticshub.v1beta1.json",
+            "bigquery.v2.json",
+            "bigqueryconnection.v1beta1.json",
+            "bigquerydatatransfer.v1.json",
+            "bigqueryreservation.v1.json",
+            "billingbudgets.v1.json",
+            "billingbudgets.v1beta1.json",
+            "cloudbilling.v1.json",
+            "cloudbilling.v1beta.json",
+            "connectors.v1.json",
+            "connectors.v2.json",
+            "datacatalog.v1.json",
+            "datacatalog.v1beta1.json",
+            "datalineage.v1.json",
+            "dataplex.v1.json",
+            "discovery.v1.json",
+            "fitness.v1.json",
+            "integrations.v1alpha.json",
+            "oauth2.v2.json",
+            "script.v1.json",
+            "searchconsole.v1.json",
+            "tagmanager.v1.json",
+            "tagmanager.v2.json",
+        ] + [
+            "abusiveexperiencereport.v1.json",
+            "adexperiencereport.v1.json",
+            "safebrowsing.v4.json",
+            "versionhistory.v1.json",
+            "webfonts.v1.json",
+            "webrisk.v1.json",
+        ]:
+            # Sometimes the index lists services that don't exist. So log any
+            # errors but don't let them crash the entire script.
+            try:
+                with urllib.request.urlopen(discovery_rest_url) as f:
+                    if f.status != 200:
+                        logging.error(
+                            f"HTTP status {f.status} when loading {filename} from {discovery_rest_url}"
+                        )
+                        continue
+                    document: DocumentInfo = DocumentInfo(f.read(), filename)
+            except urllib.error.HTTPError:
+                logging.error(f"Failed to load {filename} from {discovery_rest_url}")
+                continue
+            if document.revision == None:
+                logging.error(
+                    f"Malformed document for {filename} from {discovery_rest_url}"
+                )
+                continue
+            logging.info(f"Loaded {filename} from {discovery_rest_url}")
+            service_documents.append(document)
     return service_documents
 
 
