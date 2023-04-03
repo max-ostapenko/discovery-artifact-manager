@@ -5508,7 +5508,7 @@
       "kind": "discovery#directoryItem",
       "name": "tasks",
       "preferred": true,
-      "title": "Tasks API",
+      "title": "Google Tasks API",
       "version": "v1"
     },
     {
