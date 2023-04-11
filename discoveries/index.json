@@ -5394,7 +5394,7 @@
     {
       "description": "Lets you store and retrieve potentially-large, immutable data objects.",
       "discoveryRestUrl": "https://storage.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://cloud.google.com/storage/docs/apis",
+      "documentationLink": "https://developers.google.com/storage/docs/json_api/v1/",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
