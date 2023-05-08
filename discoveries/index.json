@@ -34,7 +34,7 @@
     {
       "description": "An API for controlling access to data by Google personnel.",
       "discoveryRestUrl": "https://accessapproval.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://cloud.google.com/cloud-provider-access-management/access-approval/docs",
+      "documentationLink": "https://cloud.google.com/assured-workloads/access-approval/docs",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
