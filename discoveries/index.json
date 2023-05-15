@@ -6127,7 +6127,7 @@
       "version": "v1"
     },
     {
-      "description": "",
+      "description": "Allows administrators to create managed developer environments in the cloud.",
       "discoveryRestUrl": "https://workstations.googleapis.com/$discovery/rest?version=v1beta",
       "documentationLink": "https://cloud.google.com/workstations",
       "icons": {
