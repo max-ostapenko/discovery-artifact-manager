@@ -47,36 +47,6 @@
       "version": "v1"
     },
     {
-      "description": "An API for setting attribute based access control to requests to Google Cloud services.",
-      "discoveryRestUrl": "https://accesscontextmanager.googleapis.com/$discovery/rest?version=v1beta",
-      "documentationLink": "https://cloud.google.com/access-context-manager/docs/reference/rest/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "accesscontextmanager:v1beta",
-      "kind": "discovery#directoryItem",
-      "name": "accesscontextmanager",
-      "preferred": false,
-      "title": "Access Context Manager API",
-      "version": "v1beta"
-    },
-    {
-      "description": "An API for setting attribute based access control to requests to Google Cloud services.",
-      "discoveryRestUrl": "https://accesscontextmanager.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://cloud.google.com/access-context-manager/docs/reference/rest/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "accesscontextmanager:v1",
-      "kind": "discovery#directoryItem",
-      "name": "accesscontextmanager",
-      "preferred": true,
-      "title": "Access Context Manager API",
-      "version": "v1"
-    },
-    {
       "description": "Google Domains ACME DNS API that allows users to complete ACME DNS-01 challenges for a domain.",
       "discoveryRestUrl": "https://acmedns.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://developers.google.com/domains/acme-dns/",
