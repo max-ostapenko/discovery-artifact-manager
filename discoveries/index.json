@@ -2325,7 +2325,7 @@
       "kind": "discovery#directoryItem",
       "name": "dlp",
       "preferred": true,
-      "title": "Cloud Data Loss Prevention (DLP) API",
+      "title": "Cloud Data Loss Prevention (DLP)",
       "version": "v2"
     },
     {
