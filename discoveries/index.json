@@ -3816,7 +3816,7 @@
       "version": "v1"
     },
     {
-      "description": "",
+      "description": "A unified platform that helps you accelerate your end-to-end cloud journey from your current on-premises or cloud environments to Google Cloud.",
       "discoveryRestUrl": "https://migrationcenter.googleapis.com/$discovery/rest?version=v1alpha1",
       "documentationLink": "https://cloud.google.com/migration-center",
       "icons": {
