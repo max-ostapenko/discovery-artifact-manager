@@ -946,6 +946,21 @@
       "version": "v1"
     },
     {
+      "description": "The Checks API contains powerful and easy-to-use privacy and compliance APIs that interact with the Checks product and its underlying technology.",
+      "discoveryRestUrl": "https://checks.googleapis.com/$discovery/rest?version=v1alpha",
+      "documentationLink": "https://developers.google.com/checks",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "checks:v1alpha",
+      "kind": "discovery#directoryItem",
+      "name": "checks",
+      "preferred": true,
+      "title": "Checks API",
+      "version": "v1alpha"
+    },
+    {
       "description": "The Chrome Management API is a suite of services that allows Chrome administrators to view, manage and gain insights on their Chrome OS and Chrome Browser devices.",
       "discoveryRestUrl": "https://chromemanagement.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "http://developers.google.com/chrome/management/",
