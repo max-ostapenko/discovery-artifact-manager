@@ -841,6 +841,21 @@
       "version": "v1"
     },
     {
+      "description": "",
+      "discoveryRestUrl": "https://blockchainnodeengine.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/blockchain-node-engine",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "blockchainnodeengine:v1",
+      "kind": "discovery#directoryItem",
+      "name": "blockchainnodeengine",
+      "preferred": true,
+      "title": "Blockchain Node Engine API",
+      "version": "v1"
+    },
+    {
       "description": "The Blogger API provides access to posts, comments and pages of a Blogger blog.",
       "discoveryRestUrl": "https://blogger.googleapis.com/$discovery/rest?version=v2",
       "documentationLink": "https://developers.google.com/blogger/docs/3.0/getting_started",
@@ -1481,9 +1496,24 @@
       "id": "cloudsupport:v2beta",
       "kind": "discovery#directoryItem",
       "name": "cloudsupport",
-      "preferred": true,
+      "preferred": false,
       "title": "Google Cloud Support API",
       "version": "v2beta"
+    },
+    {
+      "description": "Manages Google Cloud technical support cases for Customer Care support offerings.",
+      "discoveryRestUrl": "https://cloudsupport.googleapis.com/$discovery/rest?version=v2",
+      "documentationLink": "https://cloud.google.com/support/docs/apis",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "cloudsupport:v2",
+      "kind": "discovery#directoryItem",
+      "name": "cloudsupport",
+      "preferred": true,
+      "title": "Google Cloud Support API",
+      "version": "v2"
     },
     {
       "description": "Manages the execution of large numbers of distributed requests.",
@@ -6082,7 +6112,7 @@
       "version": "v1"
     },
     {
-      "description": "",
+      "description": "Workload Manager is a service that provides tooling for enterprise workloads to automate the deployment and validation of your workloads against best practices and recommendations.",
       "discoveryRestUrl": "https://workloadmanager.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/workload-manager/docs",
       "icons": {
