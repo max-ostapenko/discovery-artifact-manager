@@ -1212,7 +1212,7 @@
       "kind": "discovery#directoryItem",
       "name": "clouddeploy",
       "preferred": true,
-      "title": "Google Cloud Deploy API",
+      "title": "Cloud Deploy API",
       "version": "v1"
     },
     {
