@@ -3631,9 +3631,24 @@
       "id": "language:v1",
       "kind": "discovery#directoryItem",
       "name": "language",
-      "preferred": true,
+      "preferred": false,
       "title": "Cloud Natural Language API",
       "version": "v1"
+    },
+    {
+      "description": "Provides natural language understanding technologies, such as sentiment analysis, entity recognition, entity sentiment analysis, and other text annotations, to developers.",
+      "discoveryRestUrl": "https://language.googleapis.com/$discovery/rest?version=v2",
+      "documentationLink": "https://cloud.google.com/natural-language/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "language:v2",
+      "kind": "discovery#directoryItem",
+      "name": "language",
+      "preferred": true,
+      "title": "Cloud Natural Language API",
+      "version": "v2"
     },
     {
       "description": "A simple Google Example Library API.",
