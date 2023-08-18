@@ -270,7 +270,7 @@
       }
     }
   },
-  "revision": "20230624",
+  "revision": "20230817",
   "rootUrl": "https://billingbudgets.googleapis.com/",
   "schemas": {
     "GoogleCloudBillingBudgetsV1Budget": {
@@ -460,6 +460,10 @@
       "properties": {
         "disableDefaultIamRecipients": {
           "description": "Optional. When set to true, disables default notifications sent when a threshold is exceeded. Default notifications are sent to those with Billing Account Administrator and Billing Account User IAM roles for the target account.",
+          "type": "boolean"
+        },
+        "enableProjectLevelRecipients": {
+          "description": "Optional. When set to true, and when the budget has a single project configured, notifications will be sent to project level recipients of that project. This field will be ignored if the budget has multiple or no project configured. Currently, project level recipients are the users with `Owner` role on a cloud project.",
           "type": "boolean"
         },
         "monitoringNotificationChannels": {
