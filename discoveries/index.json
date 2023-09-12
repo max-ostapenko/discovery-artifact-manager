@@ -4732,6 +4732,21 @@
       "version": "v1"
     },
     {
+      "description": "The Rapid Migration Assessment service is our first-party migration assessment and planning tool.",
+      "discoveryRestUrl": "https://rapidmigrationassessment.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/migration-center",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "rapidmigrationassessment:v1",
+      "kind": "discovery#directoryItem",
+      "name": "rapidmigrationassessment",
+      "preferred": true,
+      "title": "Rapid Migration Assessment API",
+      "version": "v1"
+    },
+    {
       "description": "readerrevenuesubscriptionlinking.googleapis.com API.",
       "discoveryRestUrl": "https://readerrevenuesubscriptionlinking.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://developers.google.com/news/subscribe/subscription-linking/overview",
