@@ -3257,7 +3257,7 @@
       }
     }
   },
-  "revision": "20230906",
+  "revision": "20230915",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -8396,13 +8396,13 @@
           "description": "Enrichment Enabled.",
           "type": "boolean"
         },
+        "eventsListenerIngressEndpoint": {
+          "description": "Optional. Ingress endpoint of the event listener. This is used only when private connectivity is enabled.",
+          "type": "string"
+        },
         "privateConnectivityEnabled": {
           "description": "Optional. Private Connectivity Enabled.",
           "type": "boolean"
-        },
-        "publicEventsListenerEndpoint": {
-          "description": "Optional. Public Events listener endpoint.",
-          "type": "string"
         },
         "registrationDestinationConfig": {
           "$ref": "GoogleCloudConnectorsV1DestinationConfig",
@@ -8417,6 +8417,11 @@
       "properties": {
         "eventsListenerEndpoint": {
           "description": "Output only. Events listener endpoint. The value will populated after provisioning the events listener.",
+          "readOnly": true,
+          "type": "string"
+        },
+        "eventsListenerPscSa": {
+          "description": "Output only. Events listener PSC Service attachment. The value will be populated after provisioning the events listener with private connectivity enabled.",
           "readOnly": true,
           "type": "string"
         },
@@ -8443,13 +8448,13 @@
             "STATE_UNSPECIFIED",
             "ACTIVE",
             "ERROR",
-            "PUBLIC_ENDPOINT_REQUIRED"
+            "INGRESS_ENDPOINT_REQUIRED"
           ],
           "enumDescriptions": [
             "Default state.",
             "Eventing is enabled and ready to receive events.",
             "Eventing is not active due to an error.",
-            "Public endpoint required."
+            "Ingress endpoint required."
           ],
           "readOnly": true,
           "type": "string"
