@@ -676,6 +676,21 @@
       "version": "v1"
     },
     {
+      "description": "",
+      "discoveryRestUrl": "https://backupdr.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "backupdr:v1",
+      "kind": "discovery#directoryItem",
+      "name": "backupdr",
+      "preferred": true,
+      "title": "Backup and DR Service API",
+      "version": "v1"
+    },
+    {
       "description": "Provides ways to manage Bare Metal Solution hardware installed in a regional extension located near a Google Cloud data center.",
       "discoveryRestUrl": "https://baremetalsolution.googleapis.com/$discovery/rest?version=v2",
       "documentationLink": "https://cloud.google.com/bare-metal",
