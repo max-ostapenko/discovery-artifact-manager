@@ -48,21 +48,6 @@
     },
     {
       "description": "An API for setting attribute based access control to requests to Google Cloud services.",
-      "discoveryRestUrl": "https://accesscontextmanager.googleapis.com/$discovery/rest?version=v1beta",
-      "documentationLink": "https://cloud.google.com/access-context-manager/docs/reference/rest/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "accesscontextmanager:v1beta",
-      "kind": "discovery#directoryItem",
-      "name": "accesscontextmanager",
-      "preferred": false,
-      "title": "Access Context Manager API",
-      "version": "v1beta"
-    },
-    {
-      "description": "An API for setting attribute based access control to requests to Google Cloud services.",
       "discoveryRestUrl": "https://accesscontextmanager.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/access-context-manager/docs/reference/rest/",
       "icons": {
@@ -614,6 +599,21 @@
       "preferred": true,
       "title": "App Engine Admin API",
       "version": "v1"
+    },
+    {
+      "description": "",
+      "discoveryRestUrl": "https://apphub.googleapis.com/$discovery/rest?version=v1alpha",
+      "documentationLink": "https://cloud.google.com/app-hub/docs/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "apphub:v1alpha",
+      "kind": "discovery#directoryItem",
+      "name": "apphub",
+      "preferred": true,
+      "title": "App Hub API",
+      "version": "v1alpha"
     },
     {
       "description": "",
