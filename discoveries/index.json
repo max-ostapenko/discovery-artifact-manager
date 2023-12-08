@@ -611,9 +611,24 @@
       "id": "apphub:v1alpha",
       "kind": "discovery#directoryItem",
       "name": "apphub",
-      "preferred": true,
+      "preferred": false,
       "title": "App Hub API",
       "version": "v1alpha"
+    },
+    {
+      "description": "",
+      "discoveryRestUrl": "https://apphub.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/app-hub/docs/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "apphub:v1",
+      "kind": "discovery#directoryItem",
+      "name": "apphub",
+      "preferred": true,
+      "title": "App Hub API",
+      "version": "v1"
     },
     {
       "description": "",
