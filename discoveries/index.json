@@ -2947,6 +2947,21 @@
     },
     {
       "description": "",
+      "discoveryRestUrl": "https://firebaseappdistribution.googleapis.com/$discovery/rest?version=v1alpha",
+      "documentationLink": "https://firebase.google.com/products/app-distribution",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "firebaseappdistribution:v1alpha",
+      "kind": "discovery#directoryItem",
+      "name": "firebaseappdistribution",
+      "preferred": false,
+      "title": "Firebase App Distribution API",
+      "version": "v1alpha"
+    },
+    {
+      "description": "",
       "discoveryRestUrl": "https://firebaseappdistribution.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://firebase.google.com/products/app-distribution",
       "icons": {
