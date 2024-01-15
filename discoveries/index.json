@@ -843,7 +843,7 @@
     {
       "description": "Allows users to manage BigQuery connections to external data sources.",
       "discoveryRestUrl": "https://bigqueryconnection.googleapis.com/$discovery/rest?version=v1beta1",
-      "documentationLink": "https://cloud.google.com/bigquery/",
+      "documentationLink": "https://cloud.google.com/bigquery/docs/connections-api-intro",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
@@ -851,9 +851,24 @@
       "id": "bigqueryconnection:v1beta1",
       "kind": "discovery#directoryItem",
       "name": "bigqueryconnection",
-      "preferred": true,
+      "preferred": false,
       "title": "BigQuery Connection API",
       "version": "v1beta1"
+    },
+    {
+      "description": "Allows users to manage BigQuery connections to external data sources.",
+      "discoveryRestUrl": "https://bigqueryconnection.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/bigquery/docs/connections-api-intro",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "bigqueryconnection:v1",
+      "kind": "discovery#directoryItem",
+      "name": "bigqueryconnection",
+      "preferred": true,
+      "title": "BigQuery Connection API",
+      "version": "v1"
     },
     {
       "description": "Allows users to manage BigQuery data policies.",
