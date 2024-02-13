@@ -5107,7 +5107,7 @@
       "version": "v1"
     },
     {
-      "description": "Cloud Retail service enables customers to build end-to-end personalized recommendation systems without requiring a high level of expertise in machine learning, recommendation system, or Google Cloud.",
+      "description": "Vertex AI Search for Retail API is made up of Retail Search, Browse and Recommendations. These discovery AI solutions help you implement personalized search, browse and recommendations, based on machine learning models, across your websites and mobile applications.",
       "discoveryRestUrl": "https://retail.googleapis.com/$discovery/rest?version=v2alpha",
       "documentationLink": "https://cloud.google.com/recommendations",
       "icons": {
@@ -5118,11 +5118,11 @@
       "kind": "discovery#directoryItem",
       "name": "retail",
       "preferred": false,
-      "title": "Retail API",
+      "title": "Vertex AI Search for Retail API",
       "version": "v2alpha"
     },
     {
-      "description": "Cloud Retail service enables customers to build end-to-end personalized recommendation systems without requiring a high level of expertise in machine learning, recommendation system, or Google Cloud.",
+      "description": "Vertex AI Search for Retail API is made up of Retail Search, Browse and Recommendations. These discovery AI solutions help you implement personalized search, browse and recommendations, based on machine learning models, across your websites and mobile applications.",
       "discoveryRestUrl": "https://retail.googleapis.com/$discovery/rest?version=v2beta",
       "documentationLink": "https://cloud.google.com/recommendations",
       "icons": {
@@ -5133,11 +5133,11 @@
       "kind": "discovery#directoryItem",
       "name": "retail",
       "preferred": false,
-      "title": "Retail API",
+      "title": "Vertex AI Search for Retail API",
       "version": "v2beta"
     },
     {
-      "description": "Cloud Retail service enables customers to build end-to-end personalized recommendation systems without requiring a high level of expertise in machine learning, recommendation system, or Google Cloud.",
+      "description": "Vertex AI Search for Retail API is made up of Retail Search, Browse and Recommendations. These discovery AI solutions help you implement personalized search, browse and recommendations, based on machine learning models, across your websites and mobile applications.",
       "discoveryRestUrl": "https://retail.googleapis.com/$discovery/rest?version=v2",
       "documentationLink": "https://cloud.google.com/recommendations",
       "icons": {
@@ -5148,7 +5148,7 @@
       "kind": "discovery#directoryItem",
       "name": "retail",
       "preferred": true,
-      "title": "Retail API",
+      "title": "Vertex AI Search for Retail API",
       "version": "v2"
     },
     {
