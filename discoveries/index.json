@@ -2495,21 +2495,6 @@
     },
     {
       "description": "Display & Video 360 API allows users to automate complex Display & Video 360 workflows, such as creating insertion orders and setting targeting options for individual line items.",
-      "discoveryRestUrl": "https://displayvideo.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://developers.google.com/display-video/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "displayvideo:v1",
-      "kind": "discovery#directoryItem",
-      "name": "displayvideo",
-      "preferred": false,
-      "title": "Display & Video 360 API",
-      "version": "v1"
-    },
-    {
-      "description": "Display & Video 360 API allows users to automate complex Display & Video 360 workflows, such as creating insertion orders and setting targeting options for individual line items.",
       "discoveryRestUrl": "https://displayvideo.googleapis.com/$discovery/rest?version=v2",
       "documentationLink": "https://developers.google.com/display-video/",
       "icons": {
@@ -2534,24 +2519,9 @@
       "id": "displayvideo:v3",
       "kind": "discovery#directoryItem",
       "name": "displayvideo",
-      "preferred": false,
-      "title": "Display & Video 360 API",
-      "version": "v3"
-    },
-    {
-      "description": "Display & Video 360 API allows users to automate complex Display & Video 360 workflows, such as creating insertion orders and setting targeting options for individual line items.",
-      "discoveryRestUrl": "https://displayvideo.googleapis.com/$discovery/rest?version=v4",
-      "documentationLink": "https://developers.google.com/display-video/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "displayvideo:v4",
-      "kind": "discovery#directoryItem",
-      "name": "displayvideo",
       "preferred": true,
       "title": "Display & Video 360 API",
-      "version": "v4"
+      "version": "v3"
     },
     {
       "description": "Discover and protect your sensitive data. A fully managed service designed to help you discover, classify, and protect your valuable data assets with ease.",
