@@ -3936,6 +3936,21 @@
       "version": "v1"
     },
     {
+      "description": "marketingplatformadmin.googleapis.com API.",
+      "discoveryRestUrl": "https://marketingplatformadmin.googleapis.com/$discovery/rest?version=v1alpha",
+      "documentationLink": "https://developers.google.com/analytics/devguides/config/gmp/v1",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "marketingplatformadmin:v1alpha",
+      "kind": "discovery#directoryItem",
+      "name": "marketingplatformadmin",
+      "preferred": true,
+      "title": "Google Marketing Platform Admin API",
+      "version": "v1alpha"
+    },
+    {
       "description": "Google Cloud Memorystore for Memcached API is used for creating and managing Memcached instances in GCP.",
       "discoveryRestUrl": "https://memcache.googleapis.com/$discovery/rest?version=v1beta2",
       "documentationLink": "https://cloud.google.com/memorystore/",
