@@ -5318,6 +5318,21 @@
     },
     {
       "description": "Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security.",
+      "discoveryRestUrl": "https://secretmanager.googleapis.com/$discovery/rest?version=v1beta2",
+      "documentationLink": "https://cloud.google.com/secret-manager/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "secretmanager:v1beta2",
+      "kind": "discovery#directoryItem",
+      "name": "secretmanager",
+      "preferred": false,
+      "title": "Secret Manager API",
+      "version": "v1beta2"
+    },
+    {
+      "description": "Stores sensitive data such as API keys, passwords, and certificates. Provides convenience while improving security.",
       "discoveryRestUrl": "https://secretmanager.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/secret-manager/",
       "icons": {
