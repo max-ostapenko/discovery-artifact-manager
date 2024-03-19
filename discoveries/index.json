@@ -766,7 +766,7 @@
       "version": "v2"
     },
     {
-      "description": "An API to manage the running of batch resources on Google Cloud Platform.",
+      "description": "An API to manage the running of Batch resources on Google Cloud Platform.",
       "discoveryRestUrl": "https://batch.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/batch/",
       "icons": {
