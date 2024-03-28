@@ -1351,6 +1351,36 @@
       "version": "v1"
     },
     {
+      "description": "Provides insights about your customers and their Assured Workloads based on your Sovereign Controls by Partners offering.",
+      "discoveryRestUrl": "https://cloudcontrolspartner.googleapis.com/$discovery/rest?version=v1beta",
+      "documentationLink": "https://cloud.google.com/sovereign-controls-by-partners/docs/sovereign-partners/reference/rest",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "cloudcontrolspartner:v1beta",
+      "kind": "discovery#directoryItem",
+      "name": "cloudcontrolspartner",
+      "preferred": false,
+      "title": "Cloud Controls Partner API",
+      "version": "v1beta"
+    },
+    {
+      "description": "Provides insights about your customers and their Assured Workloads based on your Sovereign Controls by Partners offering.",
+      "discoveryRestUrl": "https://cloudcontrolspartner.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://cloud.google.com/sovereign-controls-by-partners/docs/sovereign-partners/reference/rest",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "cloudcontrolspartner:v1",
+      "kind": "discovery#directoryItem",
+      "name": "cloudcontrolspartner",
+      "preferred": true,
+      "title": "Cloud Controls Partner API",
+      "version": "v1"
+    },
+    {
       "description": "",
       "discoveryRestUrl": "https://clouddeploy.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/deploy/",
