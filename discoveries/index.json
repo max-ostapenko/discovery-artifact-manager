@@ -5632,6 +5632,21 @@
       "version": "v1"
     },
     {
+      "description": "Solar API.",
+      "discoveryRestUrl": "https://solar.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://developers.google.com/maps/documentation/solar",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "solar:v1",
+      "kind": "discovery#directoryItem",
+      "name": "solar",
+      "preferred": true,
+      "title": "Solar API",
+      "version": "v1"
+    },
+    {
       "description": "Accesses source code repositories hosted by Google.",
       "discoveryRestUrl": "https://sourcerepo.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/source-repositories/docs/apis",
