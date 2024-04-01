@@ -3377,7 +3377,7 @@
       "kind": "discovery#directoryItem",
       "name": "gkeonprem",
       "preferred": true,
-      "title": "Anthos On-Prem API",
+      "title": "GDC Virtual API",
       "version": "v1"
     },
     {
