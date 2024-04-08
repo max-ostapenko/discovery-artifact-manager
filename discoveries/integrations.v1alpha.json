@@ -412,7 +412,7 @@
                       "type": "string"
                     },
                     "name": {
-                      "description": "Resource name of the SFDC instance projects/{project}/locations/{location}/authConfigs/{authConfig}.",
+                      "description": "Resource name of the auth config. For more information, see Manage authentication profiles. projects/{project}/locations/{location}/authConfigs/{authConfig}.",
                       "location": "path",
                       "pattern": "^projects/[^/]+/locations/[^/]+/authConfigs/[^/]+$",
                       "required": true,
@@ -1566,7 +1566,7 @@
                           "type": "string"
                         },
                         "name": {
-                          "description": "Resource name of the SFDC instance projects/{project}/locations/{location}/authConfigs/{authConfig}.",
+                          "description": "Resource name of the auth config. For more information, see Manage authentication profiles. projects/{project}/locations/{location}/authConfigs/{authConfig}.",
                           "location": "path",
                           "pattern": "^projects/[^/]+/locations/[^/]+/products/[^/]+/authConfigs/[^/]+$",
                           "required": true,
@@ -3299,7 +3299,7 @@
       }
     }
   },
-  "revision": "20240327",
+  "revision": "20240402",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -8972,7 +8972,7 @@
           "type": "string"
         },
         "name": {
-          "description": "Resource name of the SFDC instance projects/{project}/locations/{location}/authConfigs/{authConfig}.",
+          "description": "Resource name of the auth config. For more information, see Manage authentication profiles. projects/{project}/locations/{location}/authConfigs/{authConfig}.",
           "type": "string"
         },
         "overrideValidTime": {
