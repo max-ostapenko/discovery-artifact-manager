@@ -1077,11 +1077,7 @@
                   },
                   "path": "v1/{+name}:executeEvent",
                   "request": {
-                    "additionalProperties": {
-                      "description": "Properties of the object.",
-                      "type": "any"
-                    },
-                    "type": "object"
+                    "$ref": "GoogleProtobufStruct"
                   },
                   "response": {
                     "$ref": "GoogleCloudIntegrationsV1alphaExecuteEventResponse"
@@ -3712,7 +3708,7 @@
       }
     }
   },
-  "revision": "20240416",
+  "revision": "20240421",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -10514,6 +10510,12 @@
           "description": "Required. If any integration version is published.",
           "type": "boolean"
         },
+        "createTime": {
+          "description": "Required. Output only. Auto-generated.",
+          "format": "google-datetime",
+          "readOnly": true,
+          "type": "string"
+        },
         "creatorEmail": {
           "description": "Output only. The creator's email address. Generated based on the End User Credentials/LOAS role of the user making the call.",
           "readOnly": true,
@@ -12650,6 +12652,15 @@
       "description": "A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); }",
       "id": "GoogleProtobufEmpty",
       "properties": {},
+      "type": "object"
+    },
+    "GoogleProtobufStruct": {
+      "additionalProperties": {
+        "description": "Properties of the object.",
+        "type": "any"
+      },
+      "description": "`Struct` represents a structured data value, consisting of fields which map to dynamically typed values. In some languages, `Struct` might be supported by a native representation. For example, in scripting languages like JS a struct is represented as an object. The details of that representation are described together with the proto support for the language. The JSON representation for `Struct` is JSON object.",
+      "id": "GoogleProtobufStruct",
       "type": "object"
     }
   },
