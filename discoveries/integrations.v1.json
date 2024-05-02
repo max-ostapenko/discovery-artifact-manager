@@ -1077,7 +1077,11 @@
                   },
                   "path": "v1/{+name}:executeEvent",
                   "request": {
-                    "$ref": "GoogleProtobufStruct"
+                    "additionalProperties": {
+                      "description": "Properties of the object.",
+                      "type": "any"
+                    },
+                    "type": "object"
                   },
                   "response": {
                     "$ref": "GoogleCloudIntegrationsV1alphaExecuteEventResponse"
@@ -3708,7 +3712,7 @@
       }
     }
   },
-  "revision": "20240421",
+  "revision": "20240428",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -4872,6 +4876,10 @@
         "location": {
           "description": "Location for the user's request.",
           "type": "string"
+        },
+        "retryRequestForQuota": {
+          "description": "Enqueue the execution request due to quota issue",
+          "type": "boolean"
         },
         "source": {
           "description": "LINT.ThenChange(//depot/google3/enterprise/crm/eventbus/proto/product.proto:product, //depot/google3/java/com/google/enterprise/crm/integrationplatform/api/utils/ConverterUtils.java:source_to_product)",
@@ -7117,7 +7125,7 @@
       "type": "object"
     },
     "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo": {
-      "description": "Contains all the execution details for a workflow instance. Next available id: 24",
+      "description": "Contains all the execution details for a workflow instance. Next available id: 25",
       "id": "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo",
       "properties": {
         "clientId": {
@@ -7193,6 +7201,10 @@
           ],
           "type": "string"
         },
+        "replayInfo": {
+          "$ref": "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo",
+          "description": "Replay info for the execution"
+        },
         "requestId": {
           "description": "Optional. This is used to de-dup incoming request.",
           "type": "string"
@@ -7230,6 +7242,28 @@
           "description": "Time interval in seconds to schedule retry of workflow in manifold when workflow is already running",
           "format": "int64",
           "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo": {
+      "description": "Contains the details of the execution info: this includes the replay reason and replay tree connecting executions in a parent-child relationship",
+      "id": "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfoReplayInfo",
+      "properties": {
+        "originalExecutionInfoId": {
+          "description": "If this execution is a replay of another execution, then this field contains the original execution id.",
+          "type": "string"
+        },
+        "replayReason": {
+          "description": "reason for replay",
+          "type": "string"
+        },
+        "replayedExecutionInfoIds": {
+          "description": "If this execution has been replayed, then this field contains the execution ids of the replayed executions.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         }
       },
       "type": "object"
@@ -10205,6 +10239,11 @@
           "description": "Auto-generated primary key.",
           "type": "string"
         },
+        "replayInfo": {
+          "$ref": "GoogleCloudIntegrationsV1alphaExecutionReplayInfo",
+          "description": "Output only. Replay info for the execution",
+          "readOnly": true
+        },
         "requestParameters": {
           "additionalProperties": {
             "$ref": "GoogleCloudIntegrationsV1alphaValueType"
@@ -10300,6 +10339,28 @@
             "Execution suspended and waiting for manual intervention."
           ],
           "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudIntegrationsV1alphaExecutionReplayInfo": {
+      "description": "Contains the details of the execution info: this includes the replay reason and replay tree connecting executions in a parent-child relationship",
+      "id": "GoogleCloudIntegrationsV1alphaExecutionReplayInfo",
+      "properties": {
+        "originalExecutionInfoId": {
+          "description": "If this execution is a replay of another execution, then this field contains the original execution id.",
+          "type": "string"
+        },
+        "replayReason": {
+          "description": "reason for replay",
+          "type": "string"
+        },
+        "replayedExecutionInfoIds": {
+          "description": "If this execution has been replayed, then this field contains the execution ids of the replayed executions.",
+          "items": {
+            "type": "string"
+          },
+          "type": "array"
         }
       },
       "type": "object"
@@ -12652,15 +12713,6 @@
       "description": "A generic empty message that you can re-use to avoid defining duplicated empty messages in your APIs. A typical example is to use it as the request or the response type of an API method. For instance: service Foo { rpc Bar(google.protobuf.Empty) returns (google.protobuf.Empty); }",
       "id": "GoogleProtobufEmpty",
       "properties": {},
-      "type": "object"
-    },
-    "GoogleProtobufStruct": {
-      "additionalProperties": {
-        "description": "Properties of the object.",
-        "type": "any"
-      },
-      "description": "`Struct` represents a structured data value, consisting of fields which map to dynamically typed values. In some languages, `Struct` might be supported by a native representation. For example, in scripting languages like JS a struct is represented as an object. The details of that representation are described together with the proto support for the language. The JSON representation for `Struct` is JSON object.",
-      "id": "GoogleProtobufStruct",
       "type": "object"
     }
   },
