@@ -3712,7 +3712,7 @@
       }
     }
   },
-  "revision": "20240505",
+  "revision": "20240512",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -10145,7 +10145,6 @@
           "type": "boolean"
         },
         "executionId": {
-          "deprecated": true,
           "description": "Optional. The id of the ON_HOLD execution to be resumed.",
           "type": "string"
         },
