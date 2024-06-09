@@ -1935,7 +1935,7 @@
       }
     }
   },
-  "revision": "20240526",
+  "revision": "20240602",
   "rootUrl": "https://bigquery.googleapis.com/",
   "schemas": {
     "AggregateClassificationMetrics": {
@@ -7281,7 +7281,7 @@
       "id": "RangePartitioning",
       "properties": {
         "field": {
-          "description": "Required. [Experimental] The table is partitioned by this field. The field must be a top-level NULLABLE/REQUIRED field. The only supported type is INTEGER/INT64.",
+          "description": "Required. The name of the column to partition the table on. It must be a top-level, INT64 column whose mode is NULLABLE or REQUIRED.",
           "type": "string"
         },
         "range": {
