@@ -272,6 +272,21 @@
       "version": "v1"
     },
     {
+      "description": "The Air Quality API.",
+      "discoveryRestUrl": "https://airquality.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://developers.google.com/maps/documentation/air-quality",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "airquality:v1",
+      "kind": "discovery#directoryItem",
+      "name": "airquality",
+      "preferred": true,
+      "title": "Air Quality API",
+      "version": "v1"
+    },
+    {
       "description": "Manages alerts on issues affecting your domain. Note: The current version of this API (v1beta1) is available to all Google Workspace customers.",
       "discoveryRestUrl": "https://alertcenter.googleapis.com/$discovery/rest?version=v1beta1",
       "documentationLink": "https://developers.google.com/admin-sdk/alertcenter/",
