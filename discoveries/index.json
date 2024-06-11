@@ -586,6 +586,21 @@
       "version": "v2"
     },
     {
+      "description": "Enables users to discover shadow APIs in existing Google Cloud infrastructure.",
+      "discoveryRestUrl": "https://apim.googleapis.com/$discovery/rest?version=v1alpha",
+      "documentationLink": "https://cloud.google.com/apigee/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "apim:v1alpha",
+      "kind": "discovery#directoryItem",
+      "name": "apim",
+      "preferred": true,
+      "title": "API Management API",
+      "version": "v1alpha"
+    },
+    {
       "description": "Provisions and manages developers' App Engine applications.",
       "discoveryRestUrl": "https://appengine.googleapis.com/$discovery/rest?version=v1alpha",
       "documentationLink": "https://cloud.google.com/appengine/docs/admin-api/",
@@ -4849,6 +4864,21 @@
       "name": "policytroubleshooter",
       "preferred": true,
       "title": "Policy Troubleshooter API",
+      "version": "v1"
+    },
+    {
+      "description": "The Pollen API.",
+      "discoveryRestUrl": "https://pollen.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://developers.google.com/maps/documentation/pollen",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "pollen:v1",
+      "kind": "discovery#directoryItem",
+      "name": "pollen",
+      "preferred": true,
+      "title": "Pollen API",
       "version": "v1"
     },
     {
