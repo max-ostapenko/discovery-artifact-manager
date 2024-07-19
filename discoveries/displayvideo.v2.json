@@ -9267,7 +9267,7 @@
       }
     }
   },
-  "revision": "20240618",
+  "revision": "20240717",
   "rootUrl": "https://displayvideo.googleapis.com/",
   "schemas": {
     "ActivateManualTriggerRequest": {
@@ -18903,8 +18903,8 @@
             "Advertiser ID. If selected, all filter IDs must be Advertiser IDs that belong to the Partner specified in CreateSdfDownloadTaskRequest.",
             "Campaign ID. If selected, all filter IDs must be Campaign IDs that belong to the Advertiser or Partner specified in CreateSdfDownloadTaskRequest.",
             "Media Product ID. If selected, all filter IDs must be Media Product IDs that belong to the Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Can only be used for downloading `FILE_TYPE_MEDIA_PRODUCT`.",
-            "Insertion Order ID. If selected, all filter IDs must be Insertion Order IDs that belong to the Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Can only be used for downloading `FILE_TYPE_INSERTION_ORDER`, `FILE_TYPE_LINE_ITEM`, `FILE_TYPE_AD_GROUP`, and `FILE_TYPE_AD`.",
-            "Line Item ID. If selected, all filter IDs must be Line Item IDs that belong to the Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Can only be used for downloading `FILE_TYPE_LINE_ITEM`, `FILE_TYPE_AD_GROUP`, and `FILE_TYPE_AD`."
+            "Insertion Order ID. If selected, all filter IDs must be Insertion Order IDs that belong to the Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Can only be used for downloading `FILE_TYPE_INSERTION_ORDER`, `FILE_TYPE_LINE_ITEM`, `FILE_TYPE_LINE_ITEM_QA`, `FILE_TYPE_AD_GROUP`, `FILE_TYPE_AD_GROUP_QA`, and `FILE_TYPE_AD`.",
+            "Line Item ID. If selected, all filter IDs must be Line Item IDs that belong to the Advertiser or Partner specified in CreateSdfDownloadTaskRequest. Can only be used for downloading `FILE_TYPE_LINE_ITEM`, `FILE_TYPE_LINE_ITEM_QA`,`FILE_TYPE_AD_GROUP`, `FILE_TYPE_AD_GROUP_QA`, and `FILE_TYPE_AD`."
           ],
           "type": "string"
         }
@@ -19760,7 +19760,8 @@
           "type": "array"
         },
         "publisherReviewStatuses": {
-          "description": "Publisher review statuses for the creative. **Warning:** This field will be deprecated on June 26th, 2024. After this date, this field will be empty. Read our [feature deprecation announcement](/display-video/api/deprecations#features.creative_publisher_review_statuses) for more information.",
+          "deprecated": true,
+          "description": "Publisher review statuses for the creative.",
           "items": {
             "$ref": "PublisherReviewStatus"
           },
