@@ -395,7 +395,7 @@
       }
     }
   },
-  "revision": "20240122",
+  "revision": "20240715",
   "rootUrl": "https://bigquerydatapolicy.googleapis.com/",
   "schemas": {
     "AuditConfig": {

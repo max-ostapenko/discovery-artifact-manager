@@ -2236,7 +2236,7 @@
       }
     }
   },
-  "revision": "20240629",
+  "revision": "20240713",
   "rootUrl": "https://dataform.googleapis.com/",
   "schemas": {
     "Assertion": {

@@ -1912,7 +1912,7 @@
       }
     }
   },
-  "revision": "20240515",
+  "revision": "20240718",
   "rootUrl": "https://adsense.googleapis.com/",
   "schemas": {
     "Account": {
