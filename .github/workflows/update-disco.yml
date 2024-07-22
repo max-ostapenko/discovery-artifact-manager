@@ -1,16 +1,16 @@
 name: Update Discoveries Directory
 on:
   schedule:
-    - cron: '50 0 * * *'
+    - cron: '0 8,17 * * 1-5'
   workflow_dispatch:
 
 jobs:
   update-discoveries:
-    if: ${{ github.repository == 'googleapis/discovery-artifact-manager' }}
+    if: ${{ github.repository == 'max-ostapenko/discovery-artifact-manager' }}
     runs-on: ubuntu-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.YOSHI_CODE_BOT_TOKEN }}
-      APPROVAL_GITHUB_TOKEN: ${{secrets.YOSHI_APPROVER_TOKEN}}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      APPROVAL_GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
