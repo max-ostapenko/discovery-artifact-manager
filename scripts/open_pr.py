@@ -22,15 +22,14 @@ from typing import Optional
 
 
 REMOTE_NAME = "yoshi-fork"
-REPO_NAME = "googleapis/discovery-artifact-manager"
-GIT_USER_NAME = "Yoshi Automation Bot"
-GIT_USER_EMAIL = "yoshi-automation@google.com"
+REPO_NAME = "max-ostapenko/discovery-artifact-manager"
+GIT_USER_NAME = "max-ostapenko"
+GIT_USER_EMAIL = "1611259+max-ostapenko@users.noreply.github.com"
 COMMIT_MESSAGE = "chore: Automated update of discovery documents"
 PULL_REQUEST_BODY = "Automatically created by the update_disco script."
 APPROVAL_MESSAGE = "Rubber-stamped automated update of discovery documents!"
 MAIN_TOKEN_ENV = "GITHUB_TOKEN"
 APPROVAL_TOKEN_ENV = "APPROVAL_GITHUB_TOKEN"
-AUTOMERGE_DISCOVERY_ENV = "AUTOMERGE_DISCOVERY"
 
 
 def main() -> None:
@@ -88,9 +87,9 @@ def setup() -> Optional[str]:
     """
     ensure_git_identity()
     github_token: Optional[str] = os.getenv(MAIN_TOKEN_ENV)
-    username: str = ensure_github_username()
+    username: str = GIT_USER_NAME # ensure_github_username()
     fork_repo_name: str = REPO_NAME.replace("googleapis/", f"{username}/")
-    ensure_github_fork(fork_repo_name)
+    # ensure_github_fork(fork_repo_name)
     ensure_git_remote(github_token, username, fork_repo_name)
     return github_token
 
@@ -215,7 +214,7 @@ def push_changes(branch: str, github_token: Optional[str]) -> None:
     """
     logging.info(f"Pushing branch {branch} to remote {REMOTE_NAME}.")
     existing_auth: list[str] = []
-    if github_token is not None:
+    if False: # github_token is not None:
         # This config is set by github actions. Need to undo it temporarily
         # because otherwise it overrides the auth in the remote url.
         result: subprocess.CompletedProcess = subprocess.run(
@@ -306,13 +305,8 @@ def update_pr(pr_number: str, github_token: Optional[str]) -> None:
         github_token {Optional[str]} -- The github token, if provided
     """
     approval_token: Optional[str] = os.getenv(APPROVAL_TOKEN_ENV)
-    enable_autoapprove: Optional[bool] = os.getenv(AUTOMERGE_DISCOVERY_ENV) == "true"
     if approval_token is None:
         logging.info("No approval token provided; skipping automerge")
-    elif not enable_autoapprove:
-        logging.info(
-            f"Autoapproval is not enabled, set {AUTOMERGE_DISCOVERY_ENV} to `true`"
-        )
     else:
         os.putenv(MAIN_TOKEN_ENV, approval_token)
         logging.info("Adding automerge label ...")

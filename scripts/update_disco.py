@@ -121,26 +121,106 @@ def load_documents(index_document: DocumentInfo) -> list[DocumentInfo]:
         version: str = item["version"]
         discovery_rest_url: str = item["discoveryRestUrl"]
         filename: str = f"{name}.{version}.json"
-        # Sometimes the index lists services that don't exist. So log any
-        # errors but don't let them crash the entire script.
-        try:
-            with urllib.request.urlopen(discovery_rest_url) as f:
-                if f.status != 200:
-                    logging.error(
-                        f"HTTP status {f.status} when loading {filename} from {discovery_rest_url}"
-                    )
-                    continue
-                document: DocumentInfo = DocumentInfo(f.read(), filename)
-        except urllib.error.HTTPError:
-            logging.error(f"Failed to load {filename} from {discovery_rest_url}")
-            continue
-        if document.revision == None:
-            logging.error(
-                f"Malformed document for {filename} from {discovery_rest_url}"
-            )
-            continue
-        logging.info(f"Loaded {filename} from {discovery_rest_url}")
-        service_documents.append(document)
+
+        # Whitelist of watched APIs
+        if name in [
+            # analytics
+            "analytics",
+            "analyticsadmin",
+            "analyticsdata",
+            "analyticshub",
+            "analyticsreporting",
+            "aiplatform",
+            "biglake",
+            "bigquery",
+            "bigqueryconnection",
+            "bigquerydatapolicy",
+            "bigquerydatatransfer",
+            "bigqueryreservation",
+            "chromeuxreport",
+            "connectors",
+            "datacatalog",
+            "dataform",
+            "datalineage",
+            "datapipelines",
+            "dataplex",
+            "integrations",
+            "looker",
+            "marketingplatformadmin",
+            "pagespeedonline",
+            "searchconsole",
+            "tagmanager",
+            "youtubeAnalytics",
+            "youtubereporting",
+        ] + [
+            # web and other
+            "blogger",
+            "calendar",
+            "drive",
+            "fitness",
+            "sheets",
+            "translate",
+        ] + [
+            # dev
+            "acmedns",
+            "authorizedbuyersmarketplace",
+            "billingbudgets",
+            "cloudbilling",
+            "discovery",
+            "domains",
+            "libraryagent",
+            "script",
+        ] + [
+            # ads and privacy
+            "adexchangebuyer",
+            "admob",
+            "adsense",
+            "content",
+            "dfareporting",
+            "displayvideo",
+            "doubleclickbidmanager",
+            "doubleclicksearch",
+            "indexing",
+            "localservices",
+            "mybusinessaccountmanagement",
+            "mybusinessbusinessinformation",
+            "mybusinesslodging",
+            "mybusinessnotifications",
+            "mybusinessplaceactions",
+            "mybusinessqanda",
+            "mybusinessverifications",
+            "readerrevenuesubscriptionlinking",
+            "realtimebidding",
+            "searchads360",
+        ] + [
+            # datasets
+            "abusiveexperiencereport",
+            "adexperiencereport",
+            # "civicinfo",
+            "safebrowsing",
+            "versionhistory",
+            "webrisk",
+        ]:
+            # Sometimes the index lists services that don't exist. So log any
+            # errors but don't let them crash the entire script.
+            try:
+                with urllib.request.urlopen(discovery_rest_url) as f:
+                    if f.status != 200:
+                        logging.error(
+                            f"HTTP status {f.status} when loading {filename} from {discovery_rest_url}"
+                        )
+                        continue
+                    document: DocumentInfo = DocumentInfo(f.read(), filename)
+            except urllib.error.HTTPError:
+                logging.error(f"Failed to load {filename} from {discovery_rest_url}")
+                continue
+            if document.revision == None:
+                logging.error(
+                    f"Malformed document for {filename} from {discovery_rest_url}"
+                )
+                continue
+            logging.info(f"Loaded {filename} from {discovery_rest_url}")
+            service_documents.append(document)
     return service_documents
 
 
