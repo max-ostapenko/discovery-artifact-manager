@@ -237,9 +237,24 @@
       "id": "adsenseplatform:v1alpha",
       "kind": "discovery#directoryItem",
       "name": "adsenseplatform",
-      "preferred": true,
+      "preferred": false,
       "title": "AdSense Platform API",
       "version": "v1alpha"
+    },
+    {
+      "description": "",
+      "discoveryRestUrl": "https://adsenseplatform.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://developers.google.com/adsense/platforms/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "adsenseplatform:v1",
+      "kind": "discovery#directoryItem",
+      "name": "adsenseplatform",
+      "preferred": true,
+      "title": "AdSense Platform API",
+      "version": "v1"
     },
     {
       "description": "An API for accessing Advisory Notifications in Google Cloud",
@@ -779,6 +794,21 @@
       "preferred": true,
       "title": "Assured Workloads API",
       "version": "v1"
+    },
+    {
+      "description": "The Authorized Buyers Marketplace API lets buyers programmatically discover inventory; propose, retrieve and negotiate deals with publishers.",
+      "discoveryRestUrl": "https://authorizedbuyersmarketplace.googleapis.com/$discovery/rest?version=v1alpha",
+      "documentationLink": "https://developers.google.com/authorized-buyers/apis/marketplace/reference/rest/",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "authorizedbuyersmarketplace:v1alpha",
+      "kind": "discovery#directoryItem",
+      "name": "authorizedbuyersmarketplace",
+      "preferred": false,
+      "title": "Authorized Buyers Marketplace API",
+      "version": "v1alpha"
     },
     {
       "description": "The Authorized Buyers Marketplace API lets buyers programmatically discover inventory; propose, retrieve and negotiate deals with publishers.",
@@ -2836,21 +2866,6 @@
       "name": "domains",
       "preferred": true,
       "title": "Cloud Domains API",
-      "version": "v1"
-    },
-    {
-      "description": "Read-only public API that lets users search for information about domain names.",
-      "discoveryRestUrl": "https://domainsrdap.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://developers.google.com/domains/rdap/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "domainsrdap:v1",
-      "kind": "discovery#directoryItem",
-      "name": "domainsrdap",
-      "preferred": true,
-      "title": "Domains RDAP API",
       "version": "v1"
     },
     {
@@ -5270,21 +5285,6 @@
       "preferred": true,
       "title": "Reader Revenue Subscription Linking API",
       "version": "v1"
-    },
-    {
-      "description": "Allows external bidders to manage their RTB integration with Google. This includes managing bidder endpoints, QPS quotas, configuring what ad inventory to receive via pretargeting, submitting creatives for verification, and accessing creative metadata such as approval status.",
-      "discoveryRestUrl": "https://realtimebidding.googleapis.com/$discovery/rest?version=v1alpha",
-      "documentationLink": "https://developers.google.com/authorized-buyers/apis/realtimebidding/reference/rest/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "realtimebidding:v1alpha",
-      "kind": "discovery#directoryItem",
-      "name": "realtimebidding",
-      "preferred": false,
-      "title": "Real-time Bidding API",
-      "version": "v1alpha"
     },
     {
       "description": "Allows external bidders to manage their RTB integration with Google. This includes managing bidder endpoints, QPS quotas, configuring what ad inventory to receive via pretargeting, submitting creatives for verification, and accessing creative metadata such as approval status.",
