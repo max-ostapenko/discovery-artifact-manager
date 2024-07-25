@@ -4140,7 +4140,7 @@
       }
     }
   },
-  "revision": "20240707",
+  "revision": "20240722",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -6955,7 +6955,7 @@
             "",
             "Internal IP tasks that should not be available in the UI.",
             "Tasks that are relevant to cloud systems teams and typically",
-            "include connecting to Vector salesforce, CRM Hub Spanner etc. Task entities that derive from a custom task template.",
+            "Task entities that derive from a custom task template.",
             "Category to show task recommendations"
           ],
           "type": "string"
@@ -7613,7 +7613,7 @@
       "type": "object"
     },
     "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo": {
-      "description": "Contains all the execution details for a workflow instance. Next available id: 26",
+      "description": "Contains all the execution details for a workflow instance. Next available id: 27",
       "id": "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo",
       "properties": {
         "clientId": {
@@ -7651,6 +7651,10 @@
         "executionTraceInfo": {
           "$ref": "EnterpriseCrmEventbusProtoExecutionTraceInfo",
           "description": "Execution trace info to aggregate parent-child executions."
+        },
+        "integrationVersionUserLabel": {
+          "description": "User-defined label that annotates the executed integration version.",
+          "type": "string"
         },
         "lastModifiedTime": {
           "description": "Auto-generated.",
@@ -9123,6 +9127,10 @@
       "description": "Connection represents an instance of connector.",
       "id": "GoogleCloudConnectorsV1Connection",
       "properties": {
+        "asyncOperationsEnabled": {
+          "description": "Optional. Async operations enabled for the connection. If Async Operations is enabled, Connection allows the customers to initiate async long running operations using the actions API.",
+          "type": "boolean"
+        },
         "authConfig": {
           "$ref": "GoogleCloudConnectorsV1AuthConfig",
           "description": "Optional. Configuration for establishing the connection's authentication with an external system."
@@ -9359,6 +9367,23 @@
             "Default model gke mst.",
             "Cloud run mst."
           ],
+          "type": "string"
+        },
+        "deploymentModelMigrationState": {
+          "description": "Output only. Status of the deployment model migration.",
+          "enum": [
+            "DEPLOYMENT_MODEL_MIGRATION_STATE_UNSPECIFIED",
+            "IN_PROGRESS",
+            "COMPLETED",
+            "ROLLEDBACK"
+          ],
+          "enumDescriptions": [
+            "Deployment model migration state is not specified.",
+            "Deployment model migration is in progress.",
+            "Deployment model migration is completed.",
+            "Deployment model migration rolledback."
+          ],
+          "readOnly": true,
           "type": "string"
         },
         "hpaConfig": {
@@ -13379,7 +13404,7 @@
           "type": "string"
         },
         "triggerId": {
-          "description": "Optional. The backend trigger ID.",
+          "description": "Optional. Auto-generated trigger ID. The ID is based on the properties that you define in the trigger config. For example, for an API trigger, the trigger ID follows the format: api_trigger/TRIGGER_NAME Where trigger config has properties with value {\"Trigger name\": TRIGGER_NAME}",
           "type": "string"
         },
         "triggerNumber": {
