@@ -4704,7 +4704,7 @@
       }
     }
   },
-  "revision": "20240723",
+  "revision": "20240724",
   "rootUrl": "https://analyticsadmin.googleapis.com/",
   "schemas": {
     "GoogleAnalyticsAdminV1alphaAccessBetweenFilter": {
