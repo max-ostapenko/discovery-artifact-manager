@@ -4140,7 +4140,7 @@
       }
     }
   },
-  "revision": "20240707",
+  "revision": "20240713",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -7613,7 +7613,7 @@
       "type": "object"
     },
     "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo": {
-      "description": "Contains all the execution details for a workflow instance. Next available id: 26",
+      "description": "Contains all the execution details for a workflow instance. Next available id: 27",
       "id": "EnterpriseCrmFrontendsEventbusProtoEventExecutionInfo",
       "properties": {
         "clientId": {
@@ -7651,6 +7651,10 @@
         "executionTraceInfo": {
           "$ref": "EnterpriseCrmEventbusProtoExecutionTraceInfo",
           "description": "Execution trace info to aggregate parent-child executions."
+        },
+        "integrationVersionUserLabel": {
+          "description": "User-defined label that annotates the executed integration version.",
+          "type": "string"
         },
         "lastModifiedTime": {
           "description": "Auto-generated.",
@@ -13379,7 +13383,7 @@
           "type": "string"
         },
         "triggerId": {
-          "description": "Optional. The backend trigger ID.",
+          "description": "Optional. Auto-generated trigger ID. The ID is based on the properties that you define in the trigger config. For example, for an API trigger, the trigger ID follows the format: api_trigger/TRIGGER_NAME Where trigger config has properties with value {\"Trigger name\": TRIGGER_NAME}",
           "type": "string"
         },
         "triggerNumber": {
