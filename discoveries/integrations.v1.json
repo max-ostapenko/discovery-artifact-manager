@@ -1380,34 +1380,6 @@
                       "scopes": [
                         "https://www.googleapis.com/auth/cloud-platform"
                       ]
-                    },
-                    "replay": {
-                      "description": "Re-execute an existing execution, with same request parameters and execution strategy",
-                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/integrations/{integrationsId}/executions/{executionsId}:replay",
-                      "httpMethod": "POST",
-                      "id": "integrations.projects.locations.integrations.executions.replay",
-                      "parameterOrder": [
-                        "name"
-                      ],
-                      "parameters": {
-                        "name": {
-                          "description": "Required. The execution resource name. Format: projects/{gcp_project_id}/locations/{location}/integrations/{integration}/executions/{execution_id}",
-                          "location": "path",
-                          "pattern": "^projects/[^/]+/locations/[^/]+/integrations/[^/]+/executions/[^/]+$",
-                          "required": true,
-                          "type": "string"
-                        }
-                      },
-                      "path": "v1/{+name}:replay",
-                      "request": {
-                        "$ref": "GoogleCloudIntegrationsV1alphaReplayExecutionRequest"
-                      },
-                      "response": {
-                        "$ref": "GoogleCloudIntegrationsV1alphaReplayExecutionResponse"
-                      },
-                      "scopes": [
-                        "https://www.googleapis.com/auth/cloud-platform"
-                      ]
                     }
                   },
                   "resources": {
@@ -1743,7 +1715,7 @@
                           "type": "string"
                         },
                         "parent": {
-                          "description": "Required. The parent resource where this version will be created. Format: projects/{project}/locations/{location}/integrations/{integration} Specifically, when parent equals: 1. projects//locations//integrations/, Meaning: \"List versions (with filter) for a particular integration\". 2. projects//locations//integrations/- Meaning: \"List versions (with filter) for a client within a particular region\". 3. projects//locations/-/integrations/- Meaning: \"List versions (with filter) for a client\".",
+                          "description": "Required. The parent resource where this version will be created. Format: projects/{project}/locations/{location}/integrations/{integration} Specifically, when parent equals: 1. projects//locations//integrations/, Meaning: \"List versions (with filter) for a particular integration\". 2. projects//locations//integrations/- Meaning: \"List versions (with filter) for a client within a particular region\".",
                           "location": "path",
                           "pattern": "^projects/[^/]+/locations/[^/]+/integrations/[^/]+$",
                           "required": true,
@@ -2912,7 +2884,7 @@
                               "type": "string"
                             },
                             "parent": {
-                              "description": "Required. The parent resource where this version will be created. Format: projects/{project}/locations/{location}/integrations/{integration} Specifically, when parent equals: 1. projects//locations//integrations/, Meaning: \"List versions (with filter) for a particular integration\". 2. projects//locations//integrations/- Meaning: \"List versions (with filter) for a client within a particular region\". 3. projects//locations/-/integrations/- Meaning: \"List versions (with filter) for a client\".",
+                              "description": "Required. The parent resource where this version will be created. Format: projects/{project}/locations/{location}/integrations/{integration} Specifically, when parent equals: 1. projects//locations//integrations/, Meaning: \"List versions (with filter) for a particular integration\". 2. projects//locations//integrations/- Meaning: \"List versions (with filter) for a client within a particular region\".",
                               "location": "path",
                               "pattern": "^projects/[^/]+/locations/[^/]+/products/[^/]+/integrations/[^/]+$",
                               "required": true,
@@ -4140,7 +4112,7 @@
       }
     }
   },
-  "revision": "20240722",
+  "revision": "20240728",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -5752,7 +5724,7 @@
             "",
             "",
             "",
-            "next id: 24"
+            ""
           ],
           "type": "string"
         }
@@ -9397,6 +9369,12 @@
           "readOnly": true,
           "type": "string"
         },
+        "maxInstanceRequestConcurrency": {
+          "description": "Output only. Max instance request concurrency.",
+          "format": "int32",
+          "readOnly": true,
+          "type": "integer"
+        },
         "ratelimitThreshold": {
           "description": "Output only. Max QPS supported by the connector version before throttling of requests.",
           "format": "int64",
@@ -12367,40 +12345,6 @@
       "properties": {
         "runAsServiceAccount": {
           "description": "Required. REQUIRED: Run-as service account to be updated",
-          "type": "string"
-        }
-      },
-      "type": "object"
-    },
-    "GoogleCloudIntegrationsV1alphaReplayExecutionRequest": {
-      "description": "Request for replaying an execution Next ID: 3",
-      "id": "GoogleCloudIntegrationsV1alphaReplayExecutionRequest",
-      "properties": {
-        "replayReason": {
-          "description": "Optional. The user provided reason for replaying the execution.",
-          "type": "string"
-        }
-      },
-      "type": "object"
-    },
-    "GoogleCloudIntegrationsV1alphaReplayExecutionResponse": {
-      "description": "Response for replaying an execution Next ID: 4",
-      "id": "GoogleCloudIntegrationsV1alphaReplayExecutionResponse",
-      "properties": {
-        "executionId": {
-          "description": "The id of the execution corresponding to this run of integration.",
-          "type": "string"
-        },
-        "outputParameters": {
-          "additionalProperties": {
-            "description": "Properties of the object.",
-            "type": "any"
-          },
-          "description": "OUTPUT parameters in format of Map. Where Key is the name of the parameter. The parameters would only be present in case of synchrounous execution Note: Name of the system generated parameters are wrapped by backtick(`) to distinguish them from the user defined parameters.",
-          "type": "object"
-        },
-        "replayedExecutionId": {
-          "description": "The execution id which is replayed",
           "type": "string"
         }
       },
