@@ -4112,7 +4112,7 @@
       }
     }
   },
-  "revision": "20240728",
+  "revision": "20240804",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -5338,7 +5338,6 @@
           "type": "boolean"
         },
         "source": {
-          "description": "LINT.ThenChange(//depot/google3/enterprise/crm/eventbus/proto/product.proto:product, //depot/google3/java/com/google/enterprise/crm/integrationplatform/api/utils/ConverterUtils.java:source_to_product)",
           "enum": [
             "SOURCE_UNSPECIFIED",
             "APIGEE",
@@ -9347,13 +9346,15 @@
             "DEPLOYMENT_MODEL_MIGRATION_STATE_UNSPECIFIED",
             "IN_PROGRESS",
             "COMPLETED",
-            "ROLLEDBACK"
+            "ROLLEDBACK",
+            "ROLLBACK_IN_PROGRESS"
           ],
           "enumDescriptions": [
             "Deployment model migration state is not specified.",
             "Deployment model migration is in progress.",
             "Deployment model migration is completed.",
-            "Deployment model migration rolledback."
+            "Deployment model migration rolledback.",
+            "Deployment model migration rollback in progress."
           ],
           "readOnly": true,
           "type": "string"
@@ -11329,7 +11330,8 @@
             "BOOLEAN_ARRAY",
             "JSON_VALUE",
             "PROTO_VALUE",
-            "PROTO_ARRAY"
+            "PROTO_ARRAY",
+            "NON_SERIALIZABLE_OBJECT"
           ],
           "enumDescriptions": [
             "Unspecified.",
@@ -11343,13 +11345,18 @@
             "Boolean Array.",
             "Json.",
             "Proto Value (Internal use only).",
-            "Proto Array (Internal use only)."
+            "Proto Array (Internal use only).",
+            "// Non-serializable object (Internal use only)."
           ],
           "type": "string"
         },
         "defaultValue": {
           "$ref": "GoogleCloudIntegrationsV1alphaValueType",
           "description": "Default values for the defined keys. Each value can either be string, int, double or any proto message or a serialized object."
+        },
+        "description": {
+          "description": "Optional. Description of the parameter.",
+          "type": "string"
         },
         "displayName": {
           "description": "The name (without prefix) to be displayed in the UI for this parameter. E.g. if the key is \"foo.bar.myName\", then the name would be \"myName\".",
@@ -12157,7 +12164,8 @@
             "BOOLEAN_ARRAY",
             "JSON_VALUE",
             "PROTO_VALUE",
-            "PROTO_ARRAY"
+            "PROTO_ARRAY",
+            "NON_SERIALIZABLE_OBJECT"
           ],
           "enumDescriptions": [
             "Unspecified.",
@@ -12171,7 +12179,8 @@
             "Boolean Array.",
             "Json.",
             "Proto Value (Internal use only).",
-            "Proto Array (Internal use only)."
+            "Proto Array (Internal use only).",
+            "// Non-serializable object (Internal use only)."
           ],
           "type": "string"
         },
@@ -12189,7 +12198,8 @@
             "BOOLEAN_ARRAY",
             "JSON_VALUE",
             "PROTO_VALUE",
-            "PROTO_ARRAY"
+            "PROTO_ARRAY",
+            "NON_SERIALIZABLE_OBJECT"
           ],
           "enumDescriptions": [
             "Unspecified.",
@@ -12203,7 +12213,8 @@
             "Boolean Array.",
             "Json.",
             "Proto Value (Internal use only).",
-            "Proto Array (Internal use only)."
+            "Proto Array (Internal use only).",
+            "// Non-serializable object (Internal use only)."
           ],
           "type": "string"
         }
