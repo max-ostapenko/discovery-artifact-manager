@@ -62,21 +62,6 @@
       "version": "v1"
     },
     {
-      "description": "Google Domains ACME DNS API that allows users to complete ACME DNS-01 challenges for a domain.",
-      "discoveryRestUrl": "https://acmedns.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://developers.google.com/domains/acme-dns/",
-      "icons": {
-        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
-        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
-      },
-      "id": "acmedns:v1",
-      "kind": "discovery#directoryItem",
-      "name": "acmedns",
-      "preferred": true,
-      "title": "ACME DNS API",
-      "version": "v1"
-    },
-    {
       "description": "The Address Validation API allows developers to verify the accuracy of addresses. Given an address, it returns information about the correctness of the components of the parsed address, a geocode, and a verdict on the deliverability of the parsed address.",
       "discoveryRestUrl": "https://addressvalidation.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://developers.google.com/maps/documentation/addressvalidation",
