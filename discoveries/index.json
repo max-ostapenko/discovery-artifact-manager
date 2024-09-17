@@ -4762,7 +4762,7 @@
       "version": "v1"
     },
     {
-      "description": "The Oracle Database@Google Cloud API provides set of APIs to manage Oracle databases such as Exadata and Autonomous Databases.",
+      "description": "The Oracle Database@Google Cloud API provides a set of APIs to manage Oracle database services, such as Exadata and Autonomous Databases.",
       "discoveryRestUrl": "https://oracledatabase.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://cloud.google.com/oracle/database/docs",
       "icons": {
