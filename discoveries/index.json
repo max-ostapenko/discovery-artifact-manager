@@ -3141,6 +3141,21 @@
       "version": "v1beta"
     },
     {
+      "description": "",
+      "discoveryRestUrl": "https://firebasedataconnect.googleapis.com/$discovery/rest?version=v1beta",
+      "documentationLink": "https://firebase.google.com/docs/data-connect",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "firebasedataconnect:v1beta",
+      "kind": "discovery#directoryItem",
+      "name": "firebasedataconnect",
+      "preferred": true,
+      "title": "Firebase Data Connect API",
+      "version": "v1beta"
+    },
+    {
       "description": "Programmatically creates and manages Firebase Dynamic Links.",
       "discoveryRestUrl": "https://firebasedynamiclinks.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://firebase.google.com/docs/dynamic-links/",
