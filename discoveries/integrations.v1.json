@@ -4497,7 +4497,7 @@
       }
     }
   },
-  "revision": "20241028",
+  "revision": "20241117",
   "rootUrl": "https://integrations.googleapis.com/",
   "schemas": {
     "CrmlogErrorCode": {
@@ -9444,6 +9444,7 @@
             "PREVIEW",
             "GA",
             "DEPRECATED",
+            "TEST",
             "PRIVATE_PREVIEW"
           ],
           "enumDescriptions": [
@@ -9451,6 +9452,7 @@
             "PREVIEW.",
             "GA.",
             "DEPRECATED.",
+            "TEST.",
             "PRIVATE_PREVIEW."
           ],
           "readOnly": true,
