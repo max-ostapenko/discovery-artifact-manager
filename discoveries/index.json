@@ -4837,6 +4837,20 @@
       "version": "v2"
     },
     {
+      "description": "",
+      "discoveryRestUrl": "https://observability.googleapis.com/$discovery/rest?version=v1",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "observability:v1",
+      "kind": "discovery#directoryItem",
+      "name": "observability",
+      "preferred": true,
+      "title": "Observability API",
+      "version": "v1"
+    },
+    {
       "description": "A service to scan container images for vulnerabilities.",
       "discoveryRestUrl": "https://ondemandscanning.googleapis.com/$discovery/rest?version=v1beta1",
       "documentationLink": "https://cloud.google.com/container-analysis/docs/on-demand-scanning/",
@@ -6324,7 +6338,7 @@
     {
       "description": "The Google Tasks API lets you manage your tasks and task lists.",
       "discoveryRestUrl": "https://tasks.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://developers.google.com/tasks/",
+      "documentationLink": "https://developers.google.com/workspace/tasks/",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
