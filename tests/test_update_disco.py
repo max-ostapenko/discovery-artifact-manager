@@ -238,7 +238,7 @@ class TestUpdateDisco(unittest.TestCase):
 
         mock_urlopen.side_effect = mock_urlopen_impl
         index_doc = update_disco.DocumentInfo(INDEX_1_CONTENT)
-        docs = update_disco.load_documents(index_doc)
+        docs = update_disco.load_documents(index_doc, whitelist_check=False)
         self.assertEqual(2, len(docs))
         self.assertEqual(DISCOVERY_0001_CONTENT, docs[0].content)
         self.assertEqual(DISCOVERY_0002_CONTENT, docs[1].content)

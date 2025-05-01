@@ -105,7 +105,7 @@ def load_index() -> DocumentInfo:
     return document
 
 
-def load_documents(index_document: DocumentInfo) -> list[DocumentInfo]:
+def load_documents(index_document: DocumentInfo, whitelist_check: bool = True) -> list[DocumentInfo]:
     """Downloads all discovery documents in the index
 
     Arguments:
@@ -123,7 +123,7 @@ def load_documents(index_document: DocumentInfo) -> list[DocumentInfo]:
         filename: str = f"{name}.{version}.json"
 
         # Whitelist of watched APIs
-        if name not in [
+        if whitelist_check and name not in [
             # analytics
             "analytics",
             "analyticsadmin",
