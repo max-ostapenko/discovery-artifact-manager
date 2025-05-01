@@ -8,3 +8,4 @@ test
 .vscode
 .mypy_cache
 tests/tmp
+.venv

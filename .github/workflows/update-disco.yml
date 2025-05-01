@@ -1,7 +1,7 @@
 name: Update Discoveries Directory
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */5 * * *'
   workflow_dispatch:
 
 jobs:
@@ -13,17 +13,17 @@ jobs:
       APPROVAL_GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
-      - name: Install Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/checkout@v4
+      - name: Install Python 3.13
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.13"
       - name: execute
         run: |
           python scripts/update_disco.py && python scripts/open_pr.py
       - id: automerge
         name: automerge
-        uses: "pascalgn/automerge-action@v0.15.5"
+        uses: "pascalgn/automerge-action@v0.16.4"
         env:
           MERGE_REMOVE_LABELS: "automerge"
           MERGE_METHOD: "squash"
