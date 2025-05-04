@@ -74,7 +74,7 @@ def has_changes() -> bool:
         bool -- True if there are local changes, or False otherwise
     """
     result: subprocess.CompletedProcess = subprocess.run(
-        ["git", "status", "-s"], capture_output=True
+        ["git", "status", "-s"], capture_output=True, check=False
     )
     return str(result.stdout, "utf-8").strip() != ""
 
@@ -98,17 +98,17 @@ def ensure_git_identity() -> None:
     """Ensure that the git identity (name and email) is set"""
     result: subprocess.CompletedProcess
     result = subprocess.run(
-        ["git", "config", "--get", "user.name"], capture_output=True
+        ["git", "config", "--get", "user.name"], capture_output=True, check=False
     )
     if result.returncode != 0:
         logging.info(f"Setting git user.name to {GIT_USER_NAME}")
-        subprocess.run(["git", "config", "--local", "user.name", GIT_USER_NAME])
+        subprocess.run(["git", "config", "--local", "user.name", GIT_USER_NAME], capture_output=True, check=False)
     result = subprocess.run(
-        ["git", "config", "--get", "user.email"], capture_output=True
+        ["git", "config", "--get", "user.email"], capture_output=True, check=False
     )
     if result.returncode != 0:
         logging.info(f"Setting git user.email to {GIT_USER_EMAIL}")
-        subprocess.run(["git", "config", "--local", "user.email", GIT_USER_EMAIL])
+        subprocess.run(["git", "config", "--local", "user.email", GIT_USER_EMAIL], capture_output=True, check=False)
 
 
 def ensure_github_username() -> str:
@@ -118,7 +118,7 @@ def ensure_github_username() -> str:
         str -- The GitHub user name
     """
     result: subprocess.CompletedProcess = subprocess.run(
-        ["gh", "api", "/user", "--jq=.login"], capture_output=True
+        ["gh", "api", "/user", "--jq=.login"], capture_output=True, check=False
     )
     username: str = str(result.stdout, "utf-8").strip()
     if len(username) == 0:
@@ -154,7 +154,7 @@ def ensure_git_remote(
         fork_repo_name {str} -- The expected fork repo name
     """
     result: subprocess.CompletedProcess = subprocess.run(
-        ["git", "remote", "get-url", REMOTE_NAME], capture_output=True
+        ["git", "remote", "get-url", REMOTE_NAME], capture_output=True, check=False
     )
     remote_url: str
     if result.returncode == 0:
@@ -227,6 +227,7 @@ def push_changes(branch: str, github_token: Optional[str]) -> None:
                 "^AUTHORIZATION:",
             ],
             capture_output=True,
+            check=False,
         )
         existing_auth = str(result.stdout, "utf-8").splitlines()
         if len(existing_auth) > 0:
@@ -240,9 +241,10 @@ def push_changes(branch: str, github_token: Optional[str]) -> None:
                     "http.https://github.com/.extraheader",
                     "^AUTHORIZATION:",
                 ],
+                capture_output=False,
                 check=True,
             )
-    subprocess.run(["git", "push", "-u", REMOTE_NAME, branch], check=True)
+    subprocess.run(["git", "push", "-u", REMOTE_NAME, branch], capture_output=False, check=True)
     # Restore old auth config if needed
     for auth in existing_auth:
         logging.info("Note: Restoring auth header configs after push.")
@@ -280,13 +282,18 @@ def create_pr() -> str:
             PULL_REQUEST_BODY,
         ],
         capture_output=True,
-        check=True,
+        check=False,
     )
+    if result.returncode != 0:
+        logging.error("Failed to create PR: %s", str(result.stderr, "utf-8").strip())
+        sys.exit(f"gh pr create failed with return code {result.returncode}")
     pr_number: str = str(result.stdout, "utf-8").splitlines()[-1].split("/")[-1]
     logging.info(f"Pull request number is {pr_number}.")
     for count in range(5):
         result = subprocess.run(
-            ["gh", "pr", "view", pr_number, "--repo", REPO_NAME, "--json=number"]
+            ["gh", "pr", "view", pr_number, "--repo", REPO_NAME, "--json=number"],
+            capture_output=True,
+            check=False,
         )
         if result.returncode == 0:
             logging.info("Confirmed existence of new pull request.")
@@ -320,7 +327,9 @@ def update_pr(pr_number: str, github_token: Optional[str]) -> None:
                 REPO_NAME,
                 "--add-label",
                 "automerge",
-            ]
+            ],
+            capture_output=True,
+            check=False,
         )
         logging.info("Approving pull request ...")
         subprocess.run(
@@ -334,7 +343,9 @@ def update_pr(pr_number: str, github_token: Optional[str]) -> None:
                 "--approve",
                 "--body",
                 APPROVAL_MESSAGE,
-            ]
+            ],
+            capture_output=True,
+            check=False,
         )
         if github_token is None:
             os.unsetenv(MAIN_TOKEN_ENV)
