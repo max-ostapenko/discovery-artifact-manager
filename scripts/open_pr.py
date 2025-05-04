@@ -187,7 +187,7 @@ def open_pr(github_token: Optional[str]) -> None:
     """
     branch: str = commit_changes()
     push_changes(branch, github_token)
-    pr_number: str = create_pr()
+    pr_number: str = create_pr(branch)
     update_pr(pr_number, github_token)
 
 
@@ -261,7 +261,7 @@ def push_changes(branch: str, github_token: Optional[str]) -> None:
         )
 
 
-def create_pr() -> str:
+def create_pr(branch: str) -> str:
     """Creates a pull request and waits for it to appear in the API
 
     Returns:
@@ -276,6 +276,8 @@ def create_pr() -> str:
             "create",
             "--repo",
             REPO_NAME,
+            "--head",
+            f"{GIT_USER_NAME}:{branch}",
             "--title",
             COMMIT_MESSAGE,
             "--body",
