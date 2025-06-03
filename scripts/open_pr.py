@@ -102,13 +102,21 @@ def ensure_git_identity() -> None:
     )
     if result.returncode != 0:
         logging.info(f"Setting git user.name to {GIT_USER_NAME}")
-        subprocess.run(["git", "config", "--local", "user.name", GIT_USER_NAME], capture_output=True, check=False)
+        subprocess.run(
+            ["git", "config", "--local", "user.name", GIT_USER_NAME],
+            capture_output=True,
+            check=False,
+        )
     result = subprocess.run(
         ["git", "config", "--get", "user.email"], capture_output=True, check=False
     )
     if result.returncode != 0:
         logging.info(f"Setting git user.email to {GIT_USER_EMAIL}")
-        subprocess.run(["git", "config", "--local", "user.email", GIT_USER_EMAIL], capture_output=True, check=False)
+        subprocess.run(
+            ["git", "config", "--local", "user.email", GIT_USER_EMAIL],
+            capture_output=True,
+            check=False,
+        )
 
 
 def ensure_github_username() -> str:
@@ -244,7 +252,9 @@ def push_changes(branch: str, github_token: Optional[str]) -> None:
                 capture_output=False,
                 check=True,
             )
-    subprocess.run(["git", "push", "-u", REMOTE_NAME, branch], capture_output=False, check=True)
+    subprocess.run(
+        ["git", "push", "-u", REMOTE_NAME, branch], capture_output=False, check=True
+    )
     # Restore old auth config if needed
     for auth in existing_auth:
         logging.info("Note: Restoring auth header configs after push.")
