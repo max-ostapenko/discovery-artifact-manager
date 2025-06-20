@@ -15,7 +15,7 @@
   "baseUrl": "https://bigqueryreservation.googleapis.com/",
   "batchPath": "batch",
   "canonicalName": "BigQuery Reservation",
-  "description": "A service to modify your BigQuery flat-rate reservations.",
+  "description": "A service to modify your BigQuery reservations.",
   "discoveryVersion": "v1",
   "documentationLink": "https://cloud.google.com/bigquery/",
   "endpoints": [
@@ -1140,7 +1140,7 @@
       }
     }
   },
-  "revision": "20250609",
+  "revision": "20250611",
   "rootUrl": "https://bigqueryreservation.googleapis.com/",
   "schemas": {
     "Assignment": {
