@@ -2375,7 +2375,7 @@
       }
     }
   },
-  "revision": "20250802",
+  "revision": "20250816",
   "rootUrl": "https://bigquery.googleapis.com/",
   "schemas": {
     "AggregateClassificationMetrics": {
@@ -2584,7 +2584,8 @@
               "WEEKLY",
               "MONTHLY",
               "QUARTERLY",
-              "YEARLY"
+              "YEARLY",
+              "HOURLY"
             ],
             "enumDescriptions": [
               "Unspecified seasonal period.",
@@ -2593,7 +2594,8 @@
               "Weekly period, 7 days.",
               "Monthly period, 30 days or irregular.",
               "Quarterly period, 90 days or irregular.",
-              "Yearly period, 365 days or irregular."
+              "Yearly period, 365 days or irregular.",
+              "Hourly period, 1 hour."
             ],
             "type": "string"
           },
@@ -2652,7 +2654,8 @@
               "WEEKLY",
               "MONTHLY",
               "QUARTERLY",
-              "YEARLY"
+              "YEARLY",
+              "HOURLY"
             ],
             "enumDescriptions": [
               "Unspecified seasonal period.",
@@ -2661,7 +2664,8 @@
               "Weekly period, 7 days.",
               "Monthly period, 30 days or irregular.",
               "Quarterly period, 90 days or irregular.",
-              "Yearly period, 365 days or irregular."
+              "Yearly period, 365 days or irregular.",
+              "Hourly period, 1 hour."
             ],
             "type": "string"
           },
@@ -2724,7 +2728,8 @@
               "WEEKLY",
               "MONTHLY",
               "QUARTERLY",
-              "YEARLY"
+              "YEARLY",
+              "HOURLY"
             ],
             "enumDescriptions": [
               "Unspecified seasonal period.",
@@ -2733,7 +2738,8 @@
               "Weekly period, 7 days.",
               "Monthly period, 30 days or irregular.",
               "Quarterly period, 90 days or irregular.",
-              "Yearly period, 365 days or irregular."
+              "Yearly period, 365 days or irregular.",
+              "Hourly period, 1 hour."
             ],
             "type": "string"
           },
@@ -2780,7 +2786,8 @@
               "WEEKLY",
               "MONTHLY",
               "QUARTERLY",
-              "YEARLY"
+              "YEARLY",
+              "HOURLY"
             ],
             "enumDescriptions": [
               "Unspecified seasonal period.",
@@ -2789,7 +2796,8 @@
               "Weekly period, 7 days.",
               "Monthly period, 30 days or irregular.",
               "Quarterly period, 90 days or irregular.",
-              "Yearly period, 365 days or irregular."
+              "Yearly period, 365 days or irregular.",
+              "Hourly period, 1 hour."
             ],
             "type": "string"
           },
@@ -3562,7 +3570,7 @@
       "type": "object"
     },
     "DataPolicyOption": {
-      "description": "Data policy option proto, it currently supports name only, will support precedence later.",
+      "description": "Data policy option. For more information, see [Mask data by applying data policies to a column](https://cloud.google.com/bigquery/docs/column-data-masking#data-policies-on-column/).",
       "id": "DataPolicyOption",
       "properties": {
         "name": {
@@ -9614,7 +9622,7 @@
           "type": "string"
         },
         "dataPolicies": {
-          "description": "Optional. Data policy options, will replace the data_policies.",
+          "description": "Optional. Data policies attached to this field, used for field-level access control.",
           "items": {
             "$ref": "DataPolicyOption"
           },
