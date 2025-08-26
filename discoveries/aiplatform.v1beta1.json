@@ -26026,7 +26026,7 @@
       }
     }
   },
-  "revision": "20250820",
+  "revision": "20250825",
   "rootUrl": "https://aiplatform.googleapis.com/",
   "schemas": {
     "CloudAiLargeModelsVisionGenerateVideoResponse": {
@@ -32529,6 +32529,25 @@
       },
       "type": "object"
     },
+    "GoogleCloudAiplatformV1beta1EvaluationRubricConfig": {
+      "description": "Configuration for a rubric group to be generated/saved for evaluation.",
+      "id": "GoogleCloudAiplatformV1beta1EvaluationRubricConfig",
+      "properties": {
+        "predefinedRubricGenerationSpec": {
+          "$ref": "GoogleCloudAiplatformV1beta1EvaluationRunMetricPredefinedMetricSpec",
+          "description": "Dynamically generate rubrics using a predefined spec."
+        },
+        "rubricGenerationSpec": {
+          "$ref": "GoogleCloudAiplatformV1beta1EvaluationRunMetricRubricGenerationSpec",
+          "description": "Dynamically generate rubrics using this specification."
+        },
+        "rubricGroupKey": {
+          "description": "Required. The key used to save the generated rubrics. If a generation spec is provided, this key will be used for the name of the generated rubric group. Otherwise, this key will be used to look up the existing rubric group on the evaluation item. Note that if a rubric group key is specified on both a rubric config and an evaluation metric, the key from the metric will be used to select the rubrics for evaluation.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
     "GoogleCloudAiplatformV1beta1EvaluationRun": {
       "description": "EvaluationRun is a resource that represents a single evaluation run, which includes a set of prompts, model responses, evaluation configuration and the resulting metrics.",
       "id": "GoogleCloudAiplatformV1beta1EvaluationRun",
@@ -32659,6 +32678,13 @@
         "promptTemplate": {
           "$ref": "GoogleCloudAiplatformV1beta1EvaluationRunEvaluationConfigPromptTemplate",
           "description": "The prompt template used for inference. The values for variables in the prompt template are defined in EvaluationItem.EvaluationPrompt.PromptTemplateData.values."
+        },
+        "rubricConfigs": {
+          "description": "Optional. The rubric configs for the evaluation run. They are used to generate rubrics which can be used by rubric-based metrics. Multiple rubric configs can be specified for rubric generation but only one rubric config can be used for a rubric-based metric. If more than one rubric config is provided, the evaluation metric must specify a rubric group key. Note that if a generation spec is specified on both a rubric config and an evaluation metric, the rubrics generated for the metric will be used for evaluation.",
+          "items": {
+            "$ref": "GoogleCloudAiplatformV1beta1EvaluationRubricConfig"
+          },
+          "type": "array"
         }
       },
       "type": "object"
