@@ -228,6 +228,16 @@
       "description": "Locational Endpoint",
       "endpointUrl": "https://us-east5-aiplatform.googleapis.com/",
       "location": "us-east5"
+    },
+    {
+      "description": "Regional Endpoint",
+      "endpointUrl": "https://aiplatform.us.rep.googleapis.com/",
+      "location": "us"
+    },
+    {
+      "description": "Regional Endpoint",
+      "endpointUrl": "https://aiplatform.eu.rep.googleapis.com/",
+      "location": "eu"
     }
   ],
   "fullyEncodeReservedExpansion": true,
@@ -20793,7 +20803,7 @@
       }
     }
   },
-  "revision": "20250822",
+  "revision": "20250829",
   "rootUrl": "https://aiplatform.googleapis.com/",
   "schemas": {
     "CloudAiLargeModelsVisionGenerateVideoResponse": {
@@ -25092,7 +25102,7 @@
       "id": "GoogleCloudAiplatformV1DeployRequestEndpointConfig",
       "properties": {
         "dedicatedEndpointDisabled": {
-          "description": "Optional. By default, if dedicated endpoint is enabled, the endpoint will be exposed through a dedicated DNS [Endpoint.dedicated_endpoint_dns]. Your request to the dedicated DNS will be isolated from other users' traffic and will have better performance and reliability. Note: Once you enabled dedicated endpoint, you won't be able to send request to the shared DNS {region}-aiplatform.googleapis.com. The limitations will be removed soon. If this field is set to true, the dedicated endpoint will be disabled and the deployed model will be exposed through the shared DNS {region}-aiplatform.googleapis.com.",
+          "description": "Optional. By default, if dedicated endpoint is enabled and private service connect config is not set, the endpoint will be exposed through a dedicated DNS [Endpoint.dedicated_endpoint_dns]. If private service connect config is set, the endpoint will be exposed through private service connect. Your request to the dedicated DNS will be isolated from other users' traffic and will have better performance and reliability. Note: Once you enabled dedicated endpoint, you won't be able to send request to the shared DNS {region}-aiplatform.googleapis.com. The limitations will be removed soon. If this field is set to true, the dedicated endpoint will be disabled and the deployed model will be exposed through the shared DNS {region}-aiplatform.googleapis.com.",
           "type": "boolean"
         },
         "dedicatedEndpointEnabled": {
@@ -26814,10 +26824,6 @@
       "description": "The metric used for evaluation runs.",
       "id": "GoogleCloudAiplatformV1EvaluationRunMetric",
       "properties": {
-        "computationBasedMetricSpec": {
-          "$ref": "GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec",
-          "description": "Spec for a computation based metric."
-        },
         "llmBasedMetricSpec": {
           "$ref": "GoogleCloudAiplatformV1EvaluationRunMetricLLMBasedMetricSpec",
           "description": "Spec for an LLM based metric."
@@ -26833,37 +26839,6 @@
         "rubricBasedMetricSpec": {
           "$ref": "GoogleCloudAiplatformV1EvaluationRunMetricRubricBasedMetricSpec",
           "description": "Spec for rubric based metric."
-        }
-      },
-      "type": "object"
-    },
-    "GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec": {
-      "description": "Specification for a computation based metric.",
-      "id": "GoogleCloudAiplatformV1EvaluationRunMetricComputationBasedMetricSpec",
-      "properties": {
-        "parameters": {
-          "additionalProperties": {
-            "description": "Properties of the object.",
-            "type": "any"
-          },
-          "description": "Optional. A map of parameters for the metric, e.g. {\"rouge_type\": \"rougeL\"}.",
-          "type": "object"
-        },
-        "type": {
-          "description": "Required. The type of the computation based metric.",
-          "enum": [
-            "COMPUTATION_BASED_METRIC_TYPE_UNSPECIFIED",
-            "EXACT_MATCH",
-            "BLEU",
-            "ROUGE"
-          ],
-          "enumDescriptions": [
-            "Unspecified computation based metric type.",
-            "Exact match metric.",
-            "BLEU metric.",
-            "ROUGE metric."
-          ],
-          "type": "string"
         }
       },
       "type": "object"
@@ -30602,7 +30577,12 @@
     "GoogleCloudAiplatformV1GoogleMaps": {
       "description": "Tool to retrieve public maps data for grounding, powered by Google.",
       "id": "GoogleCloudAiplatformV1GoogleMaps",
-      "properties": {},
+      "properties": {
+        "enableWidget": {
+          "description": "Optional. If true, include the widget context token in the response.",
+          "type": "boolean"
+        }
+      },
       "type": "object"
     },
     "GoogleCloudAiplatformV1GoogleSearchRetrieval": {
@@ -31850,6 +31830,45 @@
         },
         "serverUri": {
           "description": "Required. The Jira server URI.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1LLMBasedMetricSpec": {
+      "description": "Specification for an LLM based metric.",
+      "id": "GoogleCloudAiplatformV1LLMBasedMetricSpec",
+      "properties": {
+        "additionalConfig": {
+          "additionalProperties": {
+            "description": "Properties of the object.",
+            "type": "any"
+          },
+          "description": "Optional. Optional additional configuration for the metric.",
+          "type": "object"
+        },
+        "judgeAutoraterConfig": {
+          "$ref": "GoogleCloudAiplatformV1AutoraterConfig",
+          "description": "Optional. Optional configuration for the judge LLM (Autorater)."
+        },
+        "metricPromptTemplate": {
+          "description": "Required. Template for the prompt sent to the judge model.",
+          "type": "string"
+        },
+        "predefinedRubricGenerationSpec": {
+          "$ref": "GoogleCloudAiplatformV1PredefinedMetricSpec",
+          "description": "Dynamically generate rubrics using a predefined spec."
+        },
+        "rubricGenerationSpec": {
+          "$ref": "GoogleCloudAiplatformV1RubricGenerationSpec",
+          "description": "Dynamically generate rubrics using this specification."
+        },
+        "rubricGroupKey": {
+          "description": "Use a pre-defined group of rubrics associated with the input. Refers to a key in the rubric_groups map of EvaluationInstance.",
+          "type": "string"
+        },
+        "systemInstruction": {
+          "description": "Optional. System instructions for the judge model.",
           "type": "string"
         }
       },
@@ -33283,6 +33302,10 @@
         "exactMatchSpec": {
           "$ref": "GoogleCloudAiplatformV1ExactMatchSpec",
           "description": "Spec for exact match metric."
+        },
+        "llmBasedMetricSpec": {
+          "$ref": "GoogleCloudAiplatformV1LLMBasedMetricSpec",
+          "description": "Spec for an LLM based metric."
         },
         "pairwiseMetricSpec": {
           "$ref": "GoogleCloudAiplatformV1PairwiseMetricSpec",
