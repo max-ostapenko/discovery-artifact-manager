@@ -1173,7 +1173,7 @@
     {
       "description": "The Google Chat API lets you build Chat apps to integrate your services with Google Chat and manage Chat resources such as spaces, members, and messages.",
       "discoveryRestUrl": "https://chat.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://developers.google.com/hangouts/chat",
+      "documentationLink": "https://developers.google.com/workspace/chat",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
@@ -1863,7 +1863,7 @@
     {
       "description": "Sends application trace data to Cloud Trace for viewing. Trace data is collected for all App Engine applications by default. Trace data from other applications can be provided using this API. This library is used to interact with the Cloud Trace API directly. If you are looking to instrument your application for Cloud Trace, we recommend using OpenTelemetry.",
       "discoveryRestUrl": "https://cloudtrace.googleapis.com/$discovery/rest?version=v2beta1",
-      "documentationLink": "https://cloud.google.com/trace",
+      "documentationLink": "https://cloud.google.com/trace/",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
@@ -1878,7 +1878,7 @@
     {
       "description": "Sends application trace data to Cloud Trace for viewing. Trace data is collected for all App Engine applications by default. Trace data from other applications can be provided using this API. This library is used to interact with the Cloud Trace API directly. If you are looking to instrument your application for Cloud Trace, we recommend using OpenTelemetry.",
       "discoveryRestUrl": "https://cloudtrace.googleapis.com/$discovery/rest?version=v1",
-      "documentationLink": "https://cloud.google.com/trace",
+      "documentationLink": "https://cloud.google.com/trace/",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
@@ -1893,7 +1893,7 @@
     {
       "description": "Sends application trace data to Cloud Trace for viewing. Trace data is collected for all App Engine applications by default. Trace data from other applications can be provided using this API. This library is used to interact with the Cloud Trace API directly. If you are looking to instrument your application for Cloud Trace, we recommend using OpenTelemetry.",
       "discoveryRestUrl": "https://cloudtrace.googleapis.com/$discovery/rest?version=v2",
-      "documentationLink": "https://cloud.google.com/trace",
+      "documentationLink": "https://cloud.google.com/trace/",
       "icons": {
         "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
         "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
