@@ -127,11 +127,7 @@ def load_documents(
         # Whitelist of watched APIs
         if whitelist_check and name not in [
             # analytics
-            "analytics",
-            "analyticsadmin",
-            "analyticsdata",
             "analyticshub",
-            "analyticsreporting",
             "aiplatform",
             "biglake",
             "bigquery",
@@ -148,52 +144,17 @@ def load_documents(
             "dataplex",
             "integrations",
             "looker",
-            "marketingplatformadmin",
             "pagespeedonline",
             "searchconsole",
             "tagmanager",
-            "youtubeAnalytics",
-            "youtubereporting",
-        ] + [
-            # web and other
-            "blogger",
-            "calendar",
-            "drive",
-            "fitness",
-            "sheets",
-            "translate",
         ] + [
             # dev
             "acmedns",
-            "authorizedbuyersmarketplace",
             "billingbudgets",
             "cloudbilling",
             "discovery",
-            "domains",
             "libraryagent",
             "script",
-        ] + [
-            # ads and privacy
-            "adexchangebuyer",
-            "admob",
-            "adsense",
-            "content",
-            "dfareporting",
-            "displayvideo",
-            "doubleclickbidmanager",
-            "doubleclicksearch",
-            "indexing",
-            "localservices",
-            "mybusinessaccountmanagement",
-            "mybusinessbusinessinformation",
-            "mybusinesslodging",
-            "mybusinessnotifications",
-            "mybusinessplaceactions",
-            "mybusinessqanda",
-            "mybusinessverifications",
-            "readerrevenuesubscriptionlinking",
-            "realtimebidding",
-            "searchads360",
         ] + [
             # datasets
             "abusiveexperiencereport",
