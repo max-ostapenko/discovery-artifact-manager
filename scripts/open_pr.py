@@ -20,7 +20,6 @@ import time
 import uuid
 from typing import Optional
 
-
 REMOTE_NAME = "yoshi-fork"
 REPO_NAME = "max-ostapenko/discovery-artifact-manager"
 GIT_USER_NAME = "max-ostapenko"
