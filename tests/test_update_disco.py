@@ -20,7 +20,6 @@ from unittest.mock import MagicMock, patch
 
 from scripts import update_disco
 
-
 DISCOVERY_0001_CONTENT = b"""{
   "revision": "0001",
   "data": "foo"
