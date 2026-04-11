@@ -23243,6 +23243,99 @@
                   }
                 },
                 "sandboxEnvironmentSnapshots": {
+                  "methods": {
+                    "delete": {
+                      "description": "Deletes the specific SandboxEnvironmentSnapshot.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentSnapshots/{sandboxEnvironmentSnapshotsId}",
+                      "httpMethod": "DELETE",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironmentSnapshots.delete",
+                      "parameterOrder": [
+                        "name"
+                      ],
+                      "parameters": {
+                        "name": {
+                          "description": "Required. The resource name of the SandboxEnvironmentSnapshot to delete. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentSnapshots/{sandbox_environment_snapshot}`",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+/sandboxEnvironmentSnapshots/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+name}",
+                      "response": {
+                        "$ref": "GoogleLongrunningOperation"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    },
+                    "get": {
+                      "description": "Gets details of the specific SandboxEnvironmentSnapshot.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentSnapshots/{sandboxEnvironmentSnapshotsId}",
+                      "httpMethod": "GET",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironmentSnapshots.get",
+                      "parameterOrder": [
+                        "name"
+                      ],
+                      "parameters": {
+                        "name": {
+                          "description": "Required. The resource name of the sandbox environment snapshot. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentSnapshots/{sandbox_environment_snapshot}`",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+/sandboxEnvironmentSnapshots/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+name}",
+                      "response": {
+                        "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentSnapshot"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    },
+                    "list": {
+                      "description": "Lists SandboxEnvironmentSnapshots in a given reasoning engine.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentSnapshots",
+                      "httpMethod": "GET",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironmentSnapshots.list",
+                      "parameterOrder": [
+                        "parent"
+                      ],
+                      "parameters": {
+                        "filter": {
+                          "description": "Optional. The standard list filter. More detail in [AIP-160](https://google.aip.dev/160).",
+                          "location": "query",
+                          "type": "string"
+                        },
+                        "pageSize": {
+                          "description": "Optional. The maximum number of SandboxEnvironmentSnapshots to return. The service may return fewer than this value. If unspecified, at most 100 SandboxEnvironmentSnapshots will be returned. Values above 100 will be coerced to 100.",
+                          "format": "int32",
+                          "location": "query",
+                          "type": "integer"
+                        },
+                        "pageToken": {
+                          "description": "Optional. The standard list page token, received from a previous `ListSandboxEnvironmentSnapshots` call. Provide this to retrieve the subsequent page.",
+                          "location": "query",
+                          "type": "string"
+                        },
+                        "parent": {
+                          "description": "Required. The resource name of the reasoning engine to list sandbox environments from. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+parent}/sandboxEnvironmentSnapshots",
+                      "response": {
+                        "$ref": "GoogleCloudAiplatformV1ListSandboxEnvironmentSnapshotsResponse"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    }
+                  },
                   "resources": {
                     "operations": {
                       "methods": {
@@ -23357,6 +23450,127 @@
                   }
                 },
                 "sandboxEnvironmentTemplates": {
+                  "methods": {
+                    "create": {
+                      "description": "Creates a SandboxEnvironmentTemplate in a given reasoning engine.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates",
+                      "httpMethod": "POST",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironmentTemplates.create",
+                      "parameterOrder": [
+                        "parent"
+                      ],
+                      "parameters": {
+                        "parent": {
+                          "description": "Required. The resource name of the reasoning engine to create the SandboxEnvironmentTemplate in. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`.",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+parent}/sandboxEnvironmentTemplates",
+                      "request": {
+                        "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplate"
+                      },
+                      "response": {
+                        "$ref": "GoogleLongrunningOperation"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    },
+                    "delete": {
+                      "description": "Deletes the specific SandboxEnvironmentTemplate.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates/{sandboxEnvironmentTemplatesId}",
+                      "httpMethod": "DELETE",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironmentTemplates.delete",
+                      "parameterOrder": [
+                        "name"
+                      ],
+                      "parameters": {
+                        "name": {
+                          "description": "Required. The resource name of the SandboxEnvironmentTemplate to delete. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentTemplates/{sandbox_environment_template}`",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+/sandboxEnvironmentTemplates/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+name}",
+                      "response": {
+                        "$ref": "GoogleLongrunningOperation"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    },
+                    "get": {
+                      "description": "Gets details of the specific SandboxEnvironmentTemplate.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates/{sandboxEnvironmentTemplatesId}",
+                      "httpMethod": "GET",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironmentTemplates.get",
+                      "parameterOrder": [
+                        "name"
+                      ],
+                      "parameters": {
+                        "name": {
+                          "description": "Required. The resource name of the sandbox environment template. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentTemplates/{sandbox_environment_template}`",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+/sandboxEnvironmentTemplates/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+name}",
+                      "response": {
+                        "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplate"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    },
+                    "list": {
+                      "description": "Lists SandboxEnvironmentTemplates in a given reasoning engine.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates",
+                      "httpMethod": "GET",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironmentTemplates.list",
+                      "parameterOrder": [
+                        "parent"
+                      ],
+                      "parameters": {
+                        "filter": {
+                          "description": "Optional. The standard list filter. More detail in [AIP-160](https://google.aip.dev/160).",
+                          "location": "query",
+                          "type": "string"
+                        },
+                        "pageSize": {
+                          "description": "Optional. The maximum number of SandboxEnvironmentTemplates to return. The service may return fewer than this value. If unspecified, at most 100 SandboxEnvironmentTemplates will be returned.",
+                          "format": "int32",
+                          "location": "query",
+                          "type": "integer"
+                        },
+                        "pageToken": {
+                          "description": "Optional. The standard list page token, received from a previous `ListSandboxEnvironmentTemplates` call. Provide this to retrieve the subsequent page.",
+                          "location": "query",
+                          "type": "string"
+                        },
+                        "parent": {
+                          "description": "Required. The resource name of the reasoning engine to list sandbox environment templates from. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+parent}/sandboxEnvironmentTemplates",
+                      "response": {
+                        "$ref": "GoogleCloudAiplatformV1ListSandboxEnvironmentTemplatesResponse"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    }
+                  },
                   "resources": {
                     "operations": {
                       "methods": {
@@ -23614,6 +23828,34 @@
                       "path": "v1/{+parent}/sandboxEnvironments",
                       "response": {
                         "$ref": "GoogleCloudAiplatformV1ListSandboxEnvironmentsResponse"
+                      },
+                      "scopes": [
+                        "https://www.googleapis.com/auth/cloud-platform"
+                      ]
+                    },
+                    "snapshot": {
+                      "description": "Snapshots the specific SandboxEnvironment resource and creates a SandboxEnvironmentSnapshot resource.",
+                      "flatPath": "v1/projects/{projectsId}/locations/{locationsId}/reasoningEngines/{reasoningEnginesId}/sandboxEnvironments/{sandboxEnvironmentsId}:snapshot",
+                      "httpMethod": "POST",
+                      "id": "aiplatform.projects.locations.reasoningEngines.sandboxEnvironments.snapshot",
+                      "parameterOrder": [
+                        "name"
+                      ],
+                      "parameters": {
+                        "name": {
+                          "description": "Required. The resource name of the sandbox environment to snapshot. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironments/{sandbox_environment}`.",
+                          "location": "path",
+                          "pattern": "^projects/[^/]+/locations/[^/]+/reasoningEngines/[^/]+/sandboxEnvironments/[^/]+$",
+                          "required": true,
+                          "type": "string"
+                        }
+                      },
+                      "path": "v1/{+name}:snapshot",
+                      "request": {
+                        "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentSnapshot"
+                      },
+                      "response": {
+                        "$ref": "GoogleLongrunningOperation"
                       },
                       "scopes": [
                         "https://www.googleapis.com/auth/cloud-platform"
@@ -29161,6 +29403,99 @@
           }
         },
         "sandboxEnvironmentSnapshots": {
+          "methods": {
+            "delete": {
+              "description": "Deletes the specific SandboxEnvironmentSnapshot.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentSnapshots/{sandboxEnvironmentSnapshotsId}",
+              "httpMethod": "DELETE",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironmentSnapshots.delete",
+              "parameterOrder": [
+                "name"
+              ],
+              "parameters": {
+                "name": {
+                  "description": "Required. The resource name of the SandboxEnvironmentSnapshot to delete. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentSnapshots/{sandbox_environment_snapshot}`",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+/sandboxEnvironmentSnapshots/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+name}",
+              "response": {
+                "$ref": "GoogleLongrunningOperation"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            },
+            "get": {
+              "description": "Gets details of the specific SandboxEnvironmentSnapshot.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentSnapshots/{sandboxEnvironmentSnapshotsId}",
+              "httpMethod": "GET",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironmentSnapshots.get",
+              "parameterOrder": [
+                "name"
+              ],
+              "parameters": {
+                "name": {
+                  "description": "Required. The resource name of the sandbox environment snapshot. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentSnapshots/{sandbox_environment_snapshot}`",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+/sandboxEnvironmentSnapshots/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+name}",
+              "response": {
+                "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentSnapshot"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            },
+            "list": {
+              "description": "Lists SandboxEnvironmentSnapshots in a given reasoning engine.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentSnapshots",
+              "httpMethod": "GET",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironmentSnapshots.list",
+              "parameterOrder": [
+                "parent"
+              ],
+              "parameters": {
+                "filter": {
+                  "description": "Optional. The standard list filter. More detail in [AIP-160](https://google.aip.dev/160).",
+                  "location": "query",
+                  "type": "string"
+                },
+                "pageSize": {
+                  "description": "Optional. The maximum number of SandboxEnvironmentSnapshots to return. The service may return fewer than this value. If unspecified, at most 100 SandboxEnvironmentSnapshots will be returned. Values above 100 will be coerced to 100.",
+                  "format": "int32",
+                  "location": "query",
+                  "type": "integer"
+                },
+                "pageToken": {
+                  "description": "Optional. The standard list page token, received from a previous `ListSandboxEnvironmentSnapshots` call. Provide this to retrieve the subsequent page.",
+                  "location": "query",
+                  "type": "string"
+                },
+                "parent": {
+                  "description": "Required. The resource name of the reasoning engine to list sandbox environments from. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+parent}/sandboxEnvironmentSnapshots",
+              "response": {
+                "$ref": "GoogleCloudAiplatformV1ListSandboxEnvironmentSnapshotsResponse"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            }
+          },
           "resources": {
             "operations": {
               "methods": {
@@ -29275,6 +29610,127 @@
           }
         },
         "sandboxEnvironmentTemplates": {
+          "methods": {
+            "create": {
+              "description": "Creates a SandboxEnvironmentTemplate in a given reasoning engine.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates",
+              "httpMethod": "POST",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironmentTemplates.create",
+              "parameterOrder": [
+                "parent"
+              ],
+              "parameters": {
+                "parent": {
+                  "description": "Required. The resource name of the reasoning engine to create the SandboxEnvironmentTemplate in. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`.",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+parent}/sandboxEnvironmentTemplates",
+              "request": {
+                "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplate"
+              },
+              "response": {
+                "$ref": "GoogleLongrunningOperation"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            },
+            "delete": {
+              "description": "Deletes the specific SandboxEnvironmentTemplate.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates/{sandboxEnvironmentTemplatesId}",
+              "httpMethod": "DELETE",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironmentTemplates.delete",
+              "parameterOrder": [
+                "name"
+              ],
+              "parameters": {
+                "name": {
+                  "description": "Required. The resource name of the SandboxEnvironmentTemplate to delete. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentTemplates/{sandbox_environment_template}`",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+/sandboxEnvironmentTemplates/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+name}",
+              "response": {
+                "$ref": "GoogleLongrunningOperation"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            },
+            "get": {
+              "description": "Gets details of the specific SandboxEnvironmentTemplate.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates/{sandboxEnvironmentTemplatesId}",
+              "httpMethod": "GET",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironmentTemplates.get",
+              "parameterOrder": [
+                "name"
+              ],
+              "parameters": {
+                "name": {
+                  "description": "Required. The resource name of the sandbox environment template. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentTemplates/{sandbox_environment_template}`",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+/sandboxEnvironmentTemplates/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+name}",
+              "response": {
+                "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplate"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            },
+            "list": {
+              "description": "Lists SandboxEnvironmentTemplates in a given reasoning engine.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironmentTemplates",
+              "httpMethod": "GET",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironmentTemplates.list",
+              "parameterOrder": [
+                "parent"
+              ],
+              "parameters": {
+                "filter": {
+                  "description": "Optional. The standard list filter. More detail in [AIP-160](https://google.aip.dev/160).",
+                  "location": "query",
+                  "type": "string"
+                },
+                "pageSize": {
+                  "description": "Optional. The maximum number of SandboxEnvironmentTemplates to return. The service may return fewer than this value. If unspecified, at most 100 SandboxEnvironmentTemplates will be returned.",
+                  "format": "int32",
+                  "location": "query",
+                  "type": "integer"
+                },
+                "pageToken": {
+                  "description": "Optional. The standard list page token, received from a previous `ListSandboxEnvironmentTemplates` call. Provide this to retrieve the subsequent page.",
+                  "location": "query",
+                  "type": "string"
+                },
+                "parent": {
+                  "description": "Required. The resource name of the reasoning engine to list sandbox environment templates from. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}`",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+parent}/sandboxEnvironmentTemplates",
+              "response": {
+                "$ref": "GoogleCloudAiplatformV1ListSandboxEnvironmentTemplatesResponse"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            }
+          },
           "resources": {
             "operations": {
               "methods": {
@@ -29532,6 +29988,34 @@
               "path": "v1/{+parent}/sandboxEnvironments",
               "response": {
                 "$ref": "GoogleCloudAiplatformV1ListSandboxEnvironmentsResponse"
+              },
+              "scopes": [
+                "https://www.googleapis.com/auth/cloud-platform"
+              ]
+            },
+            "snapshot": {
+              "description": "Snapshots the specific SandboxEnvironment resource and creates a SandboxEnvironmentSnapshot resource.",
+              "flatPath": "v1/reasoningEngines/{reasoningEnginesId}/sandboxEnvironments/{sandboxEnvironmentsId}:snapshot",
+              "httpMethod": "POST",
+              "id": "aiplatform.reasoningEngines.sandboxEnvironments.snapshot",
+              "parameterOrder": [
+                "name"
+              ],
+              "parameters": {
+                "name": {
+                  "description": "Required. The resource name of the sandbox environment to snapshot. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironments/{sandbox_environment}`.",
+                  "location": "path",
+                  "pattern": "^reasoningEngines/[^/]+/sandboxEnvironments/[^/]+$",
+                  "required": true,
+                  "type": "string"
+                }
+              },
+              "path": "v1/{+name}:snapshot",
+              "request": {
+                "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentSnapshot"
+              },
+              "response": {
+                "$ref": "GoogleLongrunningOperation"
               },
               "scopes": [
                 "https://www.googleapis.com/auth/cloud-platform"
@@ -31441,7 +31925,7 @@
       }
     }
   },
-  "revision": "20260408",
+  "revision": "20260410",
   "rootUrl": "https://aiplatform.googleapis.com/",
   "schemas": {
     "CloudAiLargeModelsVisionGenerateVideoExperiments": {
@@ -45255,6 +45739,42 @@
       },
       "type": "object"
     },
+    "GoogleCloudAiplatformV1ListSandboxEnvironmentSnapshotsResponse": {
+      "description": "Response message for SandboxEnvironmentService.ListSandboxEnvironmentSnapshots.",
+      "id": "GoogleCloudAiplatformV1ListSandboxEnvironmentSnapshotsResponse",
+      "properties": {
+        "nextPageToken": {
+          "description": "A token, which can be sent as ListSandboxEnvironmentSnapshotsRequest.page_token to retrieve the next page. Absence of this field indicates there are no subsequent pages.",
+          "type": "string"
+        },
+        "sandboxEnvironmentSnapshots": {
+          "description": "The SandboxEnvironmentSnapshots matching the request.",
+          "items": {
+            "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentSnapshot"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1ListSandboxEnvironmentTemplatesResponse": {
+      "description": "Response message for SandboxEnvironmentService.ListSandboxEnvironmentTemplates.",
+      "id": "GoogleCloudAiplatformV1ListSandboxEnvironmentTemplatesResponse",
+      "properties": {
+        "nextPageToken": {
+          "description": "A token, which can be sent as ListSandboxEnvironmentTemplatesRequest.page_token to retrieve the next page. Absence of this field indicates there are no subsequent pages.",
+          "type": "string"
+        },
+        "sandboxEnvironmentTemplates": {
+          "description": "The SandboxEnvironmentTemplates matching the request.",
+          "items": {
+            "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplate"
+          },
+          "type": "array"
+        }
+      },
+      "type": "object"
+    },
     "GoogleCloudAiplatformV1ListSandboxEnvironmentsResponse": {
       "description": "Response message for SandboxEnvironmentService.ListSandboxEnvironments.",
       "id": "GoogleCloudAiplatformV1ListSandboxEnvironmentsResponse",
@@ -54730,6 +55250,76 @@
       },
       "type": "object"
     },
+    "GoogleCloudAiplatformV1SandboxEnvironmentSnapshot": {
+      "description": "SandboxEnvironmentSnapshot is a snapshot of the SandboxEnvironment.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentSnapshot",
+      "properties": {
+        "createTime": {
+          "description": "Output only. The timestamp when this SandboxEnvironmentSnapshot was created.",
+          "format": "google-datetime",
+          "readOnly": true,
+          "type": "string"
+        },
+        "displayName": {
+          "description": "Required. The display name of the SandboxEnvironmentSnapshot.",
+          "type": "string"
+        },
+        "expireTime": {
+          "description": "Optional. Timestamp in UTC of when this SandboxEnvironmentSnapshot is considered expired. This is *always* provided on output, regardless of what `expiration` was sent on input.",
+          "format": "google-datetime",
+          "type": "string"
+        },
+        "name": {
+          "description": "Identifier. The resource name of the SandboxEnvironmentSnapshot. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentSnapshots/{sandbox_environment_snapshot}`",
+          "type": "string"
+        },
+        "owner": {
+          "description": "Optional. Owner information for this sandbox snapshot. Different owners will have isolations on snapshot storage and identity. If not set, snapshot will be created as the default owner.",
+          "type": "string"
+        },
+        "parentSnapshot": {
+          "description": "Output only. The resource name of the parent SandboxEnvironmentSnapshot. Empty if this is a root Snapshot (the first snapshot from a newly created sandbox). Can be used to reconstruct the whole ancestry tree of snapshots.",
+          "readOnly": true,
+          "type": "string"
+        },
+        "postSnapshotAction": {
+          "description": "Optional. Input only. Action to take on the source SandboxEnvironment after the snapshot is taken. This field is only used in CreateSandboxEnvironmentSnapshotRequest and it is not stored in the resource.",
+          "enum": [
+            "POST_SNAPSHOT_ACTION_UNSPECIFIED",
+            "RUNNING",
+            "PAUSE"
+          ],
+          "enumDescriptions": [
+            "The default value. This value is unused.",
+            "Sandbox environment will continue to run after snapshot is taken.",
+            "Sandbox environment will be paused after snapshot is taken."
+          ],
+          "type": "string"
+        },
+        "sizeBytes": {
+          "description": "Optional. Output only. Size of the snapshot data in bytes.",
+          "format": "int64",
+          "readOnly": true,
+          "type": "string"
+        },
+        "sourceSandboxEnvironment": {
+          "description": "Required. The resource name of the source SandboxEnvironment this snapshot was taken from.",
+          "type": "string"
+        },
+        "ttl": {
+          "description": "Optional. Input only. The TTL for the sandbox environment snapshot. The expiration time is computed: now + TTL.",
+          "format": "google-duration",
+          "type": "string"
+        },
+        "updateTime": {
+          "description": "Output only. The timestamp when this SandboxEnvironment was most recently updated.",
+          "format": "google-datetime",
+          "readOnly": true,
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
     "GoogleCloudAiplatformV1SandboxEnvironmentSpec": {
       "description": "The specification of a SandboxEnvironment.",
       "id": "GoogleCloudAiplatformV1SandboxEnvironmentSpec",
@@ -54770,6 +55360,177 @@
             "The default value: milligcu 4000, memory 4 Gib"
           ],
           "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1SandboxEnvironmentTemplate": {
+      "description": "The specification of a SandboxEnvironmentTemplate. A SandboxEnvironmentTemplate defines a template for creating SandboxEnvironments.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentTemplate",
+      "properties": {
+        "createTime": {
+          "description": "Output only. The timestamp when this SandboxEnvironmentTemplate was created.",
+          "format": "google-datetime",
+          "readOnly": true,
+          "type": "string"
+        },
+        "customContainerEnvironment": {
+          "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateCustomContainerEnvironment",
+          "description": "The sandbox environment for custom container workloads."
+        },
+        "defaultContainerEnvironment": {
+          "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateDefaultContainerEnvironment",
+          "description": "The sandbox environment for default container workloads."
+        },
+        "displayName": {
+          "description": "Required. The display name of the SandboxEnvironmentTemplate.",
+          "type": "string"
+        },
+        "name": {
+          "description": "Identifier. The resource name of the SandboxEnvironmentTemplate. Format: `projects/{project}/locations/{location}/reasoningEngines/{reasoning_engine}/sandboxEnvironmentTemplates/{sandbox_environment_template}`",
+          "type": "string"
+        },
+        "state": {
+          "description": "Output only. The state of the sandbox environment template.",
+          "enum": [
+            "UNSPECIFIED",
+            "PROVISIONING",
+            "ACTIVE",
+            "DEPROVISIONING",
+            "DELETED",
+            "FAILED"
+          ],
+          "enumDescriptions": [
+            "The default value. This value is unused.",
+            "Runtime resources are being allocated for the sandbox environment.",
+            "Sandbox runtime is ready for serving.",
+            "Sandbox runtime is halted, performing tear down tasks.",
+            "Sandbox has terminated with underlying runtime failure.",
+            "Sandbox has failed to provision."
+          ],
+          "readOnly": true,
+          "type": "string"
+        },
+        "updateTime": {
+          "description": "Output only. The timestamp when this SandboxEnvironmentTemplate was most recently updated.",
+          "format": "google-datetime",
+          "readOnly": true,
+          "type": "string"
+        },
+        "warmPoolConfig": {
+          "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateWarmPoolConfig",
+          "description": "Optional. The configuration for the warm pool of this template."
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1SandboxEnvironmentTemplateCustomContainerEnvironment": {
+      "description": "The customized sandbox runtime environment for BYOC.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateCustomContainerEnvironment",
+      "properties": {
+        "customContainerSpec": {
+          "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateCustomContainerSpec",
+          "description": "The specification of the custom container environment."
+        },
+        "ports": {
+          "description": "Ports to expose from the container.",
+          "items": {
+            "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateNetworkPort"
+          },
+          "type": "array"
+        },
+        "resources": {
+          "$ref": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateResourceRequirements",
+          "description": "Resource requests and limits for the container."
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1SandboxEnvironmentTemplateCustomContainerSpec": {
+      "description": "Specification for deploying from a custom container image.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateCustomContainerSpec",
+      "properties": {
+        "imageUri": {
+          "description": "Required. The Artifact Registry Docker image URI (e.g., us-central1-docker.pkg.dev/my-project/my-repo/my-image:tag) of the container image that is to be run on each worker replica.",
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1SandboxEnvironmentTemplateDefaultContainerEnvironment": {
+      "description": "The default sandbox runtime environment for default container workloads.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateDefaultContainerEnvironment",
+      "properties": {
+        "defaultContainerCategory": {
+          "description": "Required. The category of the default container image.",
+          "enum": [
+            "DEFAULT_CONTAINER_CATEGORY_UNSPECIFIED",
+            "DEFAULT_CONTAINER_CATEGORY_COMPUTER_USE"
+          ],
+          "enumDescriptions": [
+            "The default value. This value is unused.",
+            "The default container image for Computer Use."
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1SandboxEnvironmentTemplateNetworkPort": {
+      "description": "Represents a network port in a container.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateNetworkPort",
+      "properties": {
+        "port": {
+          "description": "Optional. Port number to expose. This must be a valid port number, between 1 and 65535.",
+          "format": "int32",
+          "type": "integer"
+        },
+        "protocol": {
+          "description": "Optional. Protocol for port. Defaults to TCP if not specified.",
+          "enum": [
+            "PROTOCOL_UNSPECIFIED",
+            "TCP",
+            "UDP"
+          ],
+          "enumDescriptions": [
+            "Unspecified protocol. Defaults to TCP.",
+            "TCP protocol.",
+            "UDP protocol."
+          ],
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1SandboxEnvironmentTemplateResourceRequirements": {
+      "description": "Message to define resource requests and limits (mirroring Kubernetes) for each sandbox instance created from this template.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateResourceRequirements",
+      "properties": {
+        "limits": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Optional. The maximum amounts of compute resources allowed. Keys are resource names (e.g., \"cpu\", \"memory\"). Values are quantities (e.g., \"500m\", \"1Gi\").",
+          "type": "object"
+        },
+        "requests": {
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Optional. The requested amounts of compute resources. Keys are resource names (e.g., \"cpu\", \"memory\"). Values are quantities (e.g., \"250m\", \"512Mi\").",
+          "type": "object"
+        }
+      },
+      "type": "object"
+    },
+    "GoogleCloudAiplatformV1SandboxEnvironmentTemplateWarmPoolConfig": {
+      "description": "Configuration for a warm pool of sandbox instances.",
+      "id": "GoogleCloudAiplatformV1SandboxEnvironmentTemplateWarmPoolConfig",
+      "properties": {
+        "targetInstanceCount": {
+          "description": "Optional. The target number of pre-warmed instances to maintain.",
+          "format": "int32",
+          "type": "integer"
         }
       },
       "type": "object"
