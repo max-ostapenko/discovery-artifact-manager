@@ -27,8 +27,10 @@ GIT_USER_EMAIL = "1611259+max-ostapenko@users.noreply.github.com"
 COMMIT_MESSAGE = "chore: Automated update of discovery documents"
 PULL_REQUEST_BODY = "Automatically created by the update_disco script."
 APPROVAL_MESSAGE = "Rubber-stamped automated update of discovery documents!"
-MAIN_TOKEN_ENV = "GITHUB_TOKEN"
+MAIN_TOKEN_ENV = "GH_TOKEN"
+LEGACY_MAIN_TOKEN_ENV = "GITHUB_TOKEN"
 APPROVAL_TOKEN_ENV = "APPROVAL_GITHUB_TOKEN"
+CHANGE_SCOPE_PATHS = ["discoveries"]
 
 
 def main() -> None:
@@ -41,7 +43,7 @@ def main() -> None:
     This script is configured to be used for discovery document updates, and
     should be run immediately after update_disco.py.
 
-    The GITHUB_TOKEN environment variable, if set, provides a token that will
+    The GH_TOKEN environment variable, if set, provides a token that will
     be used to push the changes via an https remote, and to open the pull
     request using the gh command line. When run from a GitHub Action, this
     should be set to YOSHI_CODE_BOT's token. If this is not set, the ambient
@@ -73,7 +75,9 @@ def has_changes() -> bool:
         bool -- True if there are local changes, or False otherwise
     """
     result: subprocess.CompletedProcess = subprocess.run(
-        ["git", "status", "-s"], capture_output=True, check=False
+        ["git", "status", "-s", "--", *CHANGE_SCOPE_PATHS],
+        capture_output=True,
+        check=False,
     )
     return str(result.stdout, "utf-8").strip() != ""
 
@@ -85,7 +89,9 @@ def setup() -> Optional[str]:
         Optional[str] -- The github token, or None if not provided
     """
     ensure_git_identity()
-    github_token: Optional[str] = os.getenv(MAIN_TOKEN_ENV)
+    github_token: Optional[str] = os.getenv(MAIN_TOKEN_ENV) or os.getenv(
+        LEGACY_MAIN_TOKEN_ENV
+    )
     username: str = GIT_USER_NAME  # ensure_github_username()
     fork_repo_name: str = REPO_NAME.replace("googleapis/", f"{username}/")
     # ensure_github_fork(fork_repo_name)
@@ -207,7 +213,7 @@ def commit_changes() -> str:
     branch: str = f"autopr/{uuid.uuid4().hex}"
     logging.info(f"Committing changes to branch {branch}.")
     subprocess.run(["git", "switch", "-c", branch], check=True)
-    subprocess.run(["git", "add", "."], check=True)
+    subprocess.run(["git", "add", "--", *CHANGE_SCOPE_PATHS], check=True)
     subprocess.run(["git", "commit", "-m", COMMIT_MESSAGE], check=True)
     return branch
 

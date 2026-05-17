@@ -10,10 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write      # push feed commits
+      pull-requests: write # create/update PRs via gh
+      issues: write        # add automerge label
       id-token: write      # Workload Identity Federation
     env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      APPROVAL_GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout repo
         uses: actions/checkout@v6
