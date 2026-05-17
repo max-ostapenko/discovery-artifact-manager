@@ -9,3 +9,4 @@ test
 .mypy_cache
 tests/tmp
 .venv
+gha-creds-*.json
