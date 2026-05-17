@@ -29,6 +29,7 @@ PULL_REQUEST_BODY = "Automatically created by the update_disco script."
 APPROVAL_MESSAGE = "Rubber-stamped automated update of discovery documents!"
 MAIN_TOKEN_ENV = "GITHUB_TOKEN"
 APPROVAL_TOKEN_ENV = "APPROVAL_GITHUB_TOKEN"
+CHANGE_SCOPE_PATHS = ["discoveries"]
 
 
 def main() -> None:
@@ -73,7 +74,9 @@ def has_changes() -> bool:
         bool -- True if there are local changes, or False otherwise
     """
     result: subprocess.CompletedProcess = subprocess.run(
-        ["git", "status", "-s"], capture_output=True, check=False
+        ["git", "status", "-s", "--", *CHANGE_SCOPE_PATHS],
+        capture_output=True,
+        check=False,
     )
     return str(result.stdout, "utf-8").strip() != ""
 
@@ -207,7 +210,7 @@ def commit_changes() -> str:
     branch: str = f"autopr/{uuid.uuid4().hex}"
     logging.info(f"Committing changes to branch {branch}.")
     subprocess.run(["git", "switch", "-c", branch], check=True)
-    subprocess.run(["git", "add", "."], check=True)
+    subprocess.run(["git", "add", "--", *CHANGE_SCOPE_PATHS], check=True)
     subprocess.run(["git", "commit", "-m", COMMIT_MESSAGE], check=True)
     return branch
 
