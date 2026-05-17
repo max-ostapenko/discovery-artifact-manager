@@ -1,0 +1,33 @@
+[
+  {
+    "slug": "2026-05-17-script-v1",
+    "date": "2026-05-17",
+    "api": "script.v1",
+    "service_name": "Apps Script",
+    "title": "Massive removal of Apps Script API v1 discovery metadata",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "Apps Script",
+      "Deprecation",
+      "Breaking Change"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-05-17T22:39:49.353307+00:00"
+  },
+  {
+    "slug": "2026-05-17-libraryagent-v1",
+    "date": "2026-05-17",
+    "api": "libraryagent.v1",
+    "service_name": "Library Agent",
+    "title": "Library Agent API discovery document effectively removed",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "decommission",
+      "breaking-change"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-05-17T22:39:49.352869+00:00"
+  }
+]
