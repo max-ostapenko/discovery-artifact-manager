@@ -126,7 +126,7 @@ def load_documents(
 
         # Whitelist of watched APIs
         if whitelist_check and name not in [
-            # analytics
+            # data platform
             "analyticshub",
             "aiplatform",
             "biglake",
@@ -135,7 +135,6 @@ def load_documents(
             "bigquerydatapolicy",
             "bigquerydatatransfer",
             "bigqueryreservation",
-            "chromeuxreport",
             "connectors",
             "datacatalog",
             "dataform",
@@ -144,17 +143,14 @@ def load_documents(
             "dataplex",
             "integrations",
             "looker",
-            "pagespeedonline",
-            "searchconsole",
-            "tagmanager",
         ] + [
-            # dev
-            "acmedns",
+            # finops
+            "appoptimize",
             "billingbudgets",
             "cloudbilling",
+        ] + [
+            # devops
             "discovery",
-            "libraryagent",
-            "script",
         ] + [
             # datasets
             "abusiveexperiencereport",
@@ -163,6 +159,12 @@ def load_documents(
             "safebrowsing",
             "versionhistory",
             "webrisk",
+        ] + [
+            # analytics
+            "chromeuxreport",
+            "pagespeedonline",
+            "searchconsole",
+            "tagmanager",
         ]:
             continue
 
