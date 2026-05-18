@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-05-18-script-v1_v2",
+    "date": "2026-05-18",
+    "api": "script.v1",
+    "service_name": "Apps Script",
+    "title": "Apps Script v1 Discovery Document Gutted",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "Deprecation",
+      "Breaking Change",
+      "Apps Script"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-05-18T08:45:21.561185+00:00"
+  },
+  {
     "slug": "2026-05-18-script-v1",
     "date": "2026-05-18",
     "api": "script.v1",
@@ -14,6 +30,21 @@
     ],
     "interesting_score": 9,
     "generated_at": "2026-05-18T03:51:23.137357+00:00"
+  },
+  {
+    "slug": "2026-05-18-libraryagent-v1_v2",
+    "date": "2026-05-18",
+    "api": "libraryagent.v1",
+    "service_name": "Library Agent API",
+    "title": "Library Agent v1 discovery surface effectively removed",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "decommissioned",
+      "breaking-change"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-05-18T08:45:21.560777+00:00"
   },
   {
     "slug": "2026-05-18-libraryagent-v1",
