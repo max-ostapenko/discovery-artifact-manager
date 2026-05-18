@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "2026-05-18-script-v1",
+    "date": "2026-05-18",
+    "api": "script.v1",
+    "service_name": "Apps Script",
+    "title": "Apps Script API v1 Discovery Document Gutted",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "Deprecation",
+      "Apps Script",
+      "OAuth2"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-05-18T03:51:23.137357+00:00"
+  },
+  {
+    "slug": "2026-05-18-libraryagent-v1",
+    "date": "2026-05-18",
+    "api": "libraryagent.v1",
+    "service_name": "Library Agent",
+    "title": "Library Agent API Discovery Document Removed",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "deprecation",
+      "removal",
+      "example-api"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-05-18T03:51:23.136876+00:00"
+  }
+]
