@@ -1,5 +1,37 @@
 [
   {
+    "slug": "2026-05-20-dataform-v1beta1",
+    "date": "2026-05-20",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds asynchronous repository deletion",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "bigquery",
+      "git-integration"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-05-20T12:26:27.266962+00:00"
+  },
+  {
+    "slug": "2026-05-20-dataform-v1",
+    "date": "2026-05-20",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform Git settings and directory path improvements",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Dataform",
+      "Git",
+      "API Update"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-20T12:26:27.266439+00:00"
+  },
+  {
     "slug": "2026-05-18-script-v1_v2",
     "date": "2026-05-18",
     "api": "script.v1",
