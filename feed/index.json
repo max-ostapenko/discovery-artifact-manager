@@ -4,16 +4,16 @@
     "date": "2026-05-22",
     "api": "dataplex.v1",
     "service_name": "Dataplex",
-    "title": "Dataplex adds Change Request workflow and removes GenAI field",
+    "title": "Dataplex adds Change Requests for governed resource updates",
     "impact": "medium",
     "breaking": true,
     "tags": [
       "governance",
-      "data-discovery",
-      "breaking-change"
+      "dataplex",
+      "iam"
     ],
     "interesting_score": 7,
-    "generated_at": "2026-05-22T03:50:27.263329+00:00"
+    "generated_at": "2026-05-22T08:22:37.086273+00:00"
   },
   {
     "slug": "2026-05-21-datalineage-v1",
