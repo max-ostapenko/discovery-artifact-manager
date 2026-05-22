@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-05-22-dataplex-v1",
+    "date": "2026-05-22",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex adds Change Request workflow and removes GenAI field",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "governance",
+      "data-discovery",
+      "breaking-change"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-05-22T03:50:27.263329+00:00"
+  },
+  {
     "slug": "2026-05-20-dataform-v1beta1",
     "date": "2026-05-20",
     "api": "dataform.v1beta1",
