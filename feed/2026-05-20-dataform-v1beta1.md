@@ -2,14 +2,14 @@
 date: 2026-05-20
 api: dataform.v1beta1
 service: Dataform
-title: "Dataform adds asynchronous repository deletion"
+title: "Asynchronous repository deletion and Git branch improvements"
 impact: medium
 breaking: false
-tags: ["dataform", "bigquery", "git-integration"]
+tags: ["dataform", "git", "ops"]
 interesting_score: 6
 ---
 
-# Dataform adds asynchronous repository deletion
+# Asynchronous repository deletion and Git branch improvements
 
 **Date:** 2026-05-20  
 **API:** `dataform.v1beta1`  
@@ -17,10 +17,10 @@ interesting_score: 6
 
 ## Summary
 
-Dataform now supports long-running repository deletions and relaxes requirements for Git default branches.
+Dataform introduces long-running repository deletion and clarifies Git default branch behavior.
 
 ## Details
 
-A new `deleteLongRunning` method has been added to the repositories resource, allowing for asynchronous cleanup. This includes a `DeleteRepositoryLongRunningRequest` with a `force` flag to purge child resources like compilation results and workflow invocations. On the Git integration side, `GitRemoteSettings.defaultBranch` is now optional rather than required, and a new output-only `effectiveDefaultBranch` field helps developers identify the resolved branch name (defaulting to 'main').
+A new method `repositories.deleteLongRunning` has been added, allowing developers to delete repositories asynchronously. This includes a `force` parameter in the `DeleteRepositoryLongRunningRequest` to automatically clean up child resources like compilation results and workflow invocations, though it notably fails if workspaces or configs still exist. Additionally, `GitRemoteSettings.defaultBranch` is now optional (defaulting to 'main'), and a new output-only `effectiveDefaultBranch` field helps identify the active branch being used by the service.
 
-**Tags:** `dataform` `bigquery` `git-integration`
+**Tags:** `dataform` `git` `ops`
