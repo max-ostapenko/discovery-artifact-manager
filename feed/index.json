@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-05-22-dataplex-v1",
+    "date": "2026-05-22",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex adds Change Requests for governed resource updates",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "governance",
+      "dataplex",
+      "iam"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-05-22T08:22:37.086273+00:00"
+  },
+  {
     "slug": "2026-05-20-dataform-v1beta1",
     "date": "2026-05-20",
     "api": "dataform.v1beta1",
