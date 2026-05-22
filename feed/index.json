@@ -5,6 +5,7 @@
     "api": "datalineage.v1",
     "service_name": "Data Lineage",
     "title": "Granular OAuth Scopes for Data Lineage Streaming",
+    "title": "Granular OAuth Scopes for Data Lineage Streaming",
     "impact": "low",
     "breaking": false,
     "tags": [
@@ -13,6 +14,7 @@
       "datalineage"
     ],
     "interesting_score": 4,
+    "generated_at": "2026-05-21T17:30:48.286091+00:00"
     "generated_at": "2026-05-21T17:30:48.286091+00:00"
   },
   {
