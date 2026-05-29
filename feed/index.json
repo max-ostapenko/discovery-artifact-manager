@@ -1,5 +1,103 @@
 [
   {
+    "slug": "2026-05-29-tagmanager-v2",
+    "date": "2026-05-29",
+    "api": "tagmanager.v2",
+    "service_name": "Google Tag Manager",
+    "title": "Automatic Decimal Detection for Variable Conversion",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "tag-manager",
+      "variables",
+      "data-transformation"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-29T18:13:18.798269+00:00"
+  },
+  {
+    "slug": "2026-05-29-datalineage-v1",
+    "date": "2026-05-29",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage API",
+    "title": "Clarification for SearchLineageStreamingRequest locations",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "documentation",
+      "data-lineage"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-05-29T18:13:18.797730+00:00"
+  },
+  {
+    "slug": "2026-05-29-bigqueryconnection-v1",
+    "date": "2026-05-29",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection API",
+    "title": "Custom parameters for BigQuery Connectors",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "connectors",
+      "configuration"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-05-29T18:13:18.797184+00:00"
+  },
+  {
+    "slug": "2026-05-29-bigquery-v2",
+    "date": "2026-05-29",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Iceberg support for timestamp autodetection precision",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Iceberg",
+      "UDF",
+      "Data Loading"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-29T18:13:18.796673+00:00"
+  },
+  {
+    "slug": "2026-05-29-aiplatform-v1beta1",
+    "date": "2026-05-29",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Semantic Governance and breaks Skill IDs",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "ai",
+      "breaking-change",
+      "governance",
+      "agents"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-05-29T18:13:18.796122+00:00"
+  },
+  {
+    "slug": "2026-05-29-aiplatform-v1",
+    "date": "2026-05-29",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Exa.ai Search grounding and Hyperdisk support",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "Vertex AI",
+      "Generative AI",
+      "RAG",
+      "Infrastructure"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-05-29T18:13:18.795514+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
