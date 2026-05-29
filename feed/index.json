@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-05-29-tagmanager-v2",
+    "date": "2026-05-29",
+    "api": "tagmanager.v2",
+    "service_name": "Google Tag Manager",
+    "title": "Automatic decimal detection for variable number conversion",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Tag Manager",
+      "Variables",
+      "Data Formatting"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-29T08:42:16.267245+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
