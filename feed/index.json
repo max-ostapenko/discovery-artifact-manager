@@ -1,5 +1,69 @@
 [
   {
+    "slug": "2026-05-29-tagmanager-v2",
+    "date": "2026-05-29",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "Automatic Decimal Detection for Variable Conversions",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Tag Manager",
+      "Variables",
+      "Data Formatting"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-29T12:47:54.540880+00:00"
+  },
+  {
+    "slug": "2026-05-29-datalineage-v1",
+    "date": "2026-05-29",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage API",
+    "title": "Clarified location requirements for streaming searches",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "data-lineage",
+      "documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-05-29T12:47:54.536824+00:00"
+  },
+  {
+    "slug": "2026-05-29-bigqueryconnection-v1",
+    "date": "2026-05-29",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection API",
+    "title": "Flexible custom parameters for BigQuery Connectors",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "connectors",
+      "configuration"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-05-29T12:47:54.536426+00:00"
+  },
+  {
+    "slug": "2026-05-29-bigquery-v2",
+    "date": "2026-05-29",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Iceberg support for timestamp precision autodetection",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Iceberg",
+      "UDF",
+      "Data Loading"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-29T12:47:54.535960+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
