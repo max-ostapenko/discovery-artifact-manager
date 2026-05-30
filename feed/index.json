@@ -1,5 +1,87 @@
 [
   {
+    "slug": "2026-05-30-tagmanager-v2",
+    "date": "2026-05-30",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "Automatic decimal detection for variable conversion",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "tag-manager",
+      "variables",
+      "data-processing"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-30T07:42:24.294787+00:00"
+  },
+  {
+    "slug": "2026-05-30-datalineage-v1",
+    "date": "2026-05-30",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarification for SearchLineageStreamingRequest locations",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "documentation",
+      "data-lineage"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-05-30T07:42:24.294257+00:00"
+  },
+  {
+    "slug": "2026-05-30-connectors-v2",
+    "date": "2026-05-30",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Selective tool fetching added to Connectors API",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "connectors",
+      "api-optimization",
+      "filtering"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-30T07:42:24.293716+00:00"
+  },
+  {
+    "slug": "2026-05-30-aiplatform-v1beta1",
+    "date": "2026-05-30",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Semantic Governance arrives as Skill IDs become required",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "governance",
+      "agents",
+      "breaking-change",
+      "storage"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-05-30T07:42:24.293197+00:00"
+  },
+  {
+    "slug": "2026-05-30-aiplatform-v1",
+    "date": "2026-05-30",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Exa.ai grounding and Hyperdisk support",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Grounding",
+      "Storage",
+      "Generative AI"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-05-30T07:42:24.292571+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
