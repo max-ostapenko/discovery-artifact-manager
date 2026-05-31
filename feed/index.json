@@ -1,5 +1,69 @@
 [
   {
+    "slug": "2026-05-31-tagmanager-v2",
+    "date": "2026-05-31",
+    "api": "tagmanager.v2",
+    "service_name": "Google Tag Manager",
+    "title": "Automatic number conversion for GTM variables",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Tag Manager",
+      "Variables",
+      "Data Formatting"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-31T11:45:46.836416+00:00"
+  },
+  {
+    "slug": "2026-05-31-datalineage-v1",
+    "date": "2026-05-31",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for lineage search",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "data-lineage",
+      "documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-05-31T11:45:46.835917+00:00"
+  },
+  {
+    "slug": "2026-05-31-connectors-v2",
+    "date": "2026-05-31",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Selective tool fetching added to Connectors API",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "connectors",
+      "filtering",
+      "performance"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-31T11:45:46.835393+00:00"
+  },
+  {
+    "slug": "2026-05-31-aiplatform-v1beta1",
+    "date": "2026-05-31",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Semantic Governance arrives as Skill IDs become required",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "governance",
+      "genai",
+      "breaking-change",
+      "infrastructure"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-05-31T11:45:46.834811+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",

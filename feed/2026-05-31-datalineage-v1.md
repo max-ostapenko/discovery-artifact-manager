@@ -1,0 +1,26 @@
+---
+date: 2026-05-31
+api: datalineage.v1
+service: Data Lineage
+title: "Clarified location requirements for lineage search"
+impact: low
+breaking: false
+tags: ["data-lineage", "documentation"]
+interesting_score: 2
+---
+
+# Clarified location requirements for lineage search
+
+**Date:** 2026-05-31  
+**API:** `datalineage.v1`  
+**Impact:** Low  
+
+## Summary
+
+The Data Lineage API now explicitly requires that the locations list in streaming search requests includes the location specified in the parent field.
+
+## Details
+
+A documentation update to GoogleCloudDatacatalogLineageV1SearchLineageStreamingRequest clarifies the relationship between the parent field and the locations array. Developers using SearchLineageStreaming must ensure the parent's location is explicitly included in the search locations list to ensure request validity.
+
+**Tags:** `data-lineage` `documentation`
