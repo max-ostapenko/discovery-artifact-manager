@@ -1,0 +1,26 @@
+---
+date: 2026-06-02
+api: tagmanager.v2
+service: Tag Manager
+title: "Automatic decimal detection for variable conversion"
+impact: low
+breaking: false
+tags: ["Tag Manager", "Variables", "Data Formatting"]
+interesting_score: 4
+---
+
+# Automatic decimal detection for variable conversion
+
+**Date:** 2026-06-02  
+**API:** `tagmanager.v2`  
+**Impact:** Low  
+
+## Summary
+
+Google Tag Manager now supports automatic decimal separator detection when converting variable values to numbers.
+
+## Details
+
+The `VariableFormatValue` schema has been updated to include a new `automatic` option within the `convertToNumber` enum. This allows the API to handle numeric strings from different locales (e.g., using commas vs. dots as decimal separators) without requiring manual configuration of the separator type.
+
+**Tags:** `Tag Manager` `Variables` `Data Formatting`
