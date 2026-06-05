@@ -1,5 +1,171 @@
 [
   {
+    "slug": "2026-06-05-tagmanager-v2",
+    "date": "2026-06-05",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "Automatic decimal detection for variable conversion",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "tag-manager",
+      "variables",
+      "data-types"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-05T03:57:33.180630+00:00"
+  },
+  {
+    "slug": "2026-06-05-datalineage-v1",
+    "date": "2026-06-05",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for streaming search",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "data-lineage",
+      "documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-05T03:57:33.178881+00:00"
+  },
+  {
+    "slug": "2026-06-05-dataform-v1beta1",
+    "date": "2026-06-05",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "auth",
+      "devops"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-05T03:57:33.178302+00:00"
+  },
+  {
+    "slug": "2026-06-05-dataform-v1",
+    "date": "2026-06-05",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "security",
+      "devops"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-05T03:57:33.177752+00:00"
+  },
+  {
+    "slug": "2026-06-05-connectors-v2",
+    "date": "2026-06-05",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Selective tool fetching added to Connectors API",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Connectors",
+      "API Improvement",
+      "Filtering"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-05T03:57:33.177136+00:00"
+  },
+  {
+    "slug": "2026-06-05-bigquerydatatransfer-v1",
+    "date": "2026-06-05",
+    "api": "bigquerydatatransfer.v1",
+    "service_name": "BigQuery Data Transfer Service",
+    "title": "BigQuery Data Transfer adds Dataplex Metadata Sync",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "dataplex",
+      "data-governance",
+      "metadata"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-05T03:57:33.176530+00:00"
+  },
+  {
+    "slug": "2026-06-05-bigqueryconnection-v1",
+    "date": "2026-06-05",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection API",
+    "title": "Flexible parameters added to Connector Configurations",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "ExternalData",
+      "Configuration"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-05T03:57:33.175980+00:00"
+  },
+  {
+    "slug": "2026-06-05-bigquery-v2",
+    "date": "2026-06-05",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "BigQuery adds Iceberg support for timestamp autodetection",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "iceberg",
+      "udf",
+      "datalake"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-05T03:57:33.175421+00:00"
+  },
+  {
+    "slug": "2026-06-05-aiplatform-v1beta1",
+    "date": "2026-06-05",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Semantic Governance and breaks Skill creation",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Governance",
+      "Breaking Change",
+      "Generative AI"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-05T03:57:33.174913+00:00"
+  },
+  {
+    "slug": "2026-06-05-aiplatform-v1",
+    "date": "2026-06-05",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Exa.ai Grounding and Hyperdisk Support",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Grounding",
+      "Storage",
+      "RAG"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-05T03:57:33.174320+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
