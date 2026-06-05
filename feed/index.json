@@ -1,5 +1,121 @@
 [
   {
+    "slug": "2026-06-05-tagmanager-v2",
+    "date": "2026-06-05",
+    "api": "tagmanager.v2",
+    "service_name": "Google Tag Manager",
+    "title": "Automatic Decimal Detection for Variable Formatting",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "tagmanager",
+      "variables",
+      "automation"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-05T21:27:07.075899+00:00"
+  },
+  {
+    "slug": "2026-06-05-datalineage-v1",
+    "date": "2026-06-05",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for lineage streaming",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "data-lineage",
+      "documentation"
+    ],
+    "interesting_score": 3,
+    "generated_at": "2026-06-05T21:27:07.075386+00:00"
+  },
+  {
+    "slug": "2026-06-05-dataform-v1beta1",
+    "date": "2026-06-05",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "iam",
+      "devops"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-05T21:27:07.074835+00:00"
+  },
+  {
+    "slug": "2026-06-05-dataform-v1",
+    "date": "2026-06-05",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "iam",
+      "security"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-05T21:27:07.074304+00:00"
+  },
+  {
+    "slug": "2026-06-05-connectors-v2",
+    "date": "2026-06-05",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Selective tool fetching added to Connectors API",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "integration",
+      "connectors",
+      "api-filtering"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-05T21:27:07.073734+00:00"
+  },
+  {
+    "slug": "2026-06-05-aiplatform-v1beta1",
+    "date": "2026-06-05",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Semantic Governance and Agent Platform Refinements",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "governance",
+      "agents",
+      "breaking-change",
+      "generative-ai"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-05T21:27:07.073192+00:00"
+  },
+  {
+    "slug": "2026-06-05-aiplatform-v1",
+    "date": "2026-06-05",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Veo video experiments and Exa.ai grounding",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Generative AI",
+      "Video",
+      "RAG",
+      "Infrastructure"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-05T21:27:07.072573+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
