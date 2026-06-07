@@ -1,5 +1,171 @@
 [
   {
+    "slug": "2026-06-07-tagmanager-v2",
+    "date": "2026-06-07",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "New Automatic Number Conversion for GTM Variables",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Tag Manager",
+      "Variables",
+      "Data Processing"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-07T21:15:47.547317+00:00"
+  },
+  {
+    "slug": "2026-06-07-datalineage-v1",
+    "date": "2026-06-07",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for lineage search",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Data Lineage",
+      "Documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-07T21:15:47.546807+00:00"
+  },
+  {
+    "slug": "2026-06-07-dataform-v1beta1",
+    "date": "2026-06-07",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "auth",
+      "developer-connect"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-07T21:15:47.546259+00:00"
+  },
+  {
+    "slug": "2026-06-07-dataform-v1",
+    "date": "2026-06-07",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "authentication",
+      "developer-connect"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-07T21:15:47.545736+00:00"
+  },
+  {
+    "slug": "2026-06-07-connectors-v2",
+    "date": "2026-06-07",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Selective Tool Fetching for Connectors",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "integration",
+      "connectors",
+      "api-optimization"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-07T21:15:47.545194+00:00"
+  },
+  {
+    "slug": "2026-06-07-bigquerydatatransfer-v1",
+    "date": "2026-06-07",
+    "api": "bigquerydatatransfer.v1",
+    "service_name": "BigQuery Data Transfer Service",
+    "title": "Dataplex Universal Catalog integration for Data Transfers",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Dataplex",
+      "Data Governance",
+      "Metadata"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-07T21:15:47.544683+00:00"
+  },
+  {
+    "slug": "2026-06-07-bigqueryconnection-v1",
+    "date": "2026-06-07",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection API",
+    "title": "Dynamic parameters for Connector Configurations",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Data Integration",
+      "API Update"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-07T21:15:47.544159+00:00"
+  },
+  {
+    "slug": "2026-06-07-bigquery-v2",
+    "date": "2026-06-07",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Iceberg support for timestamp precision autodetection",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "iceberg",
+      "udf",
+      "data-loading"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-07T21:15:47.543644+00:00"
+  },
+  {
+    "slug": "2026-06-07-aiplatform-v1beta1",
+    "date": "2026-06-07",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Semantic Governance and breaks several enums",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "governance",
+      "breaking-change",
+      "agents",
+      "infrastructure"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-07T21:15:47.543096+00:00"
+  },
+  {
+    "slug": "2026-06-07-aiplatform-v1",
+    "date": "2026-06-07",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Veo video features and Exa.ai grounding",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Generative AI",
+      "Video",
+      "RAG",
+      "Infrastructure"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-07T21:15:47.542577+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
