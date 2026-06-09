@@ -1,5 +1,154 @@
 [
   {
+    "slug": "2026-06-09-tagmanager-v2",
+    "date": "2026-06-09",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "Automatic decimal detection for variable conversion",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "tagmanager",
+      "variables",
+      "formatting"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-09T12:39:29.622845+00:00"
+  },
+  {
+    "slug": "2026-06-09-dataplex-v1",
+    "date": "2026-06-09",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex adds Unstructured Data Profiling and Graph Metadata",
+    "impact": "high",
+    "breaking": false,
+    "tags": [
+      "datagovernance",
+      "metadata",
+      "unstructured-data",
+      "graph-metadata"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-09T12:39:29.622373+00:00"
+  },
+  {
+    "slug": "2026-06-09-datalineage-v1",
+    "date": "2026-06-09",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for lineage search",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "documentation",
+      "data-lineage"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-09T12:39:29.621858+00:00"
+  },
+  {
+    "slug": "2026-06-09-dataform-v1beta1",
+    "date": "2026-06-09",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "authentication",
+      "devops"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-09T12:39:29.621393+00:00"
+  },
+  {
+    "slug": "2026-06-09-dataform-v1",
+    "date": "2026-06-09",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds managed GitRepositoryLink support",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "Dataform",
+      "Git",
+      "IAM",
+      "BigQuery"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-09T12:39:29.620912+00:00"
+  },
+  {
+    "slug": "2026-06-09-connectors-v2",
+    "date": "2026-06-09",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Selective tool fetching added to Connectors API",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Connectors",
+      "API Filtering",
+      "Application Integration"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-09T12:39:29.620453+00:00"
+  },
+  {
+    "slug": "2026-06-09-bigquerydatatransfer-v1",
+    "date": "2026-06-09",
+    "api": "bigquerydatatransfer.v1",
+    "service_name": "BigQuery Data Transfer Service",
+    "title": "Dataplex Universal Catalog integration for transfers",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "dataplex",
+      "governance",
+      "metadata"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-09T12:39:29.619973+00:00"
+  },
+  {
+    "slug": "2026-06-09-aiplatform-v1beta1",
+    "date": "2026-06-09",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI Governance Engine and Agent Platform Refactor",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "Vertex AI",
+      "AI Governance",
+      "Generative AI",
+      "Breaking Change"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-06-09T12:39:29.619504+00:00"
+  },
+  {
+    "slug": "2026-06-09-aiplatform-v1",
+    "date": "2026-06-09",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Veo video controls and Exa.ai grounding",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "Generative AI",
+      "Video",
+      "Grounding",
+      "Storage"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-09T12:39:29.618940+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
