@@ -1,5 +1,172 @@
 [
   {
+    "slug": "2026-06-14-tagmanager-v2",
+    "date": "2026-06-14",
+    "api": "tagmanager.v2",
+    "service_name": "Google Tag Manager",
+    "title": "Deprecation of Container Destination methods",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "tagmanager",
+      "deprecation",
+      "analytics"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-14T04:14:59.426475+00:00"
+  },
+  {
+    "slug": "2026-06-14-pagespeedonline-v5",
+    "date": "2026-06-14",
+    "api": "pagespeedonline.v5",
+    "service_name": "PageSpeed Insights",
+    "title": "New 'Agentic Browsing' category added to Lighthouse audits",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "lighthouse",
+      "seo",
+      "performance",
+      "ai-agents"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-14T04:14:59.425968+00:00"
+  },
+  {
+    "slug": "2026-06-14-dataplex-v1",
+    "date": "2026-06-14",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex adds Unstructured Data Profiling and Graph Inference",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "data-profiling",
+      "unstructured-data",
+      "graph-metadata",
+      "governance"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-14T04:14:59.425497+00:00"
+  },
+  {
+    "slug": "2026-06-14-datalineage-v1",
+    "date": "2026-06-14",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for lineage streaming",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "documentation",
+      "data-catalog"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-14T04:14:59.425018+00:00"
+  },
+  {
+    "slug": "2026-06-14-dataform-v1beta1",
+    "date": "2026-06-14",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds Developer Connect support for Git",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "security",
+      "developer-connect"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-14T04:14:59.424548+00:00"
+  },
+  {
+    "slug": "2026-06-14-dataform-v1",
+    "date": "2026-06-14",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "security",
+      "iam"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-14T04:14:59.424058+00:00"
+  },
+  {
+    "slug": "2026-06-14-connectors-v2",
+    "date": "2026-06-14",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Generic HTTP escape hatch added to Connectors v2",
+    "impact": "high",
+    "breaking": false,
+    "tags": [
+      "Integration",
+      "Connectors",
+      "HTTP",
+      "API"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-14T04:14:59.423595+00:00"
+  },
+  {
+    "slug": "2026-06-14-bigquerydatatransfer-v1",
+    "date": "2026-06-14",
+    "api": "bigquerydatatransfer.v1",
+    "service_name": "BigQuery Data Transfer Service",
+    "title": "Dataplex Universal Catalog integration for transfers",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "dataplex",
+      "metadata",
+      "data-governance"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-14T04:14:59.423117+00:00"
+  },
+  {
+    "slug": "2026-06-14-aiplatform-v1beta1",
+    "date": "2026-06-14",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Semantic Governance and Agent Platform Refactor",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "agents",
+      "governance",
+      "breaking-change",
+      "generative-ai"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-06-14T04:14:59.422653+00:00"
+  },
+  {
+    "slug": "2026-06-14-aiplatform-v1",
+    "date": "2026-06-14",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Exa.ai Grounding and Veo Video Looping",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "generative-ai",
+      "video-gen",
+      "grounding",
+      "infrastructure"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-14T04:14:59.422097+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
