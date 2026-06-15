@@ -1,5 +1,221 @@
 [
   {
+    "slug": "2026-06-15-tagmanager-v2",
+    "date": "2026-06-15",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "Deprecation of Container Destination methods",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "deprecation",
+      "tag-manager",
+      "api-lifecycle"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-15T04:26:28.544326+00:00"
+  },
+  {
+    "slug": "2026-06-15-pagespeedonline-v5",
+    "date": "2026-06-15",
+    "api": "pagespeedonline.v5",
+    "service_name": "PageSpeed Insights",
+    "title": "New 'Agentic Browsing' Category Added",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "Lighthouse",
+      "Performance",
+      "AI",
+      "Automation"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-15T04:26:28.543829+00:00"
+  },
+  {
+    "slug": "2026-06-15-looker-v1",
+    "date": "2026-06-15",
+    "api": "looker.v1",
+    "service_name": "Looker Core",
+    "title": "Looker Core adds Soft Delete recovery and Release Channels",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "lifecycle",
+      "management",
+      "security"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-15T04:26:28.543380+00:00"
+  },
+  {
+    "slug": "2026-06-15-dataplex-v1",
+    "date": "2026-06-15",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex adds Unstructured Data and Graph Profiling",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "Dataplex",
+      "Data Profiling",
+      "Graph Data",
+      "Unstructured Data"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-15T04:26:28.542905+00:00"
+  },
+  {
+    "slug": "2026-06-15-datalineage-v1",
+    "date": "2026-06-15",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarification for SearchLineageStreaming locations",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "data-lineage",
+      "documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-15T04:26:28.542457+00:00"
+  },
+  {
+    "slug": "2026-06-15-dataform-v1beta1",
+    "date": "2026-06-15",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "auth",
+      "security"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-15T04:26:28.542017+00:00"
+  },
+  {
+    "slug": "2026-06-15-dataform-v1",
+    "date": "2026-06-15",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "iam",
+      "devops"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-15T04:26:28.541556+00:00"
+  },
+  {
+    "slug": "2026-06-15-connectors-v2",
+    "date": "2026-06-15",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "Connectors v2 adds generic HTTP request execution",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "Connectors",
+      "HTTP",
+      "Integration"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-15T04:26:28.541126+00:00"
+  },
+  {
+    "slug": "2026-06-15-bigquerydatatransfer-v1",
+    "date": "2026-06-15",
+    "api": "bigquerydatatransfer.v1",
+    "service_name": "BigQuery Data Transfer Service",
+    "title": "Dataplex Universal Catalog integration for transfers",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "dataplex",
+      "metadata",
+      "governance"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-15T04:26:28.540680+00:00"
+  },
+  {
+    "slug": "2026-06-15-bigqueryconnection-v1",
+    "date": "2026-06-15",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection",
+    "title": "Custom Parameters for Connector Configurations",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Data Integration",
+      "Connectors"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-15T04:26:28.540253+00:00"
+  },
+  {
+    "slug": "2026-06-15-analyticshub-v1",
+    "date": "2026-06-15",
+    "api": "analyticshub.v1",
+    "service_name": "Analytics Hub",
+    "title": "Analytics Hub adds ZLIB compression for message transforms",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "data-transfer",
+      "compression",
+      "bigtable",
+      "pubsub"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-15T04:26:28.539795+00:00"
+  },
+  {
+    "slug": "2026-06-15-aiplatform-v1beta1",
+    "date": "2026-06-15",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI v1beta1: Agent Platform Rebrand & Breaking Changes",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "breaking-change",
+      "agents",
+      "governance",
+      "infrastructure"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-06-15T04:26:28.539354+00:00"
+  },
+  {
+    "slug": "2026-06-15-aiplatform-v1",
+    "date": "2026-06-15",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Veo Video Looping and Exa.ai Grounding",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Generative AI",
+      "Video",
+      "Grounding",
+      "Infrastructure"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-15T04:26:28.538833+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
