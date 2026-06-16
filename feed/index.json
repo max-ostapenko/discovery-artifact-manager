@@ -1,5 +1,239 @@
 [
   {
+    "slug": "2026-06-16-tagmanager-v2",
+    "date": "2026-06-16",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "Deprecation of Container Destination methods",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "deprecation",
+      "tag-manager",
+      "automation"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-16T18:56:34.138726+00:00"
+  },
+  {
+    "slug": "2026-06-16-pagespeedonline-v5",
+    "date": "2026-06-16",
+    "api": "pagespeedonline.v5",
+    "service_name": "PageSpeed Insights",
+    "title": "New Agentic Browsing Lighthouse Category",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "lighthouse",
+      "ai",
+      "web-performance",
+      "agentic-web"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-16T18:56:34.138164+00:00"
+  },
+  {
+    "slug": "2026-06-16-looker-v1",
+    "date": "2026-06-16",
+    "api": "looker.v1",
+    "service_name": "Looker Core",
+    "title": "Looker v1 adds Soft Delete recovery and Release Channels",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "management",
+      "governance",
+      "lifecycle"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-16T18:56:34.137622+00:00"
+  },
+  {
+    "slug": "2026-06-16-dataplex-v1",
+    "date": "2026-06-16",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex adds Unstructured Data Profiling and Graph Metadata",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataplex",
+      "data-profiling",
+      "metadata",
+      "graph-data"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-16T18:56:34.137072+00:00"
+  },
+  {
+    "slug": "2026-06-16-datalineage-v1",
+    "date": "2026-06-16",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for streaming searches",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "documentation",
+      "data-catalog",
+      "lineage"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-16T18:56:34.136548+00:00"
+  },
+  {
+    "slug": "2026-06-16-dataform-v1beta1",
+    "date": "2026-06-16",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "auth",
+      "devops"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-16T18:56:34.136009+00:00"
+  },
+  {
+    "slug": "2026-06-16-dataform-v1",
+    "date": "2026-06-16",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds GitRepositoryLink for machine credentials",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "security",
+      "iam"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-16T18:56:34.135477+00:00"
+  },
+  {
+    "slug": "2026-06-16-connectors-v2",
+    "date": "2026-06-16",
+    "api": "connectors.v2",
+    "service_name": "Application Integration Connectors",
+    "title": "New generic HTTP escape hatch for Connectors",
+    "impact": "high",
+    "breaking": false,
+    "tags": [
+      "integration",
+      "http",
+      "api-design"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-16T18:56:34.134949+00:00"
+  },
+  {
+    "slug": "2026-06-16-bigquerydatatransfer-v1",
+    "date": "2026-06-16",
+    "api": "bigquerydatatransfer.v1",
+    "service_name": "BigQuery Data Transfer Service",
+    "title": "Dataplex Universal Catalog integration for transfers",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "dataplex",
+      "metadata",
+      "governance"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-16T18:56:34.134425+00:00"
+  },
+  {
+    "slug": "2026-06-16-bigqueryconnection-v1",
+    "date": "2026-06-16",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection API",
+    "title": "Dynamic parameters added to Connector Configurations",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "connectors",
+      "configuration"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-16T18:56:34.133922+00:00"
+  },
+  {
+    "slug": "2026-06-16-bigquery-v2",
+    "date": "2026-06-16",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "BigQuery API docs now explicitly list IAM permissions",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "IAM",
+      "Documentation",
+      "BigQuery Omni",
+      "Iceberg"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-06-16T18:56:34.132089+00:00"
+  },
+  {
+    "slug": "2026-06-16-analyticshub-v1",
+    "date": "2026-06-16",
+    "api": "analyticshub.v1",
+    "service_name": "Analytics Hub",
+    "title": "Message Compression and Bigtable Row Key Clarification",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "data-transfer",
+      "compression",
+      "bigtable",
+      "pubsub"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-16T18:56:34.131575+00:00"
+  },
+  {
+    "slug": "2026-06-16-aiplatform-v1beta1",
+    "date": "2026-06-16",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Semantic Governance and Breaking Agent API Changes",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "agents",
+      "genai",
+      "breaking-change",
+      "governance"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-16T18:56:34.131043+00:00"
+  },
+  {
+    "slug": "2026-06-16-aiplatform-v1",
+    "date": "2026-06-16",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Veo Video Looping, Exa.ai Grounding, and Hyperdisks",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Generative AI",
+      "Grounding",
+      "Infrastructure",
+      "Video"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-16T18:56:34.130494+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
