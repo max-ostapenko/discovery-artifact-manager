@@ -326,17 +326,17 @@ def update_pr(pr_number: str, github_token: Optional[str]) -> None:
         github_token {Optional[str]} -- The github token, if provided
     """
     if github_token is not None:
-        logging.info("Adding automerge label ...")
+        logging.info("Enabling auto-merge ...")
         subprocess.run(
             [
                 "gh",
-                "issue",
-                "edit",
+                "pr",
+                "merge",
                 pr_number,
                 "--repo",
                 REPO_NAME,
-                "--add-label",
-                "automerge",
+                "--auto",
+                "--squash",
             ],
             capture_output=True,
             check=False,

@@ -1,9 +1,15 @@
 name: CI
 
 on:
-  pull_request_target:
+  pull_request:
     branches:
       - master
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - '.github/workflows/ci.yml'
+      - 'requirements.txt'
+      - 'setup.py'
 
 jobs:
   CI:
@@ -11,8 +17,6 @@ jobs:
     steps:
     - name: Checkout repo
       uses: actions/checkout@v6
-      with:
-        ref: ${{ github.event.pull_request.head.sha }}
     - name: Install Python 3.10
       uses: actions/setup-python@v6
       with:
