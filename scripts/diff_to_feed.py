@@ -19,7 +19,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from scripts.diff_preprocessor import extract_structured_diffs
-from scripts.feed_writer import write_insights, get_latest_feed_entry
+from scripts.feed_writer import write_insights, get_recent_feed_entries
 from scripts.llm_client import analyze_api_diff
 
 
@@ -86,14 +86,15 @@ def main() -> None:
         existing_today_content = None
         recent_history_content = None
 
-        entry_date, content = get_latest_feed_entry(api)
-        if entry_date and content:
-            if entry_date == insight_date:
-                existing_today_content = content
-                logger.info(f"Found existing feed entry for {api} today ({entry_date}). Will request LLM merge.")
-            else:
-                recent_history_content = content
-                logger.info(f"Found recent historical feed entry for {api} ({entry_date}). Will pass as context.")
+        existing_today_content, recent_history = get_recent_feed_entries(api, insight_date)
+        if existing_today_content:
+            logger.info(f"Found existing feed entry for {api} today. Will request LLM merge.")
+        if recent_history:
+            logger.info(f"Found {len(recent_history)} recent historical feed entries for {api}. Will pass as context.")
+            recent_history_content = "\n\n".join(
+                f"--- Entry Date: {h['date']} (Slug: {h['slug']}) ---\n{h['content']}"
+                for h in recent_history
+            )
 
         insight = analyze_api_diff(
             diff,

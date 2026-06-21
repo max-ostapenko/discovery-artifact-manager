@@ -116,34 +116,56 @@ def _render_markdown(insight: dict, slug: str, insight_date: str) -> str:
     return "\n".join(lines)
 
 
-def get_latest_feed_entry(api: str) -> tuple[Optional[str], Optional[str]]:
-    """Look up index.json to find the latest feed entry for the given api.
+def get_recent_feed_entries(api: str, insight_date: str, max_entries: int = 3) -> tuple[Optional[str], list[dict]]:
+    """Look up index.json to find today's entry and recent past entries for the given api.
+
+    Args:
+        api: The API ID.
+        insight_date: ISO date string for today (YYYY-MM-DD).
+        max_entries: Max past entries to return.
 
     Returns:
-        A tuple of (entry_date, entry_markdown_content), or (None, None).
+        A tuple: (existing_today_content_string, list_of_past_entries)
+        Each past entry is a dict: {"date": str, "slug": str, "content": str}
     """
     index = _load_index()
     api_entries = [e for e in index if e.get("api") == api]
     if not api_entries:
-        return None, None
+        return None, []
 
-    # Sort by date descending, then slug descending to find the absolute latest
+    # Sort by date descending, then slug descending to find the newest first
     api_entries.sort(key=lambda e: (e.get("date", ""), e.get("slug", "")), reverse=True)
-    latest = api_entries[0]
 
-    slug = latest.get("slug")
-    entry_date = latest.get("date")
-    if not slug or not entry_date:
-        return None, None
+    existing_today_content = None
+    recent_history = []
 
-    md_path = FEED_DIR / f"{slug}.md"
-    if md_path.exists():
+    for entry in api_entries:
+        entry_date = entry.get("date")
+        slug = entry.get("slug")
+        if not slug or not entry_date:
+            continue
+
+        md_path = FEED_DIR / f"{slug}.md"
+        if not md_path.exists():
+            continue
+
         try:
-            return entry_date, md_path.read_text(encoding="utf-8")
+            content = md_path.read_text(encoding="utf-8")
         except Exception as e:
             logger.warning(f"Failed to read feed file {md_path}: {e}")
+            continue
 
-    return None, None
+        if entry_date == insight_date:
+            existing_today_content = content
+        else:
+            if len(recent_history) < max_entries:
+                recent_history.append({
+                    "date": entry_date,
+                    "slug": slug,
+                    "content": content
+                })
+
+    return existing_today_content, recent_history
 
 
 def write_insight(insight: dict, insight_date: Optional[str] = None) -> Optional[str]:
