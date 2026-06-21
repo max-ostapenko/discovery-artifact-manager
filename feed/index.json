@@ -1,5 +1,53 @@
 [
   {
+    "slug": "2026-05-28-datalineage-v1",
+    "date": "2026-05-28",
+    "api": "datalineage.v1",
+    "service_name": "Data Lineage",
+    "title": "Clarified location requirements for lineage search",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "data-lineage",
+      "documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-05-28T13:53:25.641558+00:00"
+  },
+  {
+    "slug": "2026-05-28-bigqueryconnection-v1",
+    "date": "2026-05-28",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection API",
+    "title": "Flexible Connector Parameters and Authentication",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "connectors",
+      "configuration"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-05-28T13:53:25.641013+00:00"
+  },
+  {
+    "slug": "2026-05-28-bigquery-v2",
+    "date": "2026-05-28",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Iceberg timestamp autodetection and UDF clarifications",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Iceberg",
+      "UDF",
+      "Data Loading"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-05-28T13:53:25.640385+00:00"
+  },
+  {
     "slug": "2026-05-22-dataplex-v1",
     "date": "2026-05-22",
     "api": "dataplex.v1",
