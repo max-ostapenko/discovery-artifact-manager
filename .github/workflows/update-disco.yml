@@ -13,7 +13,6 @@ jobs:
       pull-requests: write # create/update PRs via gh
       issues: write        # add automerge label
       id-token: write      # Workload Identity Federation
-      actions: write       # allow pushing branches containing workflow changes
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
