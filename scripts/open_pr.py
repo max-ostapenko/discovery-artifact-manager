@@ -325,11 +325,7 @@ def update_pr(pr_number: str, github_token: Optional[str]) -> None:
         pr_number {str} -- The pull request number as a string
         github_token {Optional[str]} -- The github token, if provided
     """
-    approval_token: Optional[str] = os.getenv(APPROVAL_TOKEN_ENV)
-    if approval_token is None:
-        logging.info("No approval token provided; skipping automerge")
-    else:
-        os.putenv(MAIN_TOKEN_ENV, approval_token)
+    if github_token is not None:
         logging.info("Adding automerge label ...")
         subprocess.run(
             [
@@ -345,6 +341,12 @@ def update_pr(pr_number: str, github_token: Optional[str]) -> None:
             capture_output=True,
             check=False,
         )
+
+    approval_token: Optional[str] = os.getenv(APPROVAL_TOKEN_ENV)
+    if approval_token is None:
+        logging.info("No approval token provided; skipping auto-approval")
+    else:
+        os.putenv(MAIN_TOKEN_ENV, approval_token)
         logging.info("Approving pull request ...")
         subprocess.run(
             [
