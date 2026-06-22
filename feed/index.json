@@ -1,5 +1,38 @@
 [
   {
+    "slug": "2026-06-22-bigquery-v2",
+    "date": "2026-06-22",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Clarified transferredBytes definition for BigQuery Omni",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "BigQuery Omni",
+      "Analytics"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-22T10:44:14.193835+00:00"
+  },
+  {
+    "slug": "2026-06-22-biglake-v1",
+    "date": "2026-06-22",
+    "api": "biglake.v1",
+    "service_name": "BigLake (Lakehouse API)",
+    "title": "BigLake API rebranded to Lakehouse API",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "rebranding",
+      "lakehouse",
+      "metastore",
+      "iceberg"
+    ],
+    "interesting_score": 3,
+    "generated_at": "2026-06-22T10:44:14.193262+00:00"
+  },
+  {
     "slug": "2026-05-28-datalineage-v1",
     "date": "2026-05-28",
     "api": "datalineage.v1",
