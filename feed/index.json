@@ -1,5 +1,22 @@
 [
   {
+    "slug": "2026-06-23-pagespeedonline-v5",
+    "date": "2026-06-23",
+    "api": "pagespeedonline.v5",
+    "service_name": "PageSpeed Insights",
+    "title": "New Agentic Browsing category added to PageSpeed API",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "PageSpeed Insights",
+      "AI",
+      "SEO",
+      "Web Performance"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-06-23T21:45:41.230027+00:00"
+  },
+  {
     "slug": "2026-06-22-bigquery-v2",
     "date": "2026-06-22",
     "api": "bigquery.v2",
