@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 FEED_DIR = Path(__file__).parent.parent / "feed"
 INDEX_PATH = FEED_DIR / "index.json"
 
-INTERESTING_SCORE_THRESHOLD = 2
+INTERESTING_SCORE_THRESHOLD = 3
 
 
 def _slugify(s: str) -> str:
