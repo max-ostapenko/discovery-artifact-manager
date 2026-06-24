@@ -1,5 +1,33 @@
 [
   {
+    "slug": "2026-06-24-dataform-v1beta1",
+    "date": "2026-06-24",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Documentation cleanup and internal lint removal",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-24T17:08:47.181606+00:00"
+  },
+  {
+    "slug": "2026-06-24-dataform-v1",
+    "date": "2026-06-24",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Minor documentation cleanup and formatting",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "documentation"
+    ],
+    "interesting_score": 2,
+    "generated_at": "2026-06-24T17:08:47.181033+00:00"
+  },
+  {
     "slug": "2026-06-23-pagespeedonline-v5",
     "date": "2026-06-23",
     "api": "pagespeedonline.v5",
