@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-06-25-dataplex-v1",
+    "date": "2026-06-25",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex introduces Data Domains for logical organization",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "governance",
+      "datamesh",
+      "dataplex"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-25T12:25:23.010957+00:00"
+  },
+  {
     "slug": "2026-06-24-dataform-v1beta1",
     "date": "2026-06-24",
     "api": "dataform.v1beta1",
