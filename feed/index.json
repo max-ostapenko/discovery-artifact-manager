@@ -1,5 +1,22 @@
 [
   {
+    "slug": "2026-06-26-bigquery-v2",
+    "date": "2026-06-26",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Native Apache Arrow support for query results",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Apache Arrow",
+      "Performance",
+      "Data Egress"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-06-26T04:05:54.545618+00:00"
+  },
+  {
     "slug": "2026-06-25-dataplex-v1",
     "date": "2026-06-25",
     "api": "dataplex.v1",
