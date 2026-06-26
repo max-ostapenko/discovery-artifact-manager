@@ -927,7 +927,7 @@
       "kind": "discovery#directoryItem",
       "name": "biglake",
       "preferred": true,
-      "title": "BigLake API",
+      "title": "Lakehouse API",
       "version": "v1"
     },
     {
