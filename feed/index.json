@@ -1,5 +1,39 @@
 [
   {
+    "slug": "2026-06-27-aiplatform-v1beta1",
+    "date": "2026-06-27",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI Beta: Computer Use Safety & Breaking Agent Changes",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Generative AI",
+      "Breaking Change"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-06-27T03:52:14.673508+00:00"
+  },
+  {
+    "slug": "2026-06-27-aiplatform-v1",
+    "date": "2026-06-27",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI introduces Agents and Semantic Governance resources",
+    "impact": "high",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Governance"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-06-27T03:52:14.672919+00:00"
+  },
+  {
     "slug": "2026-06-26-bigquery-v2",
     "date": "2026-06-26",
     "api": "bigquery.v2",
