@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-06-30-pagespeedonline-v5",
+    "date": "2026-06-30",
+    "api": "pagespeedonline.v5",
+    "service_name": "PageSpeed Insights",
+    "title": "New score display modes for Lighthouse categories",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "PageSpeed Insights",
+      "Lighthouse",
+      "Web Performance"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-06-30T21:41:03.472864+00:00"
+  },
+  {
     "slug": "2026-06-27-aiplatform-v1beta1",
     "date": "2026-06-27",
     "api": "aiplatform.v1beta1",
