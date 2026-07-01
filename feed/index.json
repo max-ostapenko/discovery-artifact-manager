@@ -16,6 +16,22 @@
     "generated_at": "2026-07-01T04:16:44.461567+00:00"
   },
   {
+    "slug": "2026-07-01-bigqueryreservation-v1",
+    "date": "2026-07-01",
+    "api": "bigqueryreservation.v1",
+    "service_name": "BigQuery Reservation",
+    "title": "Hierarchical Reservation Groups and Flex Plan Deprecation",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "reservations",
+      "deprecation"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-01T12:37:41.362054+00:00"
+  },
+  {
     "slug": "2026-06-30-pagespeedonline-v5",
     "date": "2026-06-30",
     "api": "pagespeedonline.v5",
