@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-07-01-tagmanager-v2",
+    "date": "2026-07-01",
+    "api": "tagmanager.v2",
+    "service_name": "Tag Manager",
+    "title": "New Automatic Number Conversion and Error Schema Cleanup",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "Tag Manager",
+      "Variables",
+      "Schema Change"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-01T04:16:44.461567+00:00"
+  },
+  {
     "slug": "2026-06-30-pagespeedonline-v5",
     "date": "2026-06-30",
     "api": "pagespeedonline.v5",
