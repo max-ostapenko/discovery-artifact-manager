@@ -1,5 +1,22 @@
 [
   {
+    "slug": "2026-07-02-dataplex-v1",
+    "date": "2026-07-02",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex Data Domains add IAM policy member metadata",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "iam",
+      "security",
+      "dataplex",
+      "governance"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-07-02T12:11:14.168779+00:00"
+  },
+  {
     "slug": "2026-07-01-tagmanager-v2",
     "date": "2026-07-01",
     "api": "tagmanager.v2",
