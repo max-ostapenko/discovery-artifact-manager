@@ -1,5 +1,40 @@
 [
   {
+    "slug": "2026-07-03-aiplatform-v1beta1",
+    "date": "2026-07-03",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI: New Memory Bank Resources and Agent Refinements",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Grounding",
+      "Reasoning Engine"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-03T21:12:36.344434+00:00"
+  },
+  {
+    "slug": "2026-07-03-aiplatform-v1",
+    "date": "2026-07-03",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Memory management and Agent configuration updates",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Memory"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-03T21:12:36.343713+00:00"
+  },
+  {
     "slug": "2026-07-02-dataplex-v1",
     "date": "2026-07-02",
     "api": "dataplex.v1",
