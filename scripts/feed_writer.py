@@ -116,7 +116,9 @@ def _render_markdown(insight: dict, slug: str, insight_date: str) -> str:
     return "\n".join(lines)
 
 
-def get_recent_feed_entries(api: str, insight_date: str, max_entries: int = 3) -> tuple[Optional[str], list[dict]]:
+def get_recent_feed_entries(
+    api: str, insight_date: str, max_entries: int = 3
+) -> tuple[Optional[str], list[dict]]:
     """Look up index.json to find today's entry and recent past entries for the given api.
 
     Args:
@@ -159,11 +161,9 @@ def get_recent_feed_entries(api: str, insight_date: str, max_entries: int = 3) -
             existing_today_content = content
         else:
             if len(recent_history) < max_entries:
-                recent_history.append({
-                    "date": entry_date,
-                    "slug": slug,
-                    "content": content
-                })
+                recent_history.append(
+                    {"date": entry_date, "slug": slug, "content": content}
+                )
 
     return existing_today_content, recent_history
 
