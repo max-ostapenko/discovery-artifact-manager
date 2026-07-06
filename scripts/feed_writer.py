@@ -139,7 +139,7 @@ def get_recent_feed_entries(
     api_entries.sort(key=lambda e: (e.get("date", ""), e.get("slug", "")), reverse=True)
 
     existing_today_content = None
-    recent_history = []
+    recent_history: list[dict] = []
 
     for entry in api_entries:
         entry_date = entry.get("date")
