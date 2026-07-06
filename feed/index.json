@@ -1,5 +1,38 @@
 [
   {
+    "slug": "2026-07-06-bigquerydatatransfer-v1",
+    "date": "2026-07-06",
+    "api": "bigquerydatatransfer.v1",
+    "service_name": "BigQuery Data Transfer Service",
+    "title": "Removal of metadataDestination from TransferRun",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "bigquery",
+      "breaking-change"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-07-06T03:58:03.746480+00:00"
+  },
+  {
+    "slug": "2026-07-06-aiplatform-v1beta1",
+    "date": "2026-07-06",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Claude-specific feature controls",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Anthropic",
+      "Claude",
+      "Data Retention"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-07-06T03:58:03.745863+00:00"
+  },
+  {
     "slug": "2026-07-03-aiplatform-v1beta1",
     "date": "2026-07-03",
     "api": "aiplatform.v1beta1",
