@@ -1,5 +1,22 @@
 [
   {
+    "slug": "2026-07-09-bigquery-v2",
+    "date": "2026-07-09",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Table-valued arguments and multi-cloud storage stats",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "SQL",
+      "BigQuery Omni",
+      "Observability"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-09T17:24:11.675047+00:00"
+  },
+  {
     "slug": "2026-07-06-bigquerydatatransfer-v1",
     "date": "2026-07-06",
     "api": "bigquerydatatransfer.v1",
