@@ -1,5 +1,40 @@
 [
   {
+    "slug": "2026-07-14-aiplatform-v1beta1",
+    "date": "2026-07-14",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Memory Bank CRUD and Streaming Event updates",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Reasoning Engine",
+      "Streaming"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-14T02:48:17.734088+00:00"
+  },
+  {
+    "slug": "2026-07-14-aiplatform-v1",
+    "date": "2026-07-14",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds CRUD and Generation for Agent Memories",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Memory"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-07-14T02:48:17.733433+00:00"
+  },
+  {
     "slug": "2026-07-09-bigquery-v2",
     "date": "2026-07-09",
     "api": "bigquery.v2",
