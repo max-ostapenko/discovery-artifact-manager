@@ -1,5 +1,40 @@
 [
   {
+    "slug": "2026-07-18-aiplatform-v1beta1",
+    "date": "2026-07-18",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI: Breaking GenAI Schema Changes & New Retrieval Tools",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Generative AI",
+      "Agents",
+      "Video Generation"
+    ],
+    "interesting_score": 9,
+    "generated_at": "2026-07-18T07:01:45.292801+00:00"
+  },
+  {
+    "slug": "2026-07-18-aiplatform-v1",
+    "date": "2026-07-18",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds HTTP request forwarding and video alignment",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Video Generation",
+      "Grounding"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-18T07:01:45.292150+00:00"
+  },
+  {
     "slug": "2026-07-15-dataplex-v1",
     "date": "2026-07-15",
     "api": "dataplex.v1",
