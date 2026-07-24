@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-07-24-bigqueryreservation-v1",
+    "date": "2026-07-24",
+    "api": "bigqueryreservation.v1",
+    "service_name": "BigQuery Reservation",
+    "title": "New reservationGroupPath field for hierarchical tracking",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "reservations",
+      "hierarchy"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-07-24T07:35:18.745350+00:00"
+  },
+  {
     "slug": "2026-07-18-aiplatform-v1beta1",
     "date": "2026-07-18",
     "api": "aiplatform.v1beta1",
