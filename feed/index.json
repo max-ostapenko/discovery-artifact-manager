@@ -1,5 +1,75 @@
 [
   {
+    "slug": "2026-07-26-bigqueryconnection-v1",
+    "date": "2026-07-26",
+    "api": "bigqueryconnection.v1",
+    "service_name": "BigQuery Connection API",
+    "title": "TLS Configuration for BigQuery Connections",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "security",
+      "tls",
+      "networking"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-26T16:05:02.400209+00:00"
+  },
+  {
+    "slug": "2026-07-26-bigquery-v2",
+    "date": "2026-07-26",
+    "api": "bigquery.v2",
+    "service_name": "BigQuery",
+    "title": "Explicit statement types and new data skew metrics",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "BigQuery",
+      "Observability",
+      "Performance",
+      "SQL"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-07-26T16:05:02.399616+00:00"
+  },
+  {
+    "slug": "2026-07-26-aiplatform-v1beta1",
+    "date": "2026-07-26",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI: Memory Bank Expansion & Breaking Agent Changes",
+    "impact": "high",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Vector Search",
+      "Reasoning Engine"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-07-26T16:05:02.399031+00:00"
+  },
+  {
+    "slug": "2026-07-26-aiplatform-v1",
+    "date": "2026-07-26",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Audio Transcription and Memory Event Ingestion",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Audio",
+      "Memory",
+      "Video Generation"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-26T16:05:02.398363+00:00"
+  },
+  {
     "slug": "2026-07-24-bigqueryreservation-v1",
     "date": "2026-07-24",
     "api": "bigqueryreservation.v1",
