@@ -1,5 +1,55 @@
 [
   {
+    "slug": "2026-07-30-analyticshub-v1",
+    "date": "2026-07-30",
+    "api": "analyticshub.v1",
+    "service_name": "Analytics Hub",
+    "title": "Deprecation of proposer field in QueryTemplate",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "deprecation",
+      "analyticshub"
+    ],
+    "interesting_score": 4,
+    "generated_at": "2026-07-30T11:54:44.461137+00:00"
+  },
+  {
+    "slug": "2026-07-30-aiplatform-v1beta1",
+    "date": "2026-07-30",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI: Task Stores, Speech Transcription, and Model Proxies",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Generative AI",
+      "Speech"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-30T11:54:44.460656+00:00"
+  },
+  {
+    "slug": "2026-07-30-aiplatform-v1",
+    "date": "2026-07-30",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Compact HTTP Forwarding and Serving Operations",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Operations",
+      "HTTP Proxy"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-07-30T11:54:44.460102+00:00"
+  },
+  {
     "slug": "2026-07-26-bigqueryconnection-v1",
     "date": "2026-07-26",
     "api": "bigqueryconnection.v1",
