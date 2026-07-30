@@ -1,5 +1,40 @@
 [
   {
+    "slug": "2026-07-30-aiplatform-v1beta1",
+    "date": "2026-07-30",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI: Task Stores, ASR Config, and HTTP Proxying",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Generative AI",
+      "Reasoning Engine"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-07-30T07:37:20.015218+00:00"
+  },
+  {
+    "slug": "2026-07-30-aiplatform-v1",
+    "date": "2026-07-30",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Compact HTTP Forwarding and Serving Profile Ops",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Model Serving",
+      "Operations"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-07-30T07:37:20.014491+00:00"
+  },
+  {
     "slug": "2026-07-26-bigqueryconnection-v1",
     "date": "2026-07-26",
     "api": "bigqueryconnection.v1",
