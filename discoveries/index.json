@@ -542,6 +542,21 @@
       "version": "v1"
     },
     {
+      "description": "Android Developer ID Status API.",
+      "discoveryRestUrl": "https://androiddeveloperidstatus.googleapis.com/$discovery/rest?version=v1",
+      "documentationLink": "https://developer.android.com/developer-verification/guides/check-registration-status",
+      "icons": {
+        "x16": "https://www.gstatic.com/images/branding/product/1x/googleg_16dp.png",
+        "x32": "https://www.gstatic.com/images/branding/product/1x/googleg_32dp.png"
+      },
+      "id": "androiddeveloperidstatus:v1",
+      "kind": "discovery#directoryItem",
+      "name": "androiddeveloperidstatus",
+      "preferred": true,
+      "title": "Android Developer ID Status API",
+      "version": "v1"
+    },
+    {
       "description": "Automates Android zero-touch enrollment for device resellers, customers, and EMMs.",
       "discoveryRestUrl": "https://androiddeviceprovisioning.googleapis.com/$discovery/rest?version=v1",
       "documentationLink": "https://developers.google.com/zero-touch/",
