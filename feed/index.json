@@ -1,5 +1,39 @@
 [
   {
+    "slug": "2026-08-06-dataform-v1beta1",
+    "date": "2026-08-06",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Support for Notebooks, SQL assets, and GCS snapshots",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "notebooks",
+      "sql",
+      "gcs"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-08-06T07:43:11.441201+00:00"
+  },
+  {
+    "slug": "2026-08-06-dataform-v1",
+    "date": "2026-08-06",
+    "api": "dataform.v1",
+    "service_name": "Dataform",
+    "title": "Dataform adds support for SQL and Notebook pipelines",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "notebooks",
+      "sql",
+      "pipelines"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-08-06T07:43:11.440454+00:00"
+  },
+  {
     "slug": "2026-07-30-analyticshub-v1",
     "date": "2026-07-30",
     "api": "analyticshub.v1",
