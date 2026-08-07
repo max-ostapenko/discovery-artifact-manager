@@ -1,5 +1,22 @@
 [
   {
+    "slug": "2026-08-07-dataplex-v1",
+    "date": "2026-08-07",
+    "api": "dataplex.v1",
+    "service_name": "Dataplex",
+    "title": "Dataplex adds ChangeRequest comments and EntryLinkType events",
+    "impact": "low",
+    "breaking": false,
+    "tags": [
+      "dataplex",
+      "governance",
+      "logging",
+      "metadata"
+    ],
+    "interesting_score": 5,
+    "generated_at": "2026-08-07T15:59:32.404344+00:00"
+  },
+  {
     "slug": "2026-08-06-dataform-v1beta1",
     "date": "2026-08-06",
     "api": "dataform.v1beta1",
