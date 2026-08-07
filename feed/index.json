@@ -17,6 +17,42 @@
     "generated_at": "2026-08-07T15:59:32.404344+00:00"
   },
   {
+    "slug": "2026-08-07-aiplatform-v1beta1",
+    "date": "2026-08-07",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI: Session Compaction and Transcription Refactor",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Agents",
+      "Generative AI",
+      "Speech"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-08-07T20:45:49.284689+00:00"
+  },
+  {
+    "slug": "2026-08-07-aiplatform-v1",
+    "date": "2026-08-07",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Session Compaction and Audio API updates",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Reasoning Engines",
+      "Audio",
+      "Evaluation"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-08-07T20:45:49.283934+00:00"
+  },
+  {
     "slug": "2026-08-06-dataform-v1beta1",
     "date": "2026-08-06",
     "api": "dataform.v1beta1",
