@@ -1,5 +1,21 @@
 [
   {
+    "slug": "2026-08-09-bigqueryreservation-v1",
+    "date": "2026-08-09",
+    "api": "bigqueryreservation.v1",
+    "service_name": "BigQuery Reservation",
+    "title": "New jobType for Materialized View Refresh assignments",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "reservations",
+      "materialized-views"
+    ],
+    "interesting_score": 6,
+    "generated_at": "2026-08-09T02:00:29.167004+00:00"
+  },
+  {
     "slug": "2026-08-07-dataplex-v1",
     "date": "2026-08-07",
     "api": "dataplex.v1",
