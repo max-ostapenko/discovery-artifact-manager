@@ -1,5 +1,22 @@
 [
   {
+    "slug": "2026-08-21-dataform-v1beta1",
+    "date": "2026-08-21",
+    "api": "dataform.v1beta1",
+    "service_name": "Dataform",
+    "title": "Git branch management arrives for Dataform Workspaces",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "dataform",
+      "git",
+      "workspaces",
+      "automation"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-08-21T20:29:32.578092+00:00"
+  },
+  {
     "slug": "2026-08-19-datacatalog-v1beta1",
     "date": "2026-08-19",
     "api": "datacatalog.v1beta1",
