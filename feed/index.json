@@ -1,5 +1,40 @@
 [
   {
+    "slug": "2026-08-22-aiplatform-v1beta1",
+    "date": "2026-08-22",
+    "api": "aiplatform.v1beta1",
+    "service_name": "Vertex AI",
+    "title": "Smart Transcription, Multi-Speaker Config, and Agentic Video",
+    "impact": "medium",
+    "breaking": true,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Generative AI",
+      "Video",
+      "Speech"
+    ],
+    "interesting_score": 8,
+    "generated_at": "2026-08-22T05:31:36.233262+00:00"
+  },
+  {
+    "slug": "2026-08-22-aiplatform-v1",
+    "date": "2026-08-22",
+    "api": "aiplatform.v1",
+    "service_name": "Vertex AI",
+    "title": "Vertex AI adds Response Management and Smart Transcription",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "AI",
+      "Vertex AI",
+      "Audio",
+      "Agents"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-08-22T05:31:36.232473+00:00"
+  },
+  {
     "slug": "2026-08-21-dataform-v1beta1",
     "date": "2026-08-21",
     "api": "dataform.v1beta1",
