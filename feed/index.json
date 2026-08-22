@@ -1,5 +1,22 @@
 [
   {
+    "slug": "2026-08-22-bigqueryreservation-v1",
+    "date": "2026-08-22",
+    "api": "bigqueryreservation.v1",
+    "service_name": "BigQuery Reservation",
+    "title": "CEL Conditions and Precedence for Reservation Assignments",
+    "impact": "medium",
+    "breaking": false,
+    "tags": [
+      "bigquery",
+      "reservations",
+      "cel",
+      "governance"
+    ],
+    "interesting_score": 7,
+    "generated_at": "2026-08-22T15:25:10.322572+00:00"
+  },
+  {
     "slug": "2026-08-22-aiplatform-v1beta1",
     "date": "2026-08-22",
     "api": "aiplatform.v1beta1",
